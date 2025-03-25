@@ -3,7 +3,7 @@
 class App : public wxApp {
 public:
     bool OnInit() {
-        wxFrame* window = new wxFrame(NULL, wxID_ANY, "Testowe okno", wxDefaultPosition, wxSize(600, 400));
+        wxFrame* window = new wxFrame(NULL, wxID_ANY, "Testowe okno + git", wxDefaultPosition, wxSize(600, 400));
         wxBoxSizer* sizer = new wxBoxSizer(wxHORIZONTAL);
         wxStaticText* text = new wxStaticText(window, wxID_ANY, "Testowe okno",
             wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE_HORIZONTAL);
