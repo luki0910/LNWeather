@@ -1,0 +1,1 @@
+[{"id":50,"stationId":11,"param":{"paramName":"dwutlenek azotu","paramFormula":"NO2","paramCode":"NO2","idParam":6}},{"id":52,"stationId":11,"param":{"paramName":"ozon","paramFormula":"O3","paramCode":"O3","idParam":5}},{"id":54,"stationId":11,"param":{"paramName":"pył zawieszony PM10","paramFormula":"PM10","paramCode":"PM10","idParam":3}}]

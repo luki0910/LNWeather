@@ -19,7 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ApiService.cpp" />
+    <ClCompile Include="ChartPanel.cpp" />
+    <ClCompile Include="DatabaseService.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApiService.h" />
+    <ClInclude Include="ChartPanel.h" />
+    <ClInclude Include="DatabaseService.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="Models.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -97,7 +110,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalHeaderUnitDependencies>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\wx;%(AdditionalHeaderUnitDependencies)</AdditionalHeaderUnitDependencies>
       <AdditionalIncludeDirectories>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\msvc;C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -115,7 +128,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalHeaderUnitDependencies>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\wx;%(AdditionalHeaderUnitDependencies)</AdditionalHeaderUnitDependencies>
       <AdditionalIncludeDirectories>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\msvc;C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -133,7 +146,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalHeaderUnitDependencies>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\wx;%(AdditionalHeaderUnitDependencies)</AdditionalHeaderUnitDependencies>
       <AdditionalIncludeDirectories>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\msvc;C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -151,7 +164,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalHeaderUnitDependencies>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\wx;%(AdditionalHeaderUnitDependencies)</AdditionalHeaderUnitDependencies>
       <AdditionalIncludeDirectories>C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include\msvc;C:\Users\luki0\LNWeather\ThirdParty\wxWidgets-3.2.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

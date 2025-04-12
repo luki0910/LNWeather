@@ -1,0 +1,1 @@
+[{"id":737,"stationId":129,"param":{"paramName":"tlenek węgla","paramFormula":"CO","paramCode":"CO","idParam":8}},{"id":740,"stationId":129,"param":{"paramName":"dwutlenek azotu","paramFormula":"NO2","paramCode":"NO2","idParam":6}},{"id":744,"stationId":129,"param":{"paramName":"pył zawieszony PM2.5","paramFormula":"PM2.5","paramCode":"PM2.5","idParam":69}}]
