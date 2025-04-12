@@ -21,8 +21,12 @@ public:
     // Ustawienie tytu³u wykresu
     void SetTitle(const wxString& title);
 
+    // Dostep do danych
+    const std::vector<MeasurementData>& GetChartData() const { return chartData; }
+
 private:
     std::vector<MeasurementData> chartData;
+    
     wxString title;
     wxString parameter;
 

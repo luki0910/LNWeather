@@ -4,6 +4,7 @@
 #include <wx/progdlg.h>
 #include <wx/datectrl.h>  // dla wxDatePickerCtrl
 #include <wx/dateevt.h>   // dla obs³ugi eventów daty
+#include <wx/notebook.h>
 #include <vector>
 #include <utility>
 #include "ChartPanel.h"
@@ -23,6 +24,11 @@ private:
     wxButton* saveCurrentToDbButton;
     wxButton* saveAllToDbButton;
     wxStaticText* dbStatusText;
+
+    //Analiza danych
+    wxButton* showAnalysisButton;
+    wxTextCtrl* analysisText;
+    wxNotebook* dataNotebook;  // Kontrolka z zak³adkami
 
     //Chart Stuff
     ChartPanel* chartPanel;
@@ -59,6 +65,10 @@ private:
     bool tryLoadAirQualityFromDatabase(int stationId);
     bool tryLoadMeasurementsWithDateRange(int sensorId);
     bool tryLoadMeasurementsWithDateRangeFromDatabase(int sensorId);
+
+    //Metody do analizy
+    void OnShowAnalysis(wxCommandEvent& event);
+    void PerformDataAnalysis(const std::vector<MeasurementData>& data, const wxString& paramName);
     
 
     // Status methods

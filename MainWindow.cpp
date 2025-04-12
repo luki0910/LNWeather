@@ -8,43 +8,75 @@
 using json = nlohmann::json;
 
 MainWindow::MainWindow() : wxFrame(NULL, wxID_ANY, "Dane pomiarowe - GIOŚ", wxDefaultPosition, wxSize(1000, 700)) {
+    // Inicjalizacja panelu głównego i sizerów
     wxPanel* mainPanel = new wxPanel(this, wxID_ANY);
     wxBoxSizer* mainSizer = new wxBoxSizer(wxVERTICAL);
     wxBoxSizer* dataSizer = new wxBoxSizer(wxHORIZONTAL);
 
-    //Panel kontrolny (lewy)
+    // Panel kontrolny (lewy)
     wxBoxSizer* controlSizer = new wxBoxSizer(wxVERTICAL);
 
-    //Elementy panelu (lewego)
+    // Inicjalizacja wszystkich kontrolek
     stationChoice = new wxChoice(mainPanel, wxID_ANY);
     sensorChoice = new wxChoice(mainPanel, wxID_ANY);
-    measurementText = new wxTextCtrl(mainPanel, wxID_ANY, "Dane pomiarowe", wxDefaultPosition, wxSize(300, 400), wxTE_MULTILINE | wxTE_READONLY | wxTE_RICH2);
     airQualityIndex = new wxStaticText(mainPanel, wxID_ANY, "Indeks jakości powietrza", wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE_HORIZONTAL);
     saveCurrentToDbButton = new wxButton(mainPanel, wxID_ANY, "Zapisz dane bieżącej stacji do bazy lokalnej");
     saveAllToDbButton = new wxButton(mainPanel, wxID_ANY, "Zapisz dane wszystkich stacji do bazy lokalnej");
     dbStatusText = new wxStaticText(mainPanel, wxID_ANY, "Status bazy: Nieznany", wxDefaultPosition, wxDefaultSize);
-
-    //Elementy do wykresu
+    dataNotebook = new wxNotebook(mainPanel, wxID_ANY, wxDefaultPosition, wxSize(300, 400));
     startDatePicker = new wxDatePickerCtrl(mainPanel, wxID_ANY);
     endDatePicker = new wxDatePickerCtrl(mainPanel, wxID_ANY, wxDefaultDateTime, wxDefaultPosition, wxDefaultSize, wxDP_DEFAULT | wxDP_SHOWCENTURY);
     applyDateRangeButton = new wxButton(mainPanel, wxID_ANY, "Zastosuj zakres dat");
 
-    //Wybór stacji
+    // Inicjalizacja czcionki
+    font = wxFont(9, wxFONTFAMILY_TELETYPE, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
+
+    // Ustawienie kontrolek zakresu dat
+    wxDateTime today = wxDateTime::Now();
+    wxDateTime weekAgo = today;
+    weekAgo.Subtract(wxDateSpan(0, 0, 1, 0)); // tydzień wstecz
+    startDatePicker->SetValue(weekAgo);
+    endDatePicker->SetValue(today);
+
+    // Tworzenie zakładek
+    // 1. Zakładka - dane pomiarowe
+    wxPanel* measurementPanel = new wxPanel(dataNotebook, wxID_ANY);
+    wxBoxSizer* measureSizer = new wxBoxSizer(wxVERTICAL);
+    measurementText = new wxTextCtrl(measurementPanel, wxID_ANY, "Dane pomiarowe", wxDefaultPosition, wxDefaultSize, wxTE_MULTILINE | wxTE_READONLY | wxTE_RICH2);
+    measureSizer->Add(measurementText, 1, wxEXPAND | wxALL, 5);
+    measurementPanel->SetSizer(measureSizer);
+    measurementText->SetFont(font);
+
+    // 2. Zakładka - analiza danych
+    wxPanel* analysisPanel = new wxPanel(dataNotebook, wxID_ANY);
+    wxBoxSizer* analysisSizer = new wxBoxSizer(wxVERTICAL);
+    showAnalysisButton = new wxButton(analysisPanel, wxID_ANY, "Wykonaj analizę danych");
+    analysisText = new wxTextCtrl(analysisPanel, wxID_ANY, "Wyniki analizy pojawią się tutaj", wxDefaultPosition, wxDefaultSize, wxTE_MULTILINE | wxTE_READONLY | wxTE_RICH2);
+    analysisSizer->Add(showAnalysisButton, 0, wxEXPAND | wxALL, 5);
+    analysisSizer->Add(analysisText, 1, wxEXPAND | wxALL, 5);
+    analysisPanel->SetSizer(analysisSizer);
+    analysisText->SetFont(font);
+
+    // Dodawanie zakładek do notebooka
+    dataNotebook->AddPage(measurementPanel, "Dane pomiarowe");
+    dataNotebook->AddPage(analysisPanel, "Analiza danych");
+
+    // Dodawanie kontrolek do panelu kontrolnego (lewa strona)
+    // 1. Wybór stacji
     controlSizer->Add(new wxStaticText(mainPanel, wxID_ANY, "Wybierz stację"), 0, wxALL, 5);
     controlSizer->Add(stationChoice, 0, wxEXPAND | wxALL, 5);
 
-    //Wybór sensora
+    // 2. Wybór sensora
     controlSizer->Add(new wxStaticText(mainPanel, wxID_ANY, "Wybierz czujnik"), 0, wxALL, 5);
     controlSizer->Add(sensorChoice, 0, wxEXPAND | wxALL, 5);
 
-    //Pozostałe
+    // 3. Indeks jakości powietrza
     controlSizer->Add(airQualityIndex, 0, wxALL, 10);
-    controlSizer->Add(measurementText, 1, wxALL | wxEXPAND, 10);
-    controlSizer->Add(saveCurrentToDbButton, 0, wxALL | wxEXPAND, 10);
-    controlSizer->Add(saveAllToDbButton, 0, wxALL | wxEXPAND, 10);
-    controlSizer->Add(dbStatusText, 0, wxALL, 10);
-    
-    //Do wykresu
+
+    // 4. Zakładki z danymi
+    controlSizer->Add(dataNotebook, 1, wxALL | wxEXPAND, 10);
+
+    // 5. Kontrolki zakresu dat
     wxBoxSizer* dateRangeSizer = new wxBoxSizer(wxHORIZONTAL);
     dateRangeSizer->Add(new wxStaticText(mainPanel, wxID_ANY, "Od:"), 0, wxALIGN_CENTER_VERTICAL | wxRIGHT, 5);
     dateRangeSizer->Add(startDatePicker, 0, wxRIGHT, 10);
@@ -53,26 +85,27 @@ MainWindow::MainWindow() : wxFrame(NULL, wxID_ANY, "Dane pomiarowe - GIOŚ", wxD
     dateRangeSizer->Add(applyDateRangeButton, 0);
     controlSizer->Add(dateRangeSizer, 0, wxALL, 10);
 
-    // Inicjalizacja czcionki
-    font = wxFont(9, wxFONTFAMILY_TELETYPE, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
-    measurementText->SetFont(font);
+    // 6. Przyciski do zarządzania bazą danych
+    controlSizer->Add(saveCurrentToDbButton, 0, wxALL | wxEXPAND, 10);
+    controlSizer->Add(saveAllToDbButton, 0, wxALL | wxEXPAND, 10);
+    controlSizer->Add(dbStatusText, 0, wxALL, 10);
 
     // Panel wykresu (prawy)
     chartPanel = new ChartPanel(mainPanel);
 
-    // Dodaj panele do głównego sizer'a
+    // Dodawanie paneli do głównego layoutu
     dataSizer->Add(controlSizer, 1, wxEXPAND | wxALL, 10);
     dataSizer->Add(chartPanel, 2, wxEXPAND | wxALL, 10);
-
     mainSizer->Add(dataSizer, 1, wxEXPAND);
     mainPanel->SetSizer(mainSizer);
 
-    // Przypisz eventy
+    // Przypisanie eventów
     stationChoice->Bind(wxEVT_CHOICE, &MainWindow::OnStationSelection, this);
     sensorChoice->Bind(wxEVT_CHOICE, &MainWindow::OnSensorSelection, this);
     saveCurrentToDbButton->Bind(wxEVT_BUTTON, &MainWindow::OnSaveCurrentToDatabase, this);
     saveAllToDbButton->Bind(wxEVT_BUTTON, &MainWindow::OnSaveAllToDatabase, this);
     applyDateRangeButton->Bind(wxEVT_BUTTON, &MainWindow::OnApplyDateRange, this);
+    showAnalysisButton->Bind(wxEVT_BUTTON, &MainWindow::OnShowAnalysis, this);
 
     // Inicjalizacja bazy danych
     dbService.initializeDatabase();
@@ -80,13 +113,6 @@ MainWindow::MainWindow() : wxFrame(NULL, wxID_ANY, "Dane pomiarowe - GIOŚ", wxD
 
     // Załaduj stacje
     loadStations();
-
-    // Kontrolki wykresu
-    wxDateTime today = wxDateTime::Now();
-    wxDateTime weekAgo = today;
-    weekAgo.Subtract(wxDateSpan(0, 0, 1, 0)); // tydzień wstecz
-    startDatePicker->SetValue(weekAgo);
-    endDatePicker->SetValue(today);
 }
 
 bool compareStationsByName(const std::pair<int, std::string>& a, const std::pair<int, std::string>& b) {
@@ -1171,6 +1197,124 @@ bool MainWindow::tryLoadMeasurementsWithDateRangeFromDatabase(int sensorId) {
     }
 
     return false;
+}
+
+void MainWindow::OnShowAnalysis(wxCommandEvent& event) {
+    // Pobierz aktualnie wybrany czujnik
+    int index = sensorChoice->GetSelection();
+    if (index == wxNOT_FOUND) {
+        wxMessageBox("Najpierw wybierz czujnik", "Informacja", wxOK | wxICON_INFORMATION);
+        return;
+    }
+
+    // Pobierz dane z wykresu (które już mamy przetworzone)
+    std::vector<MeasurementData> chartData = chartPanel->GetChartData();
+    wxString paramName = wxString::FromUTF8(sensors[index].second.c_str());
+
+    if (chartData.empty()) {
+        wxMessageBox("Brak danych do analizy", "Informacja", wxOK | wxICON_INFORMATION);
+        return;
+    }
+
+    // Wykonaj analizę
+    PerformDataAnalysis(chartData, paramName);
+
+    // Przełącz na zakładkę z analizą
+    dataNotebook->SetSelection(1);
+}
+
+void MainWindow::PerformDataAnalysis(const std::vector<MeasurementData>& data, const wxString& paramName) {
+    if (data.empty()) {
+        analysisText->SetValue("Brak danych do analizy.");
+        return;
+    }
+
+    // Inicjalizacja zmiennych
+    double min_val = std::numeric_limits<double>::max();
+    double max_val = std::numeric_limits<double>::lowest();
+    wxDateTime min_date, max_date;
+    double sum = 0.0;
+    int valid_count = 0;
+
+    // Znajdź wartości min i max oraz oblicz sumę
+    for (const auto& point : data) {
+        if (point.hasValue) {
+            valid_count++;
+            sum += point.value;
+
+            if (point.value < min_val) {
+                min_val = point.value;
+                min_date = point.date;
+            }
+
+            if (point.value > max_val) {
+                max_val = point.value;
+                max_date = point.date;
+            }
+        }
+    }
+
+    // Oblicz średnią
+    double avg = valid_count > 0 ? sum / valid_count : 0.0;
+
+    // Analiza trendu
+    wxString trend = "Brak danych do analizy trendu";
+
+    if (valid_count >= 2) {
+        // Używając prostej regresji liniowej do określenia trendu
+        double sum_x = 0;
+        double sum_y = 0;
+        double sum_xy = 0;
+        double sum_xx = 0;
+
+        int idx = 0;
+        for (const auto& point : data) {
+            if (point.hasValue) {
+                sum_x += idx;
+                sum_y += point.value;
+                sum_xy += idx * point.value;
+                sum_xx += idx * idx;
+                idx++;
+            }
+        }
+
+        // Współczynnik nachylenia prostej trendu
+        double slope = (valid_count * sum_xy - sum_x * sum_y) / (valid_count * sum_xx - sum_x * sum_x);
+
+        if (slope > 0.001) {
+            trend = "Wartości wykazują tendencję WZROSTOWĄ";
+        }
+        else if (slope < -0.001) {
+            trend = "Wartości wykazują tendencję MALEJĄCĄ";
+        }
+        else {
+            trend = "Wartości wykazują tendencję STAŁĄ (brak wyraźnego trendu)";
+        }
+    }
+
+    // Formatuj wyniki
+    wxString result;
+    result += wxString::Format("Analiza parametru: %s\n\n", paramName);
+    result += wxString::Format("Liczba pomiarów: %d\n\n", valid_count);
+
+    if (valid_count > 0) {
+        result += wxString::Format("Wartość minimalna: %.2f\n", min_val);
+        result += wxString::Format("Data wartości minimalnej: %s\n\n", min_date.Format("%Y-%m-%d %H:%M"));
+
+        result += wxString::Format("Wartość maksymalna: %.2f\n", max_val);
+        result += wxString::Format("Data wartości maksymalnej: %s\n\n", max_date.Format("%Y-%m-%d %H:%M"));
+
+        result += wxString::Format("Wartość średnia: %.2f\n\n", avg);
+
+        result += wxString::Format("Analiza trendu: %s\n", trend);
+
+        // Obliczenie zakresu zmian
+        double range = max_val - min_val;
+        result += wxString::Format("Zakres zmian (max-min): %.2f\n", range);
+    }
+
+    // Wyświetl wyniki
+    analysisText->SetValue(result);
 }
 
 wxDateTime MainWindow::parseDateTime(const std::string& dateStr) {
