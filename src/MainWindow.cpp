@@ -29,7 +29,7 @@ MainWindow::MainWindow() : wxFrame(NULL, wxID_ANY, "LNWeather", wxDefaultPositio
     wxBoxSizer* mainSizer = new wxBoxSizer(wxVERTICAL);
     wxBoxSizer* dataSizer = new wxBoxSizer(wxHORIZONTAL);
 
-    
+
 
     // Panel kontrolny (lewy)
     wxBoxSizer* controlSizer = new wxBoxSizer(wxVERTICAL);

@@ -1,6 +1,6 @@
 /**
  * @file ChartPanel.cpp
- * @brief Implementacja panelu wykresów danych pomiarowych.
+ * @brief Implementacja panelu wykresow danych pomiarowych.
  */
 
 #include "ChartPanel.h"
@@ -10,18 +10,16 @@
  /**
   * @brief Konstruktor panelu wykresu.
   *
-  * Inicjalizuje panel i konfiguruje obs³ugê zdarzeñ.
+  * Inicjalizuje panel i konfiguruje obsluge zdarzen.
   *
   * @param parent Rodzic panelu
   */
-ChartPanel::ChartPanel(wxWindow* parent)
-    : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize),
-    title("Wykres pomiarów"), parameter("") {
+ChartPanel::ChartPanel(wxWindow* parent) : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize), title("Wykres pomiarów"), parameter("") {
 
-    // W³¹cz buforowanie do p³ynnego rysowania
+    // Wlacz buforowanie do plynnego rysowania
     SetBackgroundStyle(wxBG_STYLE_PAINT);
 
-    // Pod³¹cz event paintowania
+    // Podlacz event paintowania
     Bind(wxEVT_PAINT, &ChartPanel::OnPaint, this);
     Bind(wxEVT_SIZE, &ChartPanel::OnSize, this);
 }
@@ -35,7 +33,7 @@ ChartPanel::ChartPanel(wxWindow* parent)
 void ChartPanel::SetData(const std::vector<MeasurementData>& data, const wxString& paramName) {
     chartData = data;
     parameter = paramName;
-    Refresh(); // Odœwie¿ panel aby pokazaæ nowe dane
+    Refresh(); // Odswiez panel aby pokazac nowe dane
 }
 
 /**
@@ -76,14 +74,14 @@ void ChartPanel::OnPaint(wxPaintEvent& event) {
     dc.SetFont(wxFont(12, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD));
     dc.DrawText(title, 10, 10);
 
-    // Rysuj osie i dane tylko jeœli mamy dane
+    // Rysuj osie i dane tylko jesli mamy dane
     if (!chartData.empty()) {
         DrawAxes(dc, chartRect);
         DrawData(dc, chartRect);
         DrawLabels(dc, chartRect);
     }
     else {
-        // Jeœli nie ma danych, wyœwietl informacjê
+        // Jeœli nie ma danych, wyœwietl informacje
         dc.SetFont(wxFont(10, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL));
         dc.DrawText("Brak danych do wyœwietlenia", chartRect.x + 20, chartRect.y + chartRect.height / 2);
     }
@@ -111,10 +109,10 @@ void ChartPanel::DrawAxes(wxDC& dc, const wxRect& rect) {
     // Rysuj osie X i Y
     dc.SetPen(wxPen(*wxBLACK, 1));
 
-    // Oœ Y
+    // Os Y
     dc.DrawLine(rect.x, rect.y, rect.x, rect.y + rect.height);
 
-    // Oœ X
+    // Os X
     dc.DrawLine(rect.x, rect.y + rect.height, rect.x + rect.width, rect.y + rect.height);
 
     // Podzia³ki na osi Y (5 podzia³ek)

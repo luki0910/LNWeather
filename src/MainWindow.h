@@ -32,7 +32,7 @@ public:
     MainWindow();
 
 private:
-    
+
     /**
      * @brief Lista rozwijana do wyboru stacji pomiarowej.
      */
@@ -126,7 +126,7 @@ private:
      */
     DatabaseService dbService;
 
-    
+
     /**
      * @brief £aduje listê dostêpnych stacji pomiarowych.
      */
@@ -154,7 +154,7 @@ private:
      */
     wxDateTime parseDateTime(const std::string& dateStr);
 
-    
+
     /**
      * @brief Obs³uga zdarzenia wyboru stacji.
      *
@@ -279,7 +279,7 @@ private:
      */
     bool tryLoadMeasurementsWithDateRangeFromDatabase(int sensorId);
 
-    
+
     /**
      * @brief Obs³uga zdarzenia pokazania analizy danych.
      *
@@ -297,7 +297,7 @@ private:
      */
     void PerformDataAnalysis(const std::vector<MeasurementData>& data, const wxString& paramName);
 
-    
+
     /**
      * @brief Aktualizuje wyœwietlany status bazy danych.
      */

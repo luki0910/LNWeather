@@ -2,7 +2,7 @@
 \hypertarget{class_database_service}{}\label{class_database_service}\index{DatabaseService@{DatabaseService}}
 
 
-Klasa obs³uguj¹ca lokaln¹ "{}bazê danych"{} (pliki JSON).  
+Klasa obsÅ‚ugujÄ…ca lokalnÄ… "{}bazÄ™ danych"{} (pliki JSON).  
 
 
 
@@ -13,43 +13,43 @@ Klasa obs³uguj¹ca lokaln¹ "{}bazê danych"{} (pliki JSON).
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_database_service_a892e9fde0f782a4c6708b26dda0358e3}{Database\+Service}} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor us³ugi bazy danych. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor usÅ‚ugi bazy danych. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_a6f9eedbbe1d284e8f28805fe39e13a50}{initialize\+Database}} ()
-\begin{DoxyCompactList}\small\item\em Inicjalizuje strukturê bazy danych. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Inicjalizuje strukturÄ™ bazy danych. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_a4efbfdbfec4e007e8183762b6ab59079}{save\+Stations\+Data}} (const std\+::string \&json\+Data)
 \begin{DoxyCompactList}\small\item\em Zapisuje dane stacji do bazy. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_af641121c075ae319d48986130e34b8a9}{save\+Sensors\+Data}} (int station\+Id, const std\+::string \&json\+Data)
-\begin{DoxyCompactList}\small\item\em Zapisuje dane czujników dla stacji. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Zapisuje dane czujnikÃ³w dla stacji. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_a2a0df69411742798fa2547d78386d40f}{save\+Measurement\+Data}} (int sensor\+Id, const std\+::string \&json\+Data)
 \begin{DoxyCompactList}\small\item\em Zapisuje dane pomiarowe dla czujnika. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_acae401bbad1dc8511b2bcc5f7b33ca0a}{save\+Air\+Quality\+Index}} (int station\+Id, const std\+::string \&json\+Data)
-\begin{DoxyCompactList}\small\item\em Zapisuje indeks jakoœci powietrza dla stacji. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Zapisuje indeks jakoÅ›ci powietrza dla stacji. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_a97b20bc467553fafd2ca30a4bba0e71b}{load\+Stations\+Data}} ()
 \begin{DoxyCompactList}\small\item\em Wczytuje dane stacji z bazy. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_ac2274bf120ee1d016a8b50574033411d}{load\+Sensors\+Data}} (int station\+Id)
-\begin{DoxyCompactList}\small\item\em Wczytuje dane czujników dla stacji. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Wczytuje dane czujnikÃ³w dla stacji. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_ad9b26ae0d616e2bc6ee791157810932a}{load\+Measurement\+Data}} (int sensor\+Id)
 \begin{DoxyCompactList}\small\item\em Wczytuje dane pomiarowe dla czujnika. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_abf3bee381a5451fae5e69ba15296979c}{load\+Air\+Quality\+Index}} (int station\+Id)
-\begin{DoxyCompactList}\small\item\em Wczytuje indeks jakoœci powietrza dla stacji. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Wczytuje indeks jakoÅ›ci powietrza dla stacji. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_ab21f5af749929b27a24208ebc9465810}{has\+Stations\+Data}} ()
-\begin{DoxyCompactList}\small\item\em Sprawdza czy dane stacji istniej¹ w bazie. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dane stacji istniejÄ… w bazie. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_ac026b352d51c847631beca1e17db5f40}{has\+Sensors\+Data}} (int station\+Id)
-\begin{DoxyCompactList}\small\item\em Sprawdza czy dane czujników dla stacji istniej¹ w bazie. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dane czujnikÃ³w dla stacji istniejÄ… w bazie. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_ae62a400acf4fdaa6b14d7b51fab17474}{has\+Measurement\+Data}} (int sensor\+Id)
-\begin{DoxyCompactList}\small\item\em Sprawdza czy dane pomiarowe dla czujnika istniej¹ w bazie. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dane pomiarowe dla czujnika istniejÄ… w bazie. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_database_service_a903ffbfc9e66136de28abb31f4f98aba}{has\+Air\+Quality\+Index}} (int station\+Id)
-\begin{DoxyCompactList}\small\item\em Sprawdza czy indeks jakoœci powietrza dla stacji istnieje w bazie. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy indeks jakoÅ›ci powietrza dla stacji istnieje w bazie. \end{DoxyCompactList}\item 
 wx\+Date\+Time \mbox{\hyperlink{class_database_service_a9c49febc1c12a209b7faff9f5bc4d16f}{get\+Last\+Update\+Time}} (const std\+::string \&file\+Path)
 \begin{DoxyCompactList}\small\item\em Pobiera czas ostatniej aktualizacji pliku. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_a9b8e95adcf0f21fd52a9d58030a2b985}{get\+Stations\+File\+Path}} ()
-\begin{DoxyCompactList}\small\item\em Zwraca œcie¿kê pliku z danymi stacji. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Zwraca Å›cieÅ¼kÄ™ pliku z danymi stacji. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_af1453e90fea360ae057449309e274dba}{get\+Sensors\+File\+Path}} (int station\+Id)
-\begin{DoxyCompactList}\small\item\em Zwraca œcie¿kê pliku z danymi czujników dla stacji. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Zwraca Å›cieÅ¼kÄ™ pliku z danymi czujnikÃ³w dla stacji. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_a5a283f77539d6eb8e3138fe1b685bf47}{get\+Measurement\+File\+Path}} (int sensor\+Id)
-\begin{DoxyCompactList}\small\item\em Zwraca œcie¿kê pliku z danymi pomiarowymi dla czujnika. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Zwraca Å›cieÅ¼kÄ™ pliku z danymi pomiarowymi dla czujnika. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_database_service_a304635456997b99202104c76e88263a5}{get\+Air\+Quality\+File\+Path}} (int station\+Id)
-\begin{DoxyCompactList}\small\item\em Zwraca œcie¿kê pliku z indeksem jakoœci powietrza dla stacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zwraca Å›cieÅ¼kÄ™ pliku z indeksem jakoÅ›ci powietrza dla stacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Metody prywatne}
 \begin{DoxyCompactItemize}
 \item 
@@ -65,9 +65,9 @@ std\+::string \mbox{\hyperlink{class_database_service_ad0e9d4c3516d69cab96515e3a
 
 
 \doxysubsection{Opis szczegÃ³Å‚owy}
-Klasa obs³uguj¹ca lokaln¹ "{}bazê danych"{} (pliki JSON). 
+Klasa obsÅ‚ugujÄ…ca lokalnÄ… "{}bazÄ™ danych"{} (pliki JSON). 
 
-Zapewnia funkcje do zapisywania, odczytywania i zarz¹dzania danymi przechowywanymi lokalnie w plikach JSON. 
+Zapewnia funkcje do zapisywania, odczytywania i zarzÄ…dzania danymi przechowywanymi lokalnie w plikach JSON. 
 
 \doxysubsection{Dokumentacja konstruktora i destruktora}
 \Hypertarget{class_database_service_a892e9fde0f782a4c6708b26dda0358e3}\index{DatabaseService@{DatabaseService}!DatabaseService@{DatabaseService}}
@@ -78,13 +78,13 @@ Database\+Service\+::\+Database\+Service (\begin{DoxyParamCaption}{}{}\end{DoxyP
 
 
 
-Konstruktor us³ugi bazy danych. 
+Konstruktor usÅ‚ugi bazy danych. 
 
 Konstruktor klasy \doxylink{class_database_service}{Database\+Service}.
 
-Inicjalizuje œcie¿kê do folderu bazy danych i tworzy strukturê katalogów.
+Inicjalizuje Å›cieÅ¼kÄ™ do folderu bazy danych i tworzy strukturÄ™ katalogÃ³w.
 
-Inicjalizuje folder bazy danych i tworzy strukturê katalogów. 
+Inicjalizuje folder bazy danych i tworzy strukturÄ™ katalogÃ³w. 
 
 \doxysubsection{Dokumentacja funkcji skÅ‚adowych}
 \Hypertarget{class_database_service_a304635456997b99202104c76e88263a5}\index{DatabaseService@{DatabaseService}!getAirQualityFilePath@{getAirQualityFilePath}}
@@ -95,7 +95,7 @@ std\+::string Database\+Service\+::get\+Air\+Quality\+File\+Path (\begin{DoxyPar
 
 
 
-Zwraca œcie¿kê pliku z indeksem jakoœci powietrza dla stacji. 
+Zwraca Å›cieÅ¼kÄ™ pliku z indeksem jakoÅ›ci powietrza dla stacji. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -103,7 +103,7 @@ Zwraca œcie¿kê pliku z indeksem jakoœci powietrza dla stacji.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-std\+::string Œcie¿ka do pliku 
+std\+::string ÅšcieÅ¼ka do pliku 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_a9c49febc1c12a209b7faff9f5bc4d16f}\index{DatabaseService@{DatabaseService}!getLastUpdateTime@{getLastUpdateTime}}
 \index{getLastUpdateTime@{getLastUpdateTime}!DatabaseService@{DatabaseService}}
@@ -117,7 +117,7 @@ Pobiera czas ostatniej aktualizacji pliku.
 
 
 \begin{DoxyParams}{Parametry}
-{\em file\+Path} & Œcie¿ka do pliku \\
+{\em file\+Path} & ÅšcieÅ¼ka do pliku \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
@@ -131,7 +131,7 @@ std\+::string Database\+Service\+::get\+Measurement\+File\+Path (\begin{DoxyPara
 
 
 
-Zwraca œcie¿kê pliku z danymi pomiarowymi dla czujnika. 
+Zwraca Å›cieÅ¼kÄ™ pliku z danymi pomiarowymi dla czujnika. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -139,7 +139,7 @@ Zwraca œcie¿kê pliku z danymi pomiarowymi dla czujnika.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-std\+::string Œcie¿ka do pliku 
+std\+::string ÅšcieÅ¼ka do pliku 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_af1453e90fea360ae057449309e274dba}\index{DatabaseService@{DatabaseService}!getSensorsFilePath@{getSensorsFilePath}}
 \index{getSensorsFilePath@{getSensorsFilePath}!DatabaseService@{DatabaseService}}
@@ -149,7 +149,7 @@ std\+::string Database\+Service\+::get\+Sensors\+File\+Path (\begin{DoxyParamCap
 
 
 
-Zwraca œcie¿kê pliku z danymi czujników dla stacji. 
+Zwraca Å›cieÅ¼kÄ™ pliku z danymi czujnikÃ³w dla stacji. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -157,7 +157,7 @@ Zwraca œcie¿kê pliku z danymi czujników dla stacji.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-std\+::string Œcie¿ka do pliku 
+std\+::string ÅšcieÅ¼ka do pliku 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_a9b8e95adcf0f21fd52a9d58030a2b985}\index{DatabaseService@{DatabaseService}!getStationsFilePath@{getStationsFilePath}}
 \index{getStationsFilePath@{getStationsFilePath}!DatabaseService@{DatabaseService}}
@@ -167,10 +167,10 @@ std\+::string Database\+Service\+::get\+Stations\+File\+Path (\begin{DoxyParamCa
 
 
 
-Zwraca œcie¿kê pliku z danymi stacji. 
+Zwraca Å›cieÅ¼kÄ™ pliku z danymi stacji. 
 
 \begin{DoxyReturn}{Zwraca}
-std\+::string Œcie¿ka do pliku 
+std\+::string ÅšcieÅ¼ka do pliku 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_a903ffbfc9e66136de28abb31f4f98aba}\index{DatabaseService@{DatabaseService}!hasAirQualityIndex@{hasAirQualityIndex}}
 \index{hasAirQualityIndex@{hasAirQualityIndex}!DatabaseService@{DatabaseService}}
@@ -180,7 +180,7 @@ bool Database\+Service\+::has\+Air\+Quality\+Index (\begin{DoxyParamCaption}\ite
 
 
 
-Sprawdza czy indeks jakoœci powietrza dla stacji istnieje w bazie. 
+Sprawdza czy indeks jakoÅ›ci powietrza dla stacji istnieje w bazie. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -188,9 +188,9 @@ Sprawdza czy indeks jakoœci powietrza dla stacji istnieje w bazie.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli dane istniej¹ 
+true JeÅ›li dane istniejÄ… 
 
-false Jeœli dane nie istniej¹
+false JeÅ›li dane nie istniejÄ…
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parametry}
@@ -198,9 +198,9 @@ false Jeœli dane nie istniej¹
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli plik z danymi istnieje 
+true JeÅ›li plik z danymi istnieje 
 
-false Jeœli plik z danymi nie istnieje 
+false JeÅ›li plik z danymi nie istnieje 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_ae62a400acf4fdaa6b14d7b51fab17474}\index{DatabaseService@{DatabaseService}!hasMeasurementData@{hasMeasurementData}}
 \index{hasMeasurementData@{hasMeasurementData}!DatabaseService@{DatabaseService}}
@@ -210,7 +210,7 @@ bool Database\+Service\+::has\+Measurement\+Data (\begin{DoxyParamCaption}\item[
 
 
 
-Sprawdza czy dane pomiarowe dla czujnika istniej¹ w bazie. 
+Sprawdza czy dane pomiarowe dla czujnika istniejÄ… w bazie. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -218,9 +218,9 @@ Sprawdza czy dane pomiarowe dla czujnika istniej¹ w bazie.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli dane istniej¹ 
+true JeÅ›li dane istniejÄ… 
 
-false Jeœli dane nie istniej¹
+false JeÅ›li dane nie istniejÄ…
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parametry}
@@ -228,9 +228,9 @@ false Jeœli dane nie istniej¹
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli plik z danymi istnieje 
+true JeÅ›li plik z danymi istnieje 
 
-false Jeœli plik z danymi nie istnieje 
+false JeÅ›li plik z danymi nie istnieje 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_ac026b352d51c847631beca1e17db5f40}\index{DatabaseService@{DatabaseService}!hasSensorsData@{hasSensorsData}}
 \index{hasSensorsData@{hasSensorsData}!DatabaseService@{DatabaseService}}
@@ -240,7 +240,7 @@ bool Database\+Service\+::has\+Sensors\+Data (\begin{DoxyParamCaption}\item[{int
 
 
 
-Sprawdza czy dane czujników dla stacji istniej¹ w bazie. 
+Sprawdza czy dane czujnikÃ³w dla stacji istniejÄ… w bazie. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -248,9 +248,9 @@ Sprawdza czy dane czujników dla stacji istniej¹ w bazie.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli dane istniej¹ 
+true JeÅ›li dane istniejÄ… 
 
-false Jeœli dane nie istniej¹
+false JeÅ›li dane nie istniejÄ…
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parametry}
@@ -258,9 +258,9 @@ false Jeœli dane nie istniej¹
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli plik z danymi istnieje 
+true JeÅ›li plik z danymi istnieje 
 
-false Jeœli plik z danymi nie istnieje 
+false JeÅ›li plik z danymi nie istnieje 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_ab21f5af749929b27a24208ebc9465810}\index{DatabaseService@{DatabaseService}!hasStationsData@{hasStationsData}}
 \index{hasStationsData@{hasStationsData}!DatabaseService@{DatabaseService}}
@@ -270,16 +270,16 @@ bool Database\+Service\+::has\+Stations\+Data (\begin{DoxyParamCaption}{}{}\end{
 
 
 
-Sprawdza czy dane stacji istniej¹ w bazie. 
+Sprawdza czy dane stacji istniejÄ… w bazie. 
 
 \begin{DoxyReturn}{Zwraca}
-true Jeœli dane istniej¹ 
+true JeÅ›li dane istniejÄ… 
 
-false Jeœli dane nie istniej¹
+false JeÅ›li dane nie istniejÄ…
 
-true Jeœli plik z danymi istnieje 
+true JeÅ›li plik z danymi istnieje 
 
-false Jeœli plik z danymi nie istnieje 
+false JeÅ›li plik z danymi nie istnieje 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_a6f9eedbbe1d284e8f28805fe39e13a50}\index{DatabaseService@{DatabaseService}!initializeDatabase@{initializeDatabase}}
 \index{initializeDatabase@{initializeDatabase}!DatabaseService@{DatabaseService}}
@@ -289,21 +289,21 @@ bool Database\+Service\+::initialize\+Database (\begin{DoxyParamCaption}{}{}\end
 
 
 
-Inicjalizuje strukturê bazy danych. 
+Inicjalizuje strukturÄ™ bazy danych. 
 
-Tworzy folder dla bazy danych, jeœli nie istnieje.
+Tworzy folder dla bazy danych, jeÅ›li nie istnieje.
 
 \begin{DoxyReturn}{Zwraca}
-true Jeœli inicjalizacja siê powiod³a 
+true JeÅ›li inicjalizacja siÄ™ powiodÅ‚a 
 
-false Jeœli wyst¹pi³ b³¹d
+false JeÅ›li wystÄ…piÅ‚ bÅ‚Ä…d
 \end{DoxyReturn}
-Sprawdza czy folder bazy istnieje, jeœli nie -\/ tworzy go.
+Sprawdza czy folder bazy istnieje, jeÅ›li nie -\/ tworzy go.
 
 \begin{DoxyReturn}{Zwraca}
-true Jeœli folder istnieje lub zosta³ utworzony 
+true JeÅ›li folder istnieje lub zostaÅ‚ utworzony 
 
-false Jeœli utworzenie folderu nie powiod³o siê 
+false JeÅ›li utworzenie folderu nie powiodÅ‚o siÄ™ 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_abf3bee381a5451fae5e69ba15296979c}\index{DatabaseService@{DatabaseService}!loadAirQualityIndex@{loadAirQualityIndex}}
 \index{loadAirQualityIndex@{loadAirQualityIndex}!DatabaseService@{DatabaseService}}
@@ -313,7 +313,7 @@ std\+::string Database\+Service\+::load\+Air\+Quality\+Index (\begin{DoxyParamCa
 
 
 
-Wczytuje indeks jakoœci powietrza dla stacji. 
+Wczytuje indeks jakoÅ›ci powietrza dla stacji. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -343,7 +343,7 @@ Odczytuje dane z pliku.
 
 
 \begin{DoxyParams}{Parametry}
-{\em file\+Path} & Œcie¿ka do pliku \\
+{\em file\+Path} & ÅšcieÅ¼ka do pliku \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
@@ -351,11 +351,11 @@ std\+::string Odczytane dane
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parametry}
-{\em file\+Path} & Œcie¿ka do pliku \\
+{\em file\+Path} & ÅšcieÅ¼ka do pliku \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-std\+::string Odczytane dane lub pusty string gdy b³¹d 
+std\+::string Odczytane dane lub pusty string gdy bÅ‚Ä…d 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_ad9b26ae0d616e2bc6ee791157810932a}\index{DatabaseService@{DatabaseService}!loadMeasurementData@{loadMeasurementData}}
 \index{loadMeasurementData@{loadMeasurementData}!DatabaseService@{DatabaseService}}
@@ -391,7 +391,7 @@ std\+::string Database\+Service\+::load\+Sensors\+Data (\begin{DoxyParamCaption}
 
 
 
-Wczytuje dane czujników dla stacji. 
+Wczytuje dane czujnikÃ³w dla stacji. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -432,7 +432,7 @@ bool Database\+Service\+::save\+Air\+Quality\+Index (\begin{DoxyParamCaption}\it
 
 
 
-Zapisuje indeks jakoœci powietrza dla stacji. 
+Zapisuje indeks jakoÅ›ci powietrza dla stacji. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -442,9 +442,9 @@ Zapisuje indeks jakoœci powietrza dla stacji.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli zapis siê powiód³ 
+true JeÅ›li zapis siÄ™ powiÃ³dÅ‚ 
 
-false Jeœli wyst¹pi³ b³¹d 
+false JeÅ›li wystÄ…piÅ‚ bÅ‚Ä…d 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_a2a0df69411742798fa2547d78386d40f}\index{DatabaseService@{DatabaseService}!saveMeasurementData@{saveMeasurementData}}
 \index{saveMeasurementData@{saveMeasurementData}!DatabaseService@{DatabaseService}}
@@ -464,9 +464,9 @@ Zapisuje dane pomiarowe dla czujnika.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli zapis siê powiód³ 
+true JeÅ›li zapis siÄ™ powiÃ³dÅ‚ 
 
-false Jeœli wyst¹pi³ b³¹d 
+false JeÅ›li wystÄ…piÅ‚ bÅ‚Ä…d 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_af641121c075ae319d48986130e34b8a9}\index{DatabaseService@{DatabaseService}!saveSensorsData@{saveSensorsData}}
 \index{saveSensorsData@{saveSensorsData}!DatabaseService@{DatabaseService}}
@@ -476,7 +476,7 @@ bool Database\+Service\+::save\+Sensors\+Data (\begin{DoxyParamCaption}\item[{in
 
 
 
-Zapisuje dane czujników dla stacji. 
+Zapisuje dane czujnikÃ³w dla stacji. 
 
 
 \begin{DoxyParams}{Parametry}
@@ -486,9 +486,9 @@ Zapisuje dane czujników dla stacji.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli zapis siê powiód³ 
+true JeÅ›li zapis siÄ™ powiÃ³dÅ‚ 
 
-false Jeœli wyst¹pi³ b³¹d 
+false JeÅ›li wystÄ…piÅ‚ bÅ‚Ä…d 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_a4efbfdbfec4e007e8183762b6ab59079}\index{DatabaseService@{DatabaseService}!saveStationsData@{saveStationsData}}
 \index{saveStationsData@{saveStationsData}!DatabaseService@{DatabaseService}}
@@ -508,9 +508,9 @@ Zapisuje dane stacji do pliku.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli zapis siê powiód³ 
+true JeÅ›li zapis siÄ™ powiÃ³dÅ‚ 
 
-false Jeœli wyst¹pi³ b³¹d 
+false JeÅ›li wystÄ…piÅ‚ bÅ‚Ä…d 
 \end{DoxyReturn}
 \Hypertarget{class_database_service_abb195001eb4f4d0ead2058d5db08da26}\index{DatabaseService@{DatabaseService}!saveToFile@{saveToFile}}
 \index{saveToFile@{saveToFile}!DatabaseService@{DatabaseService}}
@@ -524,15 +524,15 @@ Zapisuje dane do pliku.
 
 
 \begin{DoxyParams}{Parametry}
-{\em file\+Path} & Œcie¿ka do pliku \\
+{\em file\+Path} & ÅšcieÅ¼ka do pliku \\
 \hline
 {\em data} & Dane do zapisania \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-true Jeœli zapis siê powiód³ 
+true JeÅ›li zapis siÄ™ powiÃ³dÅ‚ 
 
-false Jeœli wyst¹pi³ b³¹d 
+false JeÅ›li wystÄ…piÅ‚ bÅ‚Ä…d 
 \end{DoxyReturn}
 
 
@@ -543,7 +543,7 @@ false Jeœli wyst¹pi³ b³¹d
 {\footnotesize\ttfamily \label{class_database_service_ad0e9d4c3516d69cab96515e3ac63be3e} 
 std\+::string Database\+Service\+::db\+Folder\hspace{0.3cm}{\ttfamily [private]}}
 
-Œcie¿ka do folderu bazy danych 
+ÅšcieÅ¼ka do folderu bazy danych 
 
 Dokumentacja dla tej klasy zostaÅ‚a wygenerowana z plikÃ³w\+:\begin{DoxyCompactItemize}
 \item 

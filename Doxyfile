@@ -1001,7 +1001,7 @@ INPUT                  = "C:\Users\luki0\LNWeather\src"
 # See also: INPUT_FILE_ENCODING
 # The default value is: UTF-8.
 
-INPUT_ENCODING         = UTF-8
+INPUT_ENCODING         = CP1250
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. The INPUT_FILE_ENCODING tag can be used to specify

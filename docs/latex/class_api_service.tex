@@ -2,7 +2,7 @@
 \hypertarget{class_api_service}{}\label{class_api_service}\index{ApiService@{ApiService}}
 
 
-Klasa obs³uguj¹ca komunikacjê z zewnêtrznymi API.  
+Klasa obsÅ‚ugujÄ…ca komunikacjÄ™ z zewnÄ™trznymi API.  
 
 
 
@@ -13,15 +13,15 @@ Klasa obs³uguj¹ca komunikacjê z zewnêtrznymi API.
 \begin{DoxyCompactItemize}
 \item 
 static std\+::string \mbox{\hyperlink{class_api_service_a59a139e53d1a1c6854a0a601d0000ed2}{fetch\+Data\+From\+API}} (const std\+::string \&url)
-\begin{DoxyCompactList}\small\item\em Pobiera dane z okreœlonego URL. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pobiera dane z okreÅ›lonego URL. \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{class_api_service_ad7cc544ba1893ddca0f23b3870f5326e}{is\+Network\+Available}} ()
-\begin{DoxyCompactList}\small\item\em Sprawdza czy jest dostêp do internetu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sprawdza czy jest dostÄ™p do internetu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Opis szczegÃ³Å‚owy}
-Klasa obs³uguj¹ca komunikacjê z zewnêtrznymi API. 
+Klasa obsÅ‚ugujÄ…ca komunikacjÄ™ z zewnÄ™trznymi API. 
 
-Zapewnia metody do pobierania danych z zewnêtrznych Ÿróde³ oraz sprawdzania dostêpnoœci sieci. 
+Zapewnia metody do pobierania danych z zewnÄ™trznych ÅºrÃ³deÅ‚ oraz sprawdzania dostÄ™pnoÅ›ci sieci. 
 
 \doxysubsection{Dokumentacja funkcji skÅ‚adowych}
 \Hypertarget{class_api_service_a59a139e53d1a1c6854a0a601d0000ed2}\index{ApiService@{ApiService}!fetchDataFromAPI@{fetchDataFromAPI}}
@@ -32,7 +32,7 @@ std\+::string Api\+Service\+::fetch\+Data\+From\+API (\begin{DoxyParamCaption}\i
 
 
 
-Pobiera dane z okreœlonego URL. 
+Pobiera dane z okreÅ›lonego URL. 
 
 Pobiera dane z podanego URL API.
 
@@ -42,9 +42,9 @@ Pobiera dane z podanego URL API.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-std\+::string OdpowiedŸ z API lub pusty string w przypadku b³êdu
+std\+::string OdpowiedÅº z API lub pusty string w przypadku bÅ‚Ä™du
 \end{DoxyReturn}
-Funkcja wykorzystuje libcurl do pobrania danych z zewnêtrznego API. Jeœli nie ma dostêpu do internetu, zwraca pusty string.
+Funkcja wykorzystuje libcurl do pobrania danych z zewnÄ™trznego API. JeÅ›li nie ma dostÄ™pu do internetu, zwraca pusty string.
 
 
 \begin{DoxyParams}{Parametry}
@@ -52,7 +52,7 @@ Funkcja wykorzystuje libcurl do pobrania danych z zewnêtrznego API. Jeœli nie ma
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-std\+::string OdpowiedŸ z API lub pusty string w przypadku b³êdu 
+std\+::string OdpowiedÅº z API lub pusty string w przypadku bÅ‚Ä™du 
 \end{DoxyReturn}
 \Hypertarget{class_api_service_ad7cc544ba1893ddca0f23b3870f5326e}\index{ApiService@{ApiService}!isNetworkAvailable@{isNetworkAvailable}}
 \index{isNetworkAvailable@{isNetworkAvailable}!ApiService@{ApiService}}
@@ -62,21 +62,21 @@ bool Api\+Service\+::is\+Network\+Available (\begin{DoxyParamCaption}{}{}\end{Do
 
 
 
-Sprawdza czy jest dostêp do internetu. 
+Sprawdza czy jest dostÄ™p do internetu. 
 
-Sprawdza dostêpnoœæ po³¹czenia z internetem.
+Sprawdza dostÄ™pnoÅ›Ä‡ poÅ‚Ä…czenia z internetem.
 
 \begin{DoxyReturn}{Zwraca}
-true Jeœli po³¹czenie z internetem jest dostêpne 
+true JeÅ›li poÅ‚Ä…czenie z internetem jest dostÄ™pne 
 
-false Jeœli brak po³¹czenia z internetem
+false JeÅ›li brak poÅ‚Ä…czenia z internetem
 \end{DoxyReturn}
-Wykonuje proste zapytanie do API, aby sprawdziæ czy urz¹dzenie ma dostêp do internetu.
+Wykonuje proste zapytanie do API, aby sprawdziÄ‡ czy urzÄ…dzenie ma dostÄ™p do internetu.
 
 \begin{DoxyReturn}{Zwraca}
-true Jeœli po³¹czenie jest dostêpne 
+true JeÅ›li poÅ‚Ä…czenie jest dostÄ™pne 
 
-false Jeœli brak po³¹czenia z internetem 
+false JeÅ›li brak poÅ‚Ä…czenia z internetem 
 \end{DoxyReturn}
 
 
