@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LNWeather: Plik ÅºrÃ³dÅ‚owy src/DatabaseService.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LNWeather<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">Dane pogodowe</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocÄ… Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_database_service_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowaÅ„</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DatabaseService.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_database_service_8h.html">IdÅº do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wx/wx.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;json.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_utils_8h.html">Utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_database_service.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="class_database_service.html#a892e9fde0f782a4c6708b26dda0358e3">DatabaseService</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="class_database_service.html#a892e9fde0f782a4c6708b26dda0358e3">DatabaseService</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#a6f9eedbbe1d284e8f28805fe39e13a50">initializeDatabase</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#a4efbfdbfec4e007e8183762b6ab59079">saveStationsData</a>(<span class="keyword">const</span> std::string&amp; jsonData);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#af641121c075ae319d48986130e34b8a9">saveSensorsData</a>(<span class="keywordtype">int</span> stationId, <span class="keyword">const</span> std::string&amp; jsonData);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#a2a0df69411742798fa2547d78386d40f">saveMeasurementData</a>(<span class="keywordtype">int</span> sensorId, <span class="keyword">const</span> std::string&amp; jsonData);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#acae401bbad1dc8511b2bcc5f7b33ca0a">saveAirQualityIndex</a>(<span class="keywordtype">int</span> stationId, <span class="keyword">const</span> std::string&amp; jsonData);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    std::string <a class="code hl_function" href="class_database_service.html#a97b20bc467553fafd2ca30a4bba0e71b">loadStationsData</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::string <a class="code hl_function" href="class_database_service.html#ac2274bf120ee1d016a8b50574033411d">loadSensorsData</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::string <a class="code hl_function" href="class_database_service.html#ad9b26ae0d616e2bc6ee791157810932a">loadMeasurementData</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    std::string <a class="code hl_function" href="class_database_service.html#abf3bee381a5451fae5e69ba15296979c">loadAirQualityIndex</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#ab21f5af749929b27a24208ebc9465810">hasStationsData</a>();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#ac026b352d51c847631beca1e17db5f40">hasSensorsData</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#ae62a400acf4fdaa6b14d7b51fab17474">hasMeasurementData</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#a903ffbfc9e66136de28abb31f4f98aba">hasAirQualityIndex</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    wxDateTime <a class="code hl_function" href="class_database_service.html#a9c49febc1c12a209b7faff9f5bc4d16f">getLastUpdateTime</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    std::string <a class="code hl_function" href="class_database_service.html#a9b8e95adcf0f21fd52a9d58030a2b985">getStationsFilePath</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    std::string <a class="code hl_function" href="class_database_service.html#af1453e90fea360ae057449309e274dba">getSensorsFilePath</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    std::string <a class="code hl_function" href="class_database_service.html#a5a283f77539d6eb8e3138fe1b685bf47">getMeasurementFilePath</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    std::string <a class="code hl_function" href="class_database_service.html#a304635456997b99202104c76e88263a5">getAirQualityFilePath</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="class_database_service.html#ad0e9d4c3516d69cab96515e3ac63be3e">  186</a></span>    std::string <a class="code hl_variable" href="class_database_service.html#ad0e9d4c3516d69cab96515e3ac63be3e">dbFolder</a>;  </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_service.html#abb195001eb4f4d0ead2058d5db08da26">saveToFile</a>(<span class="keyword">const</span> std::string&amp; filePath, <span class="keyword">const</span> std::string&amp; data);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    std::string <a class="code hl_function" href="class_database_service.html#a8d5ffad038c75e8dce060cb1e2e83000">loadFromFile</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>};</div>
+</div>
+<div class="ttc" id="a_utils_8h_html"><div class="ttname"><a href="_utils_8h.html">Utils.h</a></div><div class="ttdoc">Narzêdzia pomocnicze u¿ywane w aplikacji.</div></div>
+<div class="ttc" id="aclass_database_service_html_a2a0df69411742798fa2547d78386d40f"><div class="ttname"><a href="class_database_service.html#a2a0df69411742798fa2547d78386d40f">DatabaseService::saveMeasurementData</a></div><div class="ttdeci">bool saveMeasurementData(int sensorId, const std::string &amp;jsonData)</div><div class="ttdoc">Zapisuje dane pomiarowe dla czujnika.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:73</div></div>
+<div class="ttc" id="aclass_database_service_html_a304635456997b99202104c76e88263a5"><div class="ttname"><a href="class_database_service.html#a304635456997b99202104c76e88263a5">DatabaseService::getAirQualityFilePath</a></div><div class="ttdeci">std::string getAirQualityFilePath(int stationId)</div><div class="ttdoc">Zwraca œcie¿kê pliku z indeksem jakoœci powietrza dla stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:227</div></div>
+<div class="ttc" id="aclass_database_service_html_a4efbfdbfec4e007e8183762b6ab59079"><div class="ttname"><a href="class_database_service.html#a4efbfdbfec4e007e8183762b6ab59079">DatabaseService::saveStationsData</a></div><div class="ttdeci">bool saveStationsData(const std::string &amp;jsonData)</div><div class="ttdoc">Zapisuje dane stacji do bazy.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:49</div></div>
+<div class="ttc" id="aclass_database_service_html_a5a283f77539d6eb8e3138fe1b685bf47"><div class="ttname"><a href="class_database_service.html#a5a283f77539d6eb8e3138fe1b685bf47">DatabaseService::getMeasurementFilePath</a></div><div class="ttdeci">std::string getMeasurementFilePath(int sensorId)</div><div class="ttdoc">Zwraca œcie¿kê pliku z danymi pomiarowymi dla czujnika.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:217</div></div>
+<div class="ttc" id="aclass_database_service_html_a6f9eedbbe1d284e8f28805fe39e13a50"><div class="ttname"><a href="class_database_service.html#a6f9eedbbe1d284e8f28805fe39e13a50">DatabaseService::initializeDatabase</a></div><div class="ttdeci">bool initializeDatabase()</div><div class="ttdoc">Inicjalizuje strukturê bazy danych.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:34</div></div>
+<div class="ttc" id="aclass_database_service_html_a892e9fde0f782a4c6708b26dda0358e3"><div class="ttname"><a href="class_database_service.html#a892e9fde0f782a4c6708b26dda0358e3">DatabaseService::DatabaseService</a></div><div class="ttdeci">DatabaseService()</div><div class="ttdoc">Konstruktor us³ugi bazy danych.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:20</div></div>
+<div class="ttc" id="aclass_database_service_html_a8d5ffad038c75e8dce060cb1e2e83000"><div class="ttname"><a href="class_database_service.html#a8d5ffad038c75e8dce060cb1e2e83000">DatabaseService::loadFromFile</a></div><div class="ttdeci">std::string loadFromFile(const std::string &amp;filePath)</div><div class="ttdoc">Odczytuje dane z pliku.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:254</div></div>
+<div class="ttc" id="aclass_database_service_html_a903ffbfc9e66136de28abb31f4f98aba"><div class="ttname"><a href="class_database_service.html#a903ffbfc9e66136de28abb31f4f98aba">DatabaseService::hasAirQualityIndex</a></div><div class="ttdeci">bool hasAirQualityIndex(int stationId)</div><div class="ttdoc">Sprawdza czy indeks jakoœci powietrza dla stacji istnieje w bazie.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:167</div></div>
+<div class="ttc" id="aclass_database_service_html_a97b20bc467553fafd2ca30a4bba0e71b"><div class="ttname"><a href="class_database_service.html#a97b20bc467553fafd2ca30a4bba0e71b">DatabaseService::loadStationsData</a></div><div class="ttdeci">std::string loadStationsData()</div><div class="ttdoc">Wczytuje dane stacji z bazy.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:94</div></div>
+<div class="ttc" id="aclass_database_service_html_a9b8e95adcf0f21fd52a9d58030a2b985"><div class="ttname"><a href="class_database_service.html#a9b8e95adcf0f21fd52a9d58030a2b985">DatabaseService::getStationsFilePath</a></div><div class="ttdeci">std::string getStationsFilePath()</div><div class="ttdoc">Zwraca œcie¿kê pliku z danymi stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:197</div></div>
+<div class="ttc" id="aclass_database_service_html_a9c49febc1c12a209b7faff9f5bc4d16f"><div class="ttname"><a href="class_database_service.html#a9c49febc1c12a209b7faff9f5bc4d16f">DatabaseService::getLastUpdateTime</a></div><div class="ttdeci">wxDateTime getLastUpdateTime(const std::string &amp;filePath)</div><div class="ttdoc">Pobiera czas ostatniej aktualizacji pliku.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:177</div></div>
+<div class="ttc" id="aclass_database_service_html_ab21f5af749929b27a24208ebc9465810"><div class="ttname"><a href="class_database_service.html#ab21f5af749929b27a24208ebc9465810">DatabaseService::hasStationsData</a></div><div class="ttdeci">bool hasStationsData()</div><div class="ttdoc">Sprawdza czy dane stacji istniej¹ w bazie.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:134</div></div>
+<div class="ttc" id="aclass_database_service_html_abb195001eb4f4d0ead2058d5db08da26"><div class="ttname"><a href="class_database_service.html#abb195001eb4f4d0ead2058d5db08da26">DatabaseService::saveToFile</a></div><div class="ttdeci">bool saveToFile(const std::string &amp;filePath, const std::string &amp;data)</div><div class="ttdoc">Zapisuje dane do pliku.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:239</div></div>
+<div class="ttc" id="aclass_database_service_html_abf3bee381a5451fae5e69ba15296979c"><div class="ttname"><a href="class_database_service.html#abf3bee381a5451fae5e69ba15296979c">DatabaseService::loadAirQualityIndex</a></div><div class="ttdeci">std::string loadAirQualityIndex(int stationId)</div><div class="ttdoc">Wczytuje indeks jakoœci powietrza dla stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:124</div></div>
+<div class="ttc" id="aclass_database_service_html_ac026b352d51c847631beca1e17db5f40"><div class="ttname"><a href="class_database_service.html#ac026b352d51c847631beca1e17db5f40">DatabaseService::hasSensorsData</a></div><div class="ttdeci">bool hasSensorsData(int stationId)</div><div class="ttdoc">Sprawdza czy dane czujników dla stacji istniej¹ w bazie.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:145</div></div>
+<div class="ttc" id="aclass_database_service_html_ac2274bf120ee1d016a8b50574033411d"><div class="ttname"><a href="class_database_service.html#ac2274bf120ee1d016a8b50574033411d">DatabaseService::loadSensorsData</a></div><div class="ttdeci">std::string loadSensorsData(int stationId)</div><div class="ttdoc">Wczytuje dane czujników dla stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:104</div></div>
+<div class="ttc" id="aclass_database_service_html_acae401bbad1dc8511b2bcc5f7b33ca0a"><div class="ttname"><a href="class_database_service.html#acae401bbad1dc8511b2bcc5f7b33ca0a">DatabaseService::saveAirQualityIndex</a></div><div class="ttdeci">bool saveAirQualityIndex(int stationId, const std::string &amp;jsonData)</div><div class="ttdoc">Zapisuje indeks jakoœci powietrza dla stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:85</div></div>
+<div class="ttc" id="aclass_database_service_html_ad0e9d4c3516d69cab96515e3ac63be3e"><div class="ttname"><a href="class_database_service.html#ad0e9d4c3516d69cab96515e3ac63be3e">DatabaseService::dbFolder</a></div><div class="ttdeci">std::string dbFolder</div><div class="ttdef"><b>Definicja</b> DatabaseService.h:186</div></div>
+<div class="ttc" id="aclass_database_service_html_ad9b26ae0d616e2bc6ee791157810932a"><div class="ttname"><a href="class_database_service.html#ad9b26ae0d616e2bc6ee791157810932a">DatabaseService::loadMeasurementData</a></div><div class="ttdeci">std::string loadMeasurementData(int sensorId)</div><div class="ttdoc">Wczytuje dane pomiarowe dla czujnika.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:114</div></div>
+<div class="ttc" id="aclass_database_service_html_ae62a400acf4fdaa6b14d7b51fab17474"><div class="ttname"><a href="class_database_service.html#ae62a400acf4fdaa6b14d7b51fab17474">DatabaseService::hasMeasurementData</a></div><div class="ttdeci">bool hasMeasurementData(int sensorId)</div><div class="ttdoc">Sprawdza czy dane pomiarowe dla czujnika istniej¹ w bazie.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:156</div></div>
+<div class="ttc" id="aclass_database_service_html_af1453e90fea360ae057449309e274dba"><div class="ttname"><a href="class_database_service.html#af1453e90fea360ae057449309e274dba">DatabaseService::getSensorsFilePath</a></div><div class="ttdeci">std::string getSensorsFilePath(int stationId)</div><div class="ttdoc">Zwraca œcie¿kê pliku z danymi czujników dla stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:207</div></div>
+<div class="ttc" id="aclass_database_service_html_af641121c075ae319d48986130e34b8a9"><div class="ttname"><a href="class_database_service.html#af641121c075ae319d48986130e34b8a9">DatabaseService::saveSensorsData</a></div><div class="ttdeci">bool saveSensorsData(int stationId, const std::string &amp;jsonData)</div><div class="ttdoc">Zapisuje dane czujników dla stacji.</div><div class="ttdef"><b>Definicja</b> DatabaseService.cpp:61</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_database_service_8h.html">DatabaseService.h</a></li>
+    <li class="footer">Wygenerowano za pomocÄ… <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

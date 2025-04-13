@@ -1,0 +1,270 @@
+\doxysection{Dokumentacja klasy Chart\+Panel}
+\hypertarget{class_chart_panel}{}\label{class_chart_panel}\index{ChartPanel@{ChartPanel}}
+
+
+Panel wyúwietlajπcy wykres danych pomiarowych.  
+
+
+
+
+{\ttfamily \#include $<$Chart\+Panel.\+h$>$}
+
+Diagram dziedziczenia dla Chart\+Panel\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chart_panel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chart_panel_af4d12480f516ac3f934fe55f6c3d7e24}{Chart\+Panel}} (wx\+Window \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em Konstruktor panelu wykresu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chart_panel_ab668997f8bb327da22a0f0beb1996b3d}{Set\+Data}} (const std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \&data, const wx\+String \&param\+Name)
+\begin{DoxyCompactList}\small\item\em Ustawia dane do wyúwietlenia na wykresie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chart_panel_aa2365d92be8a38365e8835b37495530c}{Set\+Title}} (const wx\+String \&\mbox{\hyperlink{class_chart_panel_a701f9c29cc5c10a1c97db4c404a0608e}{title}})
+\begin{DoxyCompactList}\small\item\em Ustawia tytu≥ wykresu. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \& \mbox{\hyperlink{class_chart_panel_a354b9d4c9dbf50ad25132a3b006f729d}{Get\+Chart\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca referencjÍ do aktualnych danych wykresu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_chart_panel_a875f6801746bed41b20bac4bc023afa0}{On\+Paint}} (wx\+Paint\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia rysowania. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chart_panel_a38589c7fe45a9dcf178b473b038ffee9}{On\+Size}} (wx\+Size\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia zmiany rozmiaru. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chart_panel_a295bc8771dc6910b590fde506d1324a0}{Draw\+Axes}} (wx\+DC \&dc, const wx\+Rect \&rect)
+\begin{DoxyCompactList}\small\item\em Rysuje osie wykresu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chart_panel_acfaeedf7f462c4655ac4e8082f6635bc}{Draw\+Data}} (wx\+DC \&dc, const wx\+Rect \&rect)
+\begin{DoxyCompactList}\small\item\em Rysuje dane na wykresie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chart_panel_a7373de087a43031e42d349a1ba5e702b}{Draw\+Labels}} (wx\+DC \&dc, const wx\+Rect \&rect)
+\begin{DoxyCompactList}\small\item\em Rysuje etykiety na wykresie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \mbox{\hyperlink{class_chart_panel_a71a54293b9471e9afb405f937c1c8e78}{chart\+Data}}
+\item 
+wx\+String \mbox{\hyperlink{class_chart_panel_a701f9c29cc5c10a1c97db4c404a0608e}{title}}
+\item 
+wx\+String \mbox{\hyperlink{class_chart_panel_a9ad98587679ff8ccb295d178a7c85a0b}{parameter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczeg√≥≈Çowy}
+Panel wyúwietlajπcy wykres danych pomiarowych. 
+
+Wyúwietla dane pomiarowe w postaci interaktywnego wykresu z moøliwoúciπ zmiany tytu≥u i danych. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_chart_panel_af4d12480f516ac3f934fe55f6c3d7e24}\index{ChartPanel@{ChartPanel}!ChartPanel@{ChartPanel}}
+\index{ChartPanel@{ChartPanel}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{ChartPanel()}{ChartPanel()}}
+{\footnotesize\ttfamily \label{class_chart_panel_af4d12480f516ac3f934fe55f6c3d7e24} 
+Chart\+Panel\+::\+Chart\+Panel (\begin{DoxyParamCaption}\item[{wx\+Window \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor panelu wykresu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em parent} & Rodzic panelu\\
+\hline
+\end{DoxyParams}
+Inicjalizuje panel i konfiguruje obs≥ugÍ zdarzeÒ.
+
+
+\begin{DoxyParams}{Parametry}
+{\em parent} & Rodzic panelu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji sk≈Çadowych}
+\Hypertarget{class_chart_panel_a295bc8771dc6910b590fde506d1324a0}\index{ChartPanel@{ChartPanel}!DrawAxes@{DrawAxes}}
+\index{DrawAxes@{DrawAxes}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{DrawAxes()}{DrawAxes()}}
+{\footnotesize\ttfamily \label{class_chart_panel_a295bc8771dc6910b590fde506d1324a0} 
+void Chart\+Panel\+::\+Draw\+Axes (\begin{DoxyParamCaption}\item[{wx\+DC \&}]{dc}{, }\item[{const wx\+Rect \&}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rysuje osie wykresu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dc} & Kontekst urzπdzenia \\
+\hline
+{\em rect} & Prostokπt obszaru wykresu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chart_panel_acfaeedf7f462c4655ac4e8082f6635bc}\index{ChartPanel@{ChartPanel}!DrawData@{DrawData}}
+\index{DrawData@{DrawData}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{DrawData()}{DrawData()}}
+{\footnotesize\ttfamily \label{class_chart_panel_acfaeedf7f462c4655ac4e8082f6635bc} 
+void Chart\+Panel\+::\+Draw\+Data (\begin{DoxyParamCaption}\item[{wx\+DC \&}]{dc}{, }\item[{const wx\+Rect \&}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rysuje dane na wykresie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dc} & Kontekst urzπdzenia \\
+\hline
+{\em rect} & Prostokπt obszaru wykresu\\
+\hline
+\end{DoxyParams}
+Rysuje punkty i linie ≥πczπce dane pomiarowe.
+
+
+\begin{DoxyParams}{Parametry}
+{\em dc} & Kontekst urzπdzenia \\
+\hline
+{\em rect} & Prostokπt obszaru wykresu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chart_panel_a7373de087a43031e42d349a1ba5e702b}\index{ChartPanel@{ChartPanel}!DrawLabels@{DrawLabels}}
+\index{DrawLabels@{DrawLabels}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{DrawLabels()}{DrawLabels()}}
+{\footnotesize\ttfamily \label{class_chart_panel_a7373de087a43031e42d349a1ba5e702b} 
+void Chart\+Panel\+::\+Draw\+Labels (\begin{DoxyParamCaption}\item[{wx\+DC \&}]{dc}{, }\item[{const wx\+Rect \&}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rysuje etykiety na wykresie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dc} & Kontekst urzπdzenia \\
+\hline
+{\em rect} & Prostokπt obszaru wykresu\\
+\hline
+\end{DoxyParams}
+Rysuje etykiety osi X i Y z odpowiednimi wartoúciami.
+
+
+\begin{DoxyParams}{Parametry}
+{\em dc} & Kontekst urzπdzenia \\
+\hline
+{\em rect} & Prostokπt obszaru wykresu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chart_panel_a354b9d4c9dbf50ad25132a3b006f729d}\index{ChartPanel@{ChartPanel}!GetChartData@{GetChartData}}
+\index{GetChartData@{GetChartData}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{GetChartData()}{GetChartData()}}
+{\footnotesize\ttfamily \label{class_chart_panel_a354b9d4c9dbf50ad25132a3b006f729d} 
+const std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \& Chart\+Panel\+::\+Get\+Chart\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca referencjÍ do aktualnych danych wykresu. 
+
+\begin{DoxyReturn}{Zwraca}
+const std\+::vector$<$\+Measurement\+Data$>$\& Referencja do wektora danych 
+\end{DoxyReturn}
+\Hypertarget{class_chart_panel_a875f6801746bed41b20bac4bc023afa0}\index{ChartPanel@{ChartPanel}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily \label{class_chart_panel_a875f6801746bed41b20bac4bc023afa0} 
+void Chart\+Panel\+::\+On\+Paint (\begin{DoxyParamCaption}\item[{wx\+Paint\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia rysowania. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie rysowania\\
+\hline
+\end{DoxyParams}
+Rysuje wykres z wykorzystaniem buforowania.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie rysowania \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chart_panel_a38589c7fe45a9dcf178b473b038ffee9}\index{ChartPanel@{ChartPanel}!OnSize@{OnSize}}
+\index{OnSize@{OnSize}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{OnSize()}{OnSize()}}
+{\footnotesize\ttfamily \label{class_chart_panel_a38589c7fe45a9dcf178b473b038ffee9} 
+void Chart\+Panel\+::\+On\+Size (\begin{DoxyParamCaption}\item[{wx\+Size\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia zmiany rozmiaru. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie zmiany rozmiaru\\
+\hline
+\end{DoxyParams}
+Odúwieøa wykres po zmianie rozmiaru panelu.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie zmiany rozmiaru \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chart_panel_ab668997f8bb327da22a0f0beb1996b3d}\index{ChartPanel@{ChartPanel}!SetData@{SetData}}
+\index{SetData@{SetData}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily \label{class_chart_panel_ab668997f8bb327da22a0f0beb1996b3d} 
+void Chart\+Panel\+::\+Set\+Data (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \&}]{data}{, }\item[{const wx\+String \&}]{param\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia dane do wyúwietlenia na wykresie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em data} & Wektor danych pomiarowych \\
+\hline
+{\em param\+Name} & Nazwa parametru \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chart_panel_aa2365d92be8a38365e8835b37495530c}\index{ChartPanel@{ChartPanel}!SetTitle@{SetTitle}}
+\index{SetTitle@{SetTitle}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{SetTitle()}{SetTitle()}}
+{\footnotesize\ttfamily \label{class_chart_panel_aa2365d92be8a38365e8835b37495530c} 
+void Chart\+Panel\+::\+Set\+Title (\begin{DoxyParamCaption}\item[{const wx\+String \&}]{new\+Title}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia tytu≥ wykresu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title} & Nowy tytu≥ wykresu\\
+\hline
+{\em new\+Title} & Nowy tytu≥ wykresu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja atrybut√≥w sk≈Çadowych}
+\Hypertarget{class_chart_panel_a71a54293b9471e9afb405f937c1c8e78}\index{ChartPanel@{ChartPanel}!chartData@{chartData}}
+\index{chartData@{chartData}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{chartData}{chartData}}
+{\footnotesize\ttfamily \label{class_chart_panel_a71a54293b9471e9afb405f937c1c8e78} 
+std\+::vector$<$\mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}}$>$ Chart\+Panel\+::chart\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+Dane pomiarowe \Hypertarget{class_chart_panel_a9ad98587679ff8ccb295d178a7c85a0b}\index{ChartPanel@{ChartPanel}!parameter@{parameter}}
+\index{parameter@{parameter}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{parameter}{parameter}}
+{\footnotesize\ttfamily \label{class_chart_panel_a9ad98587679ff8ccb295d178a7c85a0b} 
+wx\+String Chart\+Panel\+::parameter\hspace{0.3cm}{\ttfamily [private]}}
+
+Nazwa parametru \Hypertarget{class_chart_panel_a701f9c29cc5c10a1c97db4c404a0608e}\index{ChartPanel@{ChartPanel}!title@{title}}
+\index{title@{title}!ChartPanel@{ChartPanel}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \label{class_chart_panel_a701f9c29cc5c10a1c97db4c404a0608e} 
+wx\+String Chart\+Panel\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
+Tytu≥ wykresu 
+
+Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_chart_panel_8h}{Chart\+Panel.\+h}}\item 
+src/\mbox{\hyperlink{_chart_panel_8cpp}{Chart\+Panel.\+cpp}}\end{DoxyCompactItemize}

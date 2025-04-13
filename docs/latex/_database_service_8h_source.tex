@@ -1,0 +1,63 @@
+\doxysection{Database\+Service.\+h}
+\hypertarget{_database_service_8h_source}{}\label{_database_service_8h_source}\index{src/DatabaseService.h@{src/DatabaseService.h}}
+\mbox{\hyperlink{_database_service_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <json.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_utils_8h}{Utils.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database_service_a892e9fde0f782a4c6708b26dda0358e3}{DatabaseService}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_database_service_a892e9fde0f782a4c6708b26dda0358e3}{DatabaseService}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_a6f9eedbbe1d284e8f28805fe39e13a50}{initializeDatabase}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_a4efbfdbfec4e007e8183762b6ab59079}{saveStationsData}}(\textcolor{keyword}{const}\ std::string\&\ jsonData);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_af641121c075ae319d48986130e34b8a9}{saveSensorsData}}(\textcolor{keywordtype}{int}\ stationId,\ \textcolor{keyword}{const}\ std::string\&\ jsonData);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_a2a0df69411742798fa2547d78386d40f}{saveMeasurementData}}(\textcolor{keywordtype}{int}\ sensorId,\ \textcolor{keyword}{const}\ std::string\&\ jsonData);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_acae401bbad1dc8511b2bcc5f7b33ca0a}{saveAirQualityIndex}}(\textcolor{keywordtype}{int}\ stationId,\ \textcolor{keyword}{const}\ std::string\&\ jsonData);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_a97b20bc467553fafd2ca30a4bba0e71b}{loadStationsData}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_ac2274bf120ee1d016a8b50574033411d}{loadSensorsData}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00101\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_ad9b26ae0d616e2bc6ee791157810932a}{loadMeasurementData}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00109\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_abf3bee381a5451fae5e69ba15296979c}{loadAirQualityIndex}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_ab21f5af749929b27a24208ebc9465810}{hasStationsData}}();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_ac026b352d51c847631beca1e17db5f40}{hasSensorsData}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_ae62a400acf4fdaa6b14d7b51fab17474}{hasMeasurementData}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_a903ffbfc9e66136de28abb31f4f98aba}{hasAirQualityIndex}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00152\ \ \ \ \ wxDateTime\ \mbox{\hyperlink{class_database_service_a9c49febc1c12a209b7faff9f5bc4d16f}{getLastUpdateTime}}(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_a9b8e95adcf0f21fd52a9d58030a2b985}{getStationsFilePath}}();}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00167\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_af1453e90fea360ae057449309e274dba}{getSensorsFilePath}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00175\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_a5a283f77539d6eb8e3138fe1b685bf47}{getMeasurementFilePath}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00183\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_a304635456997b99202104c76e88263a5}{getAirQualityFilePath}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00186\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_ad0e9d4c3516d69cab96515e3ac63be3e}{dbFolder}};\ \ }
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_database_service_abb195001eb4f4d0ead2058d5db08da26}{saveToFile}}(\textcolor{keyword}{const}\ std::string\&\ filePath,\ \textcolor{keyword}{const}\ std::string\&\ data);}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00204\ \ \ \ \ std::string\ \mbox{\hyperlink{class_database_service_a8d5ffad038c75e8dce060cb1e2e83000}{loadFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00205\ \};}
+
+\end{DoxyCode}

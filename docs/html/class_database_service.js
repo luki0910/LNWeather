@@ -1,0 +1,25 @@
+var class_database_service =
+[
+    [ "DatabaseService", "class_database_service.html#a892e9fde0f782a4c6708b26dda0358e3", null ],
+    [ "getAirQualityFilePath", "class_database_service.html#a304635456997b99202104c76e88263a5", null ],
+    [ "getLastUpdateTime", "class_database_service.html#a9c49febc1c12a209b7faff9f5bc4d16f", null ],
+    [ "getMeasurementFilePath", "class_database_service.html#a5a283f77539d6eb8e3138fe1b685bf47", null ],
+    [ "getSensorsFilePath", "class_database_service.html#af1453e90fea360ae057449309e274dba", null ],
+    [ "getStationsFilePath", "class_database_service.html#a9b8e95adcf0f21fd52a9d58030a2b985", null ],
+    [ "hasAirQualityIndex", "class_database_service.html#a903ffbfc9e66136de28abb31f4f98aba", null ],
+    [ "hasMeasurementData", "class_database_service.html#ae62a400acf4fdaa6b14d7b51fab17474", null ],
+    [ "hasSensorsData", "class_database_service.html#ac026b352d51c847631beca1e17db5f40", null ],
+    [ "hasStationsData", "class_database_service.html#ab21f5af749929b27a24208ebc9465810", null ],
+    [ "initializeDatabase", "class_database_service.html#a6f9eedbbe1d284e8f28805fe39e13a50", null ],
+    [ "loadAirQualityIndex", "class_database_service.html#abf3bee381a5451fae5e69ba15296979c", null ],
+    [ "loadFromFile", "class_database_service.html#a8d5ffad038c75e8dce060cb1e2e83000", null ],
+    [ "loadMeasurementData", "class_database_service.html#ad9b26ae0d616e2bc6ee791157810932a", null ],
+    [ "loadSensorsData", "class_database_service.html#ac2274bf120ee1d016a8b50574033411d", null ],
+    [ "loadStationsData", "class_database_service.html#a97b20bc467553fafd2ca30a4bba0e71b", null ],
+    [ "saveAirQualityIndex", "class_database_service.html#acae401bbad1dc8511b2bcc5f7b33ca0a", null ],
+    [ "saveMeasurementData", "class_database_service.html#a2a0df69411742798fa2547d78386d40f", null ],
+    [ "saveSensorsData", "class_database_service.html#af641121c075ae319d48986130e34b8a9", null ],
+    [ "saveStationsData", "class_database_service.html#a4efbfdbfec4e007e8183762b6ab59079", null ],
+    [ "saveToFile", "class_database_service.html#abb195001eb4f4d0ead2058d5db08da26", null ],
+    [ "dbFolder", "class_database_service.html#ad0e9d4c3516d69cab96515e3ac63be3e", null ]
+];

@@ -1,0 +1,114 @@
+\doxysection{Main\+Window.\+h}
+\hypertarget{_main_window_8h_source}{}\label{_main_window_8h_source}\index{src/MainWindow.h@{src/MainWindow.h}}
+\mbox{\hyperlink{_main_window_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <wx/choice.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <wx/progdlg.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <wx/datectrl.h>}\ \ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <wx/dateevt.h>}\ \ \ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <wx/notebook.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_chart_panel_8h}{ChartPanel.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_database_service_8h}{DatabaseService.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}{MainWindow}}\ :\ \textcolor{keyword}{public}\ wxFrame\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}{MainWindow}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ wxChoice*\ \mbox{\hyperlink{class_main_window_ab79901ef3927ef8d4fc9808454289e9c}{stationChoice}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ wxChoice*\ \mbox{\hyperlink{class_main_window_a9ad4ea66cd6943ef7f290abb7bd2af02}{sensorChoice}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ wxTextCtrl*\ \mbox{\hyperlink{class_main_window_a7f60679de553bda949c1cd012e7ca1f7}{measurementText}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ wxFont\ \mbox{\hyperlink{class_main_window_a5cc65f39a7063fce43a43dbfbffee5a7}{font}};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ wxStaticText*\ \mbox{\hyperlink{class_main_window_ad1a1f8acd5d787b694b869d978de9e6d}{airQualityIndex}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ wxButton*\ \mbox{\hyperlink{class_main_window_a371a0f887e59c6f3f398a1d809313e26}{saveCurrentToDbButton}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ wxButton*\ \mbox{\hyperlink{class_main_window_a498d116e07b21d0c37c89b75a2f057ce}{saveAllToDbButton}};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ wxStaticText*\ \mbox{\hyperlink{class_main_window_a89414ee8ccd74ab984f45c8b201fdc09}{dbStatusText}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//Analiza\ danych}}
+\DoxyCodeLine{00080\ \ \ \ \ wxButton*\ \mbox{\hyperlink{class_main_window_a87d20b3b108146cfa227fe0a30010c5f}{showAnalysisButton}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ wxTextCtrl*\ \mbox{\hyperlink{class_main_window_a0ad0d86f22bde498e1bc8a99741d2f65}{analysisText}};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \ \ wxNotebook*\ \mbox{\hyperlink{class_main_window_a30db2afc9192fd802ca58d70ac480004}{dataNotebook}};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//Chart\ Stuff}}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_chart_panel}{ChartPanel}}*\ \mbox{\hyperlink{class_main_window_a0e4eaff0f50b3d6d2152d332db7d27e0}{chartPanel}};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ wxDatePickerCtrl*\ \mbox{\hyperlink{class_main_window_a9c944ddf631912ab4a78b79ad8294035}{startDatePicker}};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00106\ \ \ \ \ wxDatePickerCtrl*\ \mbox{\hyperlink{class_main_window_adf62a35a38deafdc57fc6542edbbe96f}{endDatePicker}};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00111\ \ \ \ \ wxButton*\ \mbox{\hyperlink{class_main_window_a3ef063480515f1ab331f8aab59585023}{applyDateRangeButton}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{comment}{//\ Data\ Storage}}
+\DoxyCodeLine{00117\ \ \ \ \ std::vector<std::pair<int,\ std::string>>\ \mbox{\hyperlink{class_main_window_a611a09e2a5cca43d88bfe9115fe8b118}{stations}};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00122\ \ \ \ \ std::vector<std::pair<int,\ std::string>>\ \mbox{\hyperlink{class_main_window_abac5b47c1c2bf5886d5ba2aa84c04f8e}{sensors}};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{class_database_service}{DatabaseService}}\ \mbox{\hyperlink{class_main_window_acdc3119578b9103be36bbb7c5647cb1f}{dbService}};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_acacfa9bb4814ee9a259452621647393f}{loadStations}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a323ab9794e4e9511ba39336e2dc459e8}{loadSensorsForStation}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a38c47a87d3a4cfe1c7518be1fd20e402}{loadAirQualityIndex}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00155\ \ \ \ \ wxDateTime\ \mbox{\hyperlink{class_main_window_a12662474fd3554408f26d3fb6b1ce0a3}{parseDateTime}}(\textcolor{keyword}{const}\ std::string\&\ dateStr);}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a96400d992898bf8367616f535a4310cf}{OnStationSelection}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a48c06ef33aa85f55aa502a75617d9028}{OnSensorSelection}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a1c7811f367d334c73b4df41b0c069452}{OnSaveCurrentToDatabase}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a8a6fe7c3f1335600d379df273ed8a800}{OnSaveAllToDatabase}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a4d9b684a5665c1be078b0d6548eaa50d}{OnApplyDateRange}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{comment}{//\ Metody}}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a4728880029aa480f0beaf6bd6eedfa92}{tryLoadStationsFromAPI}}();}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_ae9955baa7dd1b9fc6e0086445c1747d4}{tryLoadStationsFromDatabase}}();}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00217\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_aa91e8ca80d6168f15c62f321c8777042}{tryLoadSensorsFromAPI}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a2390845772be8ad530d75c0cbac31a2f}{tryLoadSensorsFromDatabase}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a1b047756bbd1a3f48da831cb1c7deb62}{tryLoadMeasurementsFromAPI}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_ab4b5fe2c027db7deeeb84d3f767ff9e6}{tryLoadMeasurementsFromDatabase}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00253\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_aef1054bb7be90e2cdf5ad7636e9463a2}{tryLoadAirQualityFromAPI}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_ace6ca6411bfbb9592ee17ec013ea7aab}{tryLoadAirQualityFromDatabase}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a56e2315b6818efecca9b8d461dfc3ace}{tryLoadMeasurementsWithDateRange}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00280\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a18f7722197a674f73ad0a9ca283b16c6}{tryLoadMeasurementsWithDateRangeFromDatabase}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00282\ \ \ \ \ }
+\DoxyCodeLine{00288\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a61c5ef14af69b0a26eabe645fcad55b7}{OnShowAnalysis}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00298\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aea7ee3310c0e9140d8e43f47023fd67d}{PerformDataAnalysis}}(\textcolor{keyword}{const}\ std::vector<MeasurementData>\&\ data,\ \textcolor{keyword}{const}\ wxString\&\ paramName);}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00300\ \ \ \ \ }
+\DoxyCodeLine{00304\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a45208115e4963a492e207ab26fccdeca}{updateDatabaseStatus}}();}
+\DoxyCodeLine{00305\ \};}
+
+\end{DoxyCode}

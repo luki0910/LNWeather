@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LNWeather: Dokumentacja klasy ChartPanel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LNWeather<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">Dane pogodowe</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocƒÖ Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_chart_panel.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowa≈Ñ</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_chart_panel-members.html">Lista wszystkich sk≈Çadowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy ChartPanel</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Panel wyúwietlajπcy wykres danych pomiarowych.  
+ <a href="#details">Wiƒôcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_chart_panel_8h_source.html">ChartPanel.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla ChartPanel</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_chart_panel.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:af4d12480f516ac3f934fe55f6c3d7e24" id="r_af4d12480f516ac3f934fe55f6c3d7e24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4d12480f516ac3f934fe55f6c3d7e24">ChartPanel</a> (wxWindow *parent)</td></tr>
+<tr class="memdesc:af4d12480f516ac3f934fe55f6c3d7e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor panelu wykresu.  <br /></td></tr>
+<tr class="separator:af4d12480f516ac3f934fe55f6c3d7e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab668997f8bb327da22a0f0beb1996b3d" id="r_ab668997f8bb327da22a0f0beb1996b3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab668997f8bb327da22a0f0beb1996b3d">SetData</a> (const std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt; &amp;data, const wxString &amp;paramName)</td></tr>
+<tr class="memdesc:ab668997f8bb327da22a0f0beb1996b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia dane do wyúwietlenia na wykresie.  <br /></td></tr>
+<tr class="separator:ab668997f8bb327da22a0f0beb1996b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2365d92be8a38365e8835b37495530c" id="r_aa2365d92be8a38365e8835b37495530c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2365d92be8a38365e8835b37495530c">SetTitle</a> (const wxString &amp;<a class="el" href="#a701f9c29cc5c10a1c97db4c404a0608e">title</a>)</td></tr>
+<tr class="memdesc:aa2365d92be8a38365e8835b37495530c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia tytu≥ wykresu.  <br /></td></tr>
+<tr class="separator:aa2365d92be8a38365e8835b37495530c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354b9d4c9dbf50ad25132a3b006f729d" id="r_a354b9d4c9dbf50ad25132a3b006f729d"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a354b9d4c9dbf50ad25132a3b006f729d">GetChartData</a> () const</td></tr>
+<tr class="memdesc:a354b9d4c9dbf50ad25132a3b006f729d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca referencjÍ do aktualnych danych wykresu.  <br /></td></tr>
+<tr class="separator:a354b9d4c9dbf50ad25132a3b006f729d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a875f6801746bed41b20bac4bc023afa0" id="r_a875f6801746bed41b20bac4bc023afa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a875f6801746bed41b20bac4bc023afa0">OnPaint</a> (wxPaintEvent &amp;event)</td></tr>
+<tr class="memdesc:a875f6801746bed41b20bac4bc023afa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia rysowania.  <br /></td></tr>
+<tr class="separator:a875f6801746bed41b20bac4bc023afa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38589c7fe45a9dcf178b473b038ffee9" id="r_a38589c7fe45a9dcf178b473b038ffee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38589c7fe45a9dcf178b473b038ffee9">OnSize</a> (wxSizeEvent &amp;event)</td></tr>
+<tr class="memdesc:a38589c7fe45a9dcf178b473b038ffee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia zmiany rozmiaru.  <br /></td></tr>
+<tr class="separator:a38589c7fe45a9dcf178b473b038ffee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295bc8771dc6910b590fde506d1324a0" id="r_a295bc8771dc6910b590fde506d1324a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295bc8771dc6910b590fde506d1324a0">DrawAxes</a> (wxDC &amp;dc, const wxRect &amp;rect)</td></tr>
+<tr class="memdesc:a295bc8771dc6910b590fde506d1324a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysuje osie wykresu.  <br /></td></tr>
+<tr class="separator:a295bc8771dc6910b590fde506d1324a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfaeedf7f462c4655ac4e8082f6635bc" id="r_acfaeedf7f462c4655ac4e8082f6635bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfaeedf7f462c4655ac4e8082f6635bc">DrawData</a> (wxDC &amp;dc, const wxRect &amp;rect)</td></tr>
+<tr class="memdesc:acfaeedf7f462c4655ac4e8082f6635bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysuje dane na wykresie.  <br /></td></tr>
+<tr class="separator:acfaeedf7f462c4655ac4e8082f6635bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7373de087a43031e42d349a1ba5e702b" id="r_a7373de087a43031e42d349a1ba5e702b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7373de087a43031e42d349a1ba5e702b">DrawLabels</a> (wxDC &amp;dc, const wxRect &amp;rect)</td></tr>
+<tr class="memdesc:a7373de087a43031e42d349a1ba5e702b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysuje etykiety na wykresie.  <br /></td></tr>
+<tr class="separator:a7373de087a43031e42d349a1ba5e702b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a71a54293b9471e9afb405f937c1c8e78" id="r_a71a54293b9471e9afb405f937c1c8e78"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71a54293b9471e9afb405f937c1c8e78">chartData</a></td></tr>
+<tr class="separator:a71a54293b9471e9afb405f937c1c8e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701f9c29cc5c10a1c97db4c404a0608e" id="r_a701f9c29cc5c10a1c97db4c404a0608e"><td class="memItemLeft" align="right" valign="top">wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a701f9c29cc5c10a1c97db4c404a0608e">title</a></td></tr>
+<tr class="separator:a701f9c29cc5c10a1c97db4c404a0608e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad98587679ff8ccb295d178a7c85a0b" id="r_a9ad98587679ff8ccb295d178a7c85a0b"><td class="memItemLeft" align="right" valign="top">wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad98587679ff8ccb295d178a7c85a0b">parameter</a></td></tr>
+<tr class="separator:a9ad98587679ff8ccb295d178a7c85a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczeg√≥≈Çowy</h2>
+<div class="textblock"><p>Panel wyúwietlajπcy wykres danych pomiarowych. </p>
+<p>Wyúwietla dane pomiarowe w postaci interaktywnego wykresu z moøliwoúciπ zmiany tytu≥u i danych. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="af4d12480f516ac3f934fe55f6c3d7e24" name="af4d12480f516ac3f934fe55f6c3d7e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d12480f516ac3f934fe55f6c3d7e24">&#9670;&#160;</a></span>ChartPanel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChartPanel::ChartPanel </td>
+          <td>(</td>
+          <td class="paramtype">wxWindow *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor panelu wykresu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Rodzic panelu</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Inicjalizuje panel i konfiguruje obs≥ugÍ zdarzeÒ.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Rodzic panelu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji sk≈Çadowych</h2>
+<a id="a295bc8771dc6910b590fde506d1324a0" name="a295bc8771dc6910b590fde506d1324a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295bc8771dc6910b590fde506d1324a0">&#9670;&#160;</a></span>DrawAxes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::DrawAxes </td>
+          <td>(</td>
+          <td class="paramtype">wxDC &amp;</td>          <td class="paramname"><span class="paramname"><em>dc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxRect &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rysuje osie wykresu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dc</td><td>Kontekst urzπdzenia </td></tr>
+    <tr><td class="paramname">rect</td><td>Prostokπt obszaru wykresu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfaeedf7f462c4655ac4e8082f6635bc" name="acfaeedf7f462c4655ac4e8082f6635bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfaeedf7f462c4655ac4e8082f6635bc">&#9670;&#160;</a></span>DrawData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::DrawData </td>
+          <td>(</td>
+          <td class="paramtype">wxDC &amp;</td>          <td class="paramname"><span class="paramname"><em>dc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxRect &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rysuje dane na wykresie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dc</td><td>Kontekst urzπdzenia </td></tr>
+    <tr><td class="paramname">rect</td><td>Prostokπt obszaru wykresu</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Rysuje punkty i linie ≥πczπce dane pomiarowe.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dc</td><td>Kontekst urzπdzenia </td></tr>
+    <tr><td class="paramname">rect</td><td>Prostokπt obszaru wykresu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7373de087a43031e42d349a1ba5e702b" name="a7373de087a43031e42d349a1ba5e702b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7373de087a43031e42d349a1ba5e702b">&#9670;&#160;</a></span>DrawLabels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::DrawLabels </td>
+          <td>(</td>
+          <td class="paramtype">wxDC &amp;</td>          <td class="paramname"><span class="paramname"><em>dc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxRect &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rysuje etykiety na wykresie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dc</td><td>Kontekst urzπdzenia </td></tr>
+    <tr><td class="paramname">rect</td><td>Prostokπt obszaru wykresu</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Rysuje etykiety osi X i Y z odpowiednimi wartoúciami.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dc</td><td>Kontekst urzπdzenia </td></tr>
+    <tr><td class="paramname">rect</td><td>Prostokπt obszaru wykresu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a354b9d4c9dbf50ad25132a3b006f729d" name="a354b9d4c9dbf50ad25132a3b006f729d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354b9d4c9dbf50ad25132a3b006f729d">&#9670;&#160;</a></span>GetChartData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt; &amp; ChartPanel::GetChartData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zwraca referencjÍ do aktualnych danych wykresu. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>const std::vector&lt;MeasurementData&gt;&amp; Referencja do wektora danych </dd></dl>
+
+</div>
+</div>
+<a id="a875f6801746bed41b20bac4bc023afa0" name="a875f6801746bed41b20bac4bc023afa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875f6801746bed41b20bac4bc023afa0">&#9670;&#160;</a></span>OnPaint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::OnPaint </td>
+          <td>(</td>
+          <td class="paramtype">wxPaintEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia rysowania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie rysowania</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Rysuje wykres z wykorzystaniem buforowania.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie rysowania </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38589c7fe45a9dcf178b473b038ffee9" name="a38589c7fe45a9dcf178b473b038ffee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38589c7fe45a9dcf178b473b038ffee9">&#9670;&#160;</a></span>OnSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::OnSize </td>
+          <td>(</td>
+          <td class="paramtype">wxSizeEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia zmiany rozmiaru. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie zmiany rozmiaru</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Odúwieøa wykres po zmianie rozmiaru panelu.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie zmiany rozmiaru </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab668997f8bb327da22a0f0beb1996b3d" name="ab668997f8bb327da22a0f0beb1996b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab668997f8bb327da22a0f0beb1996b3d">&#9670;&#160;</a></span>SetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::SetData </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxString &amp;</td>          <td class="paramname"><span class="paramname"><em>paramName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ustawia dane do wyúwietlenia na wykresie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Wektor danych pomiarowych </td></tr>
+    <tr><td class="paramname">paramName</td><td>Nazwa parametru </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2365d92be8a38365e8835b37495530c" name="aa2365d92be8a38365e8835b37495530c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2365d92be8a38365e8835b37495530c">&#9670;&#160;</a></span>SetTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartPanel::SetTitle </td>
+          <td>(</td>
+          <td class="paramtype">const wxString &amp;</td>          <td class="paramname"><span class="paramname"><em>newTitle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ustawia tytu≥ wykresu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Nowy tytu≥ wykresu</td></tr>
+    <tr><td class="paramname">newTitle</td><td>Nowy tytu≥ wykresu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybut√≥w sk≈Çadowych</h2>
+<a id="a71a54293b9471e9afb405f937c1c8e78" name="a71a54293b9471e9afb405f937c1c8e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a54293b9471e9afb405f937c1c8e78">&#9670;&#160;</a></span>chartData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_measurement_data.html">MeasurementData</a>&gt; ChartPanel::chartData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Dane pomiarowe </p>
+
+</div>
+</div>
+<a id="a9ad98587679ff8ccb295d178a7c85a0b" name="a9ad98587679ff8ccb295d178a7c85a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad98587679ff8ccb295d178a7c85a0b">&#9670;&#160;</a></span>parameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxString ChartPanel::parameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nazwa parametru </p>
+
+</div>
+</div>
+<a id="a701f9c29cc5c10a1c97db4c404a0608e" name="a701f9c29cc5c10a1c97db4c404a0608e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a701f9c29cc5c10a1c97db4c404a0608e">&#9670;&#160;</a></span>title</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxString ChartPanel::title</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tytu≥ wykresu </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w:<ul>
+<li>src/<a class="el" href="_chart_panel_8h_source.html">ChartPanel.h</a></li>
+<li>src/<a class="el" href="_chart_panel_8cpp.html">ChartPanel.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_chart_panel.html">ChartPanel</a></li>
+    <li class="footer">Wygenerowano za pomocƒÖ <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,57 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="src">
+      <UniqueIdentifier>{0189dc08-5fd5-40bc-953f-54e8720c4e03}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="src\Header Files">
+      <UniqueIdentifier>{9a11d50f-1fbb-4e9b-9730-05d61bfd71f2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="src\Source Files">
+      <UniqueIdentifier>{667bff3b-e318-465a-9bb9-8acb257ba4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Resource Files">
+      <UniqueIdentifier>{80d0f701-9a4f-4885-af2d-f9452365d814}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\ApiService.cpp">
+      <Filter>src\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ApiService.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\ChartPanel.cpp">
+      <Filter>src\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ChartPanel.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\DatabaseService.cpp">
+      <Filter>src\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainWindow.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\MainWindow.cpp">
+      <Filter>src\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DatabaseService.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Utils.cpp">
+      <Filter>src\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ApiService.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\ApiService.h">
+      <Filter>src\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ChartPanel.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\ChartPanel.h">
+      <Filter>src\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Models.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\DatabaseService.h">
+      <Filter>src\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\MainWindow.h">
+      <Filter>src\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MainWindow.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Models.h">
+      <Filter>src\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DatabaseService.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\resource.h">
+      <Filter>src\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Utils.h">
+      <Filter>src\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource.rc">
+      <Filter>src\Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

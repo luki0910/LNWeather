@@ -1,0 +1,1596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LNWeather: Dokumentacja klasy MainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LNWeather<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">Dane pogodowe</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocƒÖ Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_main_window.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowa≈Ñ</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_main_window-members.html">Lista wszystkich sk≈Çadowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy MainWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa implementujπca g≥Ûwne okno aplikacji.  
+ <a href="#details">Wiƒôcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_main_window_8h_source.html">MainWindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla MainWindow</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_main_window.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a34c4b4207b46d11a4100c9b19f0e81bb" id="r_a34c4b4207b46d11a4100c9b19f0e81bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow</a> ()</td></tr>
+<tr class="memdesc:a34c4b4207b46d11a4100c9b19f0e81bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor g≥Ûwnego okna.  <br /></td></tr>
+<tr class="separator:a34c4b4207b46d11a4100c9b19f0e81bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:acacfa9bb4814ee9a259452621647393f" id="r_acacfa9bb4814ee9a259452621647393f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acacfa9bb4814ee9a259452621647393f">loadStations</a> ()</td></tr>
+<tr class="memdesc:acacfa9bb4814ee9a259452621647393f"><td class="mdescLeft">&#160;</td><td class="mdescRight">£aduje listÍ dostÍpnych stacji pomiarowych.  <br /></td></tr>
+<tr class="separator:acacfa9bb4814ee9a259452621647393f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ab9794e4e9511ba39336e2dc459e8" id="r_a323ab9794e4e9511ba39336e2dc459e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a323ab9794e4e9511ba39336e2dc459e8">loadSensorsForStation</a> (int stationId)</td></tr>
+<tr class="memdesc:a323ab9794e4e9511ba39336e2dc459e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">£aduje czujniki dla wybranej stacji.  <br /></td></tr>
+<tr class="separator:a323ab9794e4e9511ba39336e2dc459e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c47a87d3a4cfe1c7518be1fd20e402" id="r_a38c47a87d3a4cfe1c7518be1fd20e402"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38c47a87d3a4cfe1c7518be1fd20e402">loadAirQualityIndex</a> (int stationId)</td></tr>
+<tr class="memdesc:a38c47a87d3a4cfe1c7518be1fd20e402"><td class="mdescLeft">&#160;</td><td class="mdescRight">£aduje indeks jakoúci powietrza dla stacji.  <br /></td></tr>
+<tr class="separator:a38c47a87d3a4cfe1c7518be1fd20e402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12662474fd3554408f26d3fb6b1ce0a3" id="r_a12662474fd3554408f26d3fb6b1ce0a3"><td class="memItemLeft" align="right" valign="top">wxDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12662474fd3554408f26d3fb6b1ce0a3">parseDateTime</a> (const std::string &amp;dateStr)</td></tr>
+<tr class="memdesc:a12662474fd3554408f26d3fb6b1ce0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konwertuje string daty na obiekt wxDateTime.  <br /></td></tr>
+<tr class="separator:a12662474fd3554408f26d3fb6b1ce0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96400d992898bf8367616f535a4310cf" id="r_a96400d992898bf8367616f535a4310cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96400d992898bf8367616f535a4310cf">OnStationSelection</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a96400d992898bf8367616f535a4310cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia wyboru stacji.  <br /></td></tr>
+<tr class="separator:a96400d992898bf8367616f535a4310cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c06ef33aa85f55aa502a75617d9028" id="r_a48c06ef33aa85f55aa502a75617d9028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48c06ef33aa85f55aa502a75617d9028">OnSensorSelection</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a48c06ef33aa85f55aa502a75617d9028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia wyboru czujnika.  <br /></td></tr>
+<tr class="separator:a48c06ef33aa85f55aa502a75617d9028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7811f367d334c73b4df41b0c069452" id="r_a1c7811f367d334c73b4df41b0c069452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c7811f367d334c73b4df41b0c069452">OnSaveCurrentToDatabase</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a1c7811f367d334c73b4df41b0c069452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia zapisania bieøπcego pomiaru do bazy danych.  <br /></td></tr>
+<tr class="separator:a1c7811f367d334c73b4df41b0c069452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6fe7c3f1335600d379df273ed8a800" id="r_a8a6fe7c3f1335600d379df273ed8a800"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a6fe7c3f1335600d379df273ed8a800">OnSaveAllToDatabase</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a8a6fe7c3f1335600d379df273ed8a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia zapisania wszystkich danych do bazy danych.  <br /></td></tr>
+<tr class="separator:a8a6fe7c3f1335600d379df273ed8a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9b684a5665c1be078b0d6548eaa50d" id="r_a4d9b684a5665c1be078b0d6548eaa50d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d9b684a5665c1be078b0d6548eaa50d">OnApplyDateRange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a4d9b684a5665c1be078b0d6548eaa50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia zastosowania zakresu dat dla wykresu.  <br /></td></tr>
+<tr class="separator:a4d9b684a5665c1be078b0d6548eaa50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4728880029aa480f0beaf6bd6eedfa92" id="r_a4728880029aa480f0beaf6bd6eedfa92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4728880029aa480f0beaf6bd6eedfa92">tryLoadStationsFromAPI</a> ()</td></tr>
+<tr class="memdesc:a4728880029aa480f0beaf6bd6eedfa92"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ stacje z API.  <br /></td></tr>
+<tr class="separator:a4728880029aa480f0beaf6bd6eedfa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9955baa7dd1b9fc6e0086445c1747d4" id="r_ae9955baa7dd1b9fc6e0086445c1747d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9955baa7dd1b9fc6e0086445c1747d4">tryLoadStationsFromDatabase</a> ()</td></tr>
+<tr class="memdesc:ae9955baa7dd1b9fc6e0086445c1747d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ stacje z lokalnej bazy danych.  <br /></td></tr>
+<tr class="separator:ae9955baa7dd1b9fc6e0086445c1747d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91e8ca80d6168f15c62f321c8777042" id="r_aa91e8ca80d6168f15c62f321c8777042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa91e8ca80d6168f15c62f321c8777042">tryLoadSensorsFromAPI</a> (int stationId)</td></tr>
+<tr class="memdesc:aa91e8ca80d6168f15c62f321c8777042"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ czujniki dla stacji z API.  <br /></td></tr>
+<tr class="separator:aa91e8ca80d6168f15c62f321c8777042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2390845772be8ad530d75c0cbac31a2f" id="r_a2390845772be8ad530d75c0cbac31a2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2390845772be8ad530d75c0cbac31a2f">tryLoadSensorsFromDatabase</a> (int stationId)</td></tr>
+<tr class="memdesc:a2390845772be8ad530d75c0cbac31a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ czujniki dla stacji z lokalnej bazy danych.  <br /></td></tr>
+<tr class="separator:a2390845772be8ad530d75c0cbac31a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b047756bbd1a3f48da831cb1c7deb62" id="r_a1b047756bbd1a3f48da831cb1c7deb62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b047756bbd1a3f48da831cb1c7deb62">tryLoadMeasurementsFromAPI</a> (int sensorId)</td></tr>
+<tr class="memdesc:a1b047756bbd1a3f48da831cb1c7deb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ pomiary z API.  <br /></td></tr>
+<tr class="separator:a1b047756bbd1a3f48da831cb1c7deb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b5fe2c027db7deeeb84d3f767ff9e6" id="r_ab4b5fe2c027db7deeeb84d3f767ff9e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4b5fe2c027db7deeeb84d3f767ff9e6">tryLoadMeasurementsFromDatabase</a> (int sensorId)</td></tr>
+<tr class="memdesc:ab4b5fe2c027db7deeeb84d3f767ff9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ pomiary z lokalnej bazy danych.  <br /></td></tr>
+<tr class="separator:ab4b5fe2c027db7deeeb84d3f767ff9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1054bb7be90e2cdf5ad7636e9463a2" id="r_aef1054bb7be90e2cdf5ad7636e9463a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef1054bb7be90e2cdf5ad7636e9463a2">tryLoadAirQualityFromAPI</a> (int stationId)</td></tr>
+<tr class="memdesc:aef1054bb7be90e2cdf5ad7636e9463a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ indeks jakoúci powietrza z API.  <br /></td></tr>
+<tr class="separator:aef1054bb7be90e2cdf5ad7636e9463a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6ca6411bfbb9592ee17ec013ea7aab" id="r_ace6ca6411bfbb9592ee17ec013ea7aab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace6ca6411bfbb9592ee17ec013ea7aab">tryLoadAirQualityFromDatabase</a> (int stationId)</td></tr>
+<tr class="memdesc:ace6ca6411bfbb9592ee17ec013ea7aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ indeks jakoúci powietrza z lokalnej bazy danych.  <br /></td></tr>
+<tr class="separator:ace6ca6411bfbb9592ee17ec013ea7aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e2315b6818efecca9b8d461dfc3ace" id="r_a56e2315b6818efecca9b8d461dfc3ace"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56e2315b6818efecca9b8d461dfc3ace">tryLoadMeasurementsWithDateRange</a> (int sensorId)</td></tr>
+<tr class="memdesc:a56e2315b6818efecca9b8d461dfc3ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat.  <br /></td></tr>
+<tr class="separator:a56e2315b6818efecca9b8d461dfc3ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f7722197a674f73ad0a9ca283b16c6" id="r_a18f7722197a674f73ad0a9ca283b16c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18f7722197a674f73ad0a9ca283b16c6">tryLoadMeasurementsWithDateRangeFromDatabase</a> (int sensorId)</td></tr>
+<tr class="memdesc:a18f7722197a674f73ad0a9ca283b16c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat z lokalnej bazy danych.  <br /></td></tr>
+<tr class="separator:a18f7722197a674f73ad0a9ca283b16c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c5ef14af69b0a26eabe645fcad55b7" id="r_a61c5ef14af69b0a26eabe645fcad55b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61c5ef14af69b0a26eabe645fcad55b7">OnShowAnalysis</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a61c5ef14af69b0a26eabe645fcad55b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obs≥uga zdarzenia pokazania analizy danych.  <br /></td></tr>
+<tr class="separator:a61c5ef14af69b0a26eabe645fcad55b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7ee3310c0e9140d8e43f47023fd67d" id="r_aea7ee3310c0e9140d8e43f47023fd67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7ee3310c0e9140d8e43f47023fd67d">PerformDataAnalysis</a> (const std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt; &amp;data, const wxString &amp;paramName)</td></tr>
+<tr class="memdesc:aea7ee3310c0e9140d8e43f47023fd67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wykonuje analizÍ danych pomiarowych.  <br /></td></tr>
+<tr class="separator:aea7ee3310c0e9140d8e43f47023fd67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45208115e4963a492e207ab26fccdeca" id="r_a45208115e4963a492e207ab26fccdeca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45208115e4963a492e207ab26fccdeca">updateDatabaseStatus</a> ()</td></tr>
+<tr class="memdesc:a45208115e4963a492e207ab26fccdeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje wyúwietlany status bazy danych.  <br /></td></tr>
+<tr class="separator:a45208115e4963a492e207ab26fccdeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:ab79901ef3927ef8d4fc9808454289e9c" id="r_ab79901ef3927ef8d4fc9808454289e9c"><td class="memItemLeft" align="right" valign="top">wxChoice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab79901ef3927ef8d4fc9808454289e9c">stationChoice</a></td></tr>
+<tr class="memdesc:ab79901ef3927ef8d4fc9808454289e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista rozwijana do wyboru stacji pomiarowej.  <br /></td></tr>
+<tr class="separator:ab79901ef3927ef8d4fc9808454289e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad4ea66cd6943ef7f290abb7bd2af02" id="r_a9ad4ea66cd6943ef7f290abb7bd2af02"><td class="memItemLeft" align="right" valign="top">wxChoice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad4ea66cd6943ef7f290abb7bd2af02">sensorChoice</a></td></tr>
+<tr class="memdesc:a9ad4ea66cd6943ef7f290abb7bd2af02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista rozwijana do wyboru czujnika.  <br /></td></tr>
+<tr class="separator:a9ad4ea66cd6943ef7f290abb7bd2af02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f60679de553bda949c1cd012e7ca1f7" id="r_a7f60679de553bda949c1cd012e7ca1f7"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f60679de553bda949c1cd012e7ca1f7">measurementText</a></td></tr>
+<tr class="memdesc:a7f60679de553bda949c1cd012e7ca1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole tekstowe do wyúwietlania danych pomiarowych.  <br /></td></tr>
+<tr class="separator:a7f60679de553bda949c1cd012e7ca1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc65f39a7063fce43a43dbfbffee5a7" id="r_a5cc65f39a7063fce43a43dbfbffee5a7"><td class="memItemLeft" align="right" valign="top">wxFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cc65f39a7063fce43a43dbfbffee5a7">font</a></td></tr>
+<tr class="memdesc:a5cc65f39a7063fce43a43dbfbffee5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czcionka uøywana w interfejsie.  <br /></td></tr>
+<tr class="separator:a5cc65f39a7063fce43a43dbfbffee5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a1f8acd5d787b694b869d978de9e6d" id="r_ad1a1f8acd5d787b694b869d978de9e6d"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1a1f8acd5d787b694b869d978de9e6d">airQualityIndex</a></td></tr>
+<tr class="memdesc:ad1a1f8acd5d787b694b869d978de9e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etykieta wyúwietlajπca indeks jakoúci powietrza.  <br /></td></tr>
+<tr class="separator:ad1a1f8acd5d787b694b869d978de9e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371a0f887e59c6f3f398a1d809313e26" id="r_a371a0f887e59c6f3f398a1d809313e26"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a371a0f887e59c6f3f398a1d809313e26">saveCurrentToDbButton</a></td></tr>
+<tr class="memdesc:a371a0f887e59c6f3f398a1d809313e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk do zapisania bieøπcego pomiaru do bazy danych.  <br /></td></tr>
+<tr class="separator:a371a0f887e59c6f3f398a1d809313e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498d116e07b21d0c37c89b75a2f057ce" id="r_a498d116e07b21d0c37c89b75a2f057ce"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a498d116e07b21d0c37c89b75a2f057ce">saveAllToDbButton</a></td></tr>
+<tr class="memdesc:a498d116e07b21d0c37c89b75a2f057ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk do zapisania wszystkich danych do bazy danych.  <br /></td></tr>
+<tr class="separator:a498d116e07b21d0c37c89b75a2f057ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89414ee8ccd74ab984f45c8b201fdc09" id="r_a89414ee8ccd74ab984f45c8b201fdc09"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89414ee8ccd74ab984f45c8b201fdc09">dbStatusText</a></td></tr>
+<tr class="memdesc:a89414ee8ccd74ab984f45c8b201fdc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etykieta wyúwietlajπca status bazy danych.  <br /></td></tr>
+<tr class="separator:a89414ee8ccd74ab984f45c8b201fdc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d20b3b108146cfa227fe0a30010c5f" id="r_a87d20b3b108146cfa227fe0a30010c5f"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d20b3b108146cfa227fe0a30010c5f">showAnalysisButton</a></td></tr>
+<tr class="memdesc:a87d20b3b108146cfa227fe0a30010c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk do pokazania analizy danych.  <br /></td></tr>
+<tr class="separator:a87d20b3b108146cfa227fe0a30010c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad0d86f22bde498e1bc8a99741d2f65" id="r_a0ad0d86f22bde498e1bc8a99741d2f65"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ad0d86f22bde498e1bc8a99741d2f65">analysisText</a></td></tr>
+<tr class="memdesc:a0ad0d86f22bde498e1bc8a99741d2f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole tekstowe do wyúwietlania analizy danych.  <br /></td></tr>
+<tr class="separator:a0ad0d86f22bde498e1bc8a99741d2f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30db2afc9192fd802ca58d70ac480004" id="r_a30db2afc9192fd802ca58d70ac480004"><td class="memItemLeft" align="right" valign="top">wxNotebook *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30db2afc9192fd802ca58d70ac480004">dataNotebook</a></td></tr>
+<tr class="memdesc:a30db2afc9192fd802ca58d70ac480004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontrolka z zak≥adkami dla rÛønych widokÛw danych.  <br /></td></tr>
+<tr class="separator:a30db2afc9192fd802ca58d70ac480004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4eaff0f50b3d6d2152d332db7d27e0" id="r_a0e4eaff0f50b3d6d2152d332db7d27e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chart_panel.html">ChartPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4eaff0f50b3d6d2152d332db7d27e0">chartPanel</a></td></tr>
+<tr class="memdesc:a0e4eaff0f50b3d6d2152d332db7d27e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Panel wykresu do wizualizacji danych pomiarowych.  <br /></td></tr>
+<tr class="separator:a0e4eaff0f50b3d6d2152d332db7d27e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c944ddf631912ab4a78b79ad8294035" id="r_a9c944ddf631912ab4a78b79ad8294035"><td class="memItemLeft" align="right" valign="top">wxDatePickerCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c944ddf631912ab4a78b79ad8294035">startDatePicker</a></td></tr>
+<tr class="memdesc:a9c944ddf631912ab4a78b79ad8294035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontrolka do wyboru daty poczπtkowej zakresu.  <br /></td></tr>
+<tr class="separator:a9c944ddf631912ab4a78b79ad8294035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf62a35a38deafdc57fc6542edbbe96f" id="r_adf62a35a38deafdc57fc6542edbbe96f"><td class="memItemLeft" align="right" valign="top">wxDatePickerCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf62a35a38deafdc57fc6542edbbe96f">endDatePicker</a></td></tr>
+<tr class="memdesc:adf62a35a38deafdc57fc6542edbbe96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontrolka do wyboru daty koÒcowej zakresu.  <br /></td></tr>
+<tr class="separator:adf62a35a38deafdc57fc6542edbbe96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef063480515f1ab331f8aab59585023" id="r_a3ef063480515f1ab331f8aab59585023"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef063480515f1ab331f8aab59585023">applyDateRangeButton</a></td></tr>
+<tr class="memdesc:a3ef063480515f1ab331f8aab59585023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk do zastosowania wybranego zakresu dat.  <br /></td></tr>
+<tr class="separator:a3ef063480515f1ab331f8aab59585023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611a09e2a5cca43d88bfe9115fe8b118" id="r_a611a09e2a5cca43d88bfe9115fe8b118"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a611a09e2a5cca43d88bfe9115fe8b118">stations</a></td></tr>
+<tr class="memdesc:a611a09e2a5cca43d88bfe9115fe8b118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor przechowujπcy pary (ID, nazwa) dostÍpnych stacji.  <br /></td></tr>
+<tr class="separator:a611a09e2a5cca43d88bfe9115fe8b118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac5b47c1c2bf5886d5ba2aa84c04f8e" id="r_abac5b47c1c2bf5886d5ba2aa84c04f8e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abac5b47c1c2bf5886d5ba2aa84c04f8e">sensors</a></td></tr>
+<tr class="memdesc:abac5b47c1c2bf5886d5ba2aa84c04f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor przechowujπcy pary (ID, nazwa) dostÍpnych czujnikÛw.  <br /></td></tr>
+<tr class="separator:abac5b47c1c2bf5886d5ba2aa84c04f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc3119578b9103be36bbb7c5647cb1f" id="r_acdc3119578b9103be36bbb7c5647cb1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_database_service.html">DatabaseService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdc3119578b9103be36bbb7c5647cb1f">dbService</a></td></tr>
+<tr class="memdesc:acdc3119578b9103be36bbb7c5647cb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Us≥uga do obs≥ugi lokalnej bazy danych.  <br /></td></tr>
+<tr class="separator:acdc3119578b9103be36bbb7c5647cb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczeg√≥≈Çowy</h2>
+<div class="textblock"><p>Klasa implementujπca g≥Ûwne okno aplikacji. </p>
+<p>Zarzπdza interfejsem uøytkownika, pobieraniem i wyúwietlaniem danych z API jakoúci powietrza oraz lokalnej bazy danych. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a34c4b4207b46d11a4100c9b19f0e81bb" name="a34c4b4207b46d11a4100c9b19f0e81bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c4b4207b46d11a4100c9b19f0e81bb">&#9670;&#160;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor g≥Ûwnego okna. </p>
+<p>Konstruktor klasy <a class="el" href="class_main_window.html" title="Klasa implementujπca g≥Ûwne okno aplikacji.">MainWindow</a>.</p>
+<p>Inicjalizuje interfejs aplikacji i ≥aduje dane stacji.</p>
+<p>Inicjalizuje g≈Ç√≥wne okno aplikacji, tworzy wszystkie kontrolki interfejsu u≈ºytkownika, ustawia uk≈Çad element√≥w, wiƒÖ≈ºe zdarzenia oraz inicjalizuje bazƒô danych. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji sk≈Çadowych</h2>
+<a id="a38c47a87d3a4cfe1c7518be1fd20e402" name="a38c47a87d3a4cfe1c7518be1fd20e402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c47a87d3a4cfe1c7518be1fd20e402">&#9670;&#160;</a></span>loadAirQualityIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::loadAirQualityIndex </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>£aduje indeks jakoúci powietrza dla stacji. </p>
+<p>≈Åaduje informacje o indeksie jako≈õci powietrza dla wybranej stacji.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji, dla ktÛrej naleøy za≥adowaÊ indeks jakoúci powietrza</td></tr>
+    <tr><td class="paramname">stationId</td><td>Identyfikator wybranej stacji</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera indeks jako≈õci powietrza z API lub z lokalnej bazy danych. Aktualizuje etykietƒô indeksu jako≈õci powietrza z odpowiednim kolorem. </p>
+
+</div>
+</div>
+<a id="a323ab9794e4e9511ba39336e2dc459e8" name="a323ab9794e4e9511ba39336e2dc459e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323ab9794e4e9511ba39336e2dc459e8">&#9670;&#160;</a></span>loadSensorsForStation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::loadSensorsForStation </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>£aduje czujniki dla wybranej stacji. </p>
+<p>≈Åaduje informacje o czujnikach dla wybranej stacji.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji, dla ktÛrej naleøy za≥adowaÊ czujniki</td></tr>
+    <tr><td class="paramname">stationId</td><td>Identyfikator wybranej stacji</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera dane o czujnikach dla stacji z API lub z lokalnej bazy danych. Wype≈Çnia kontrolkƒô wyboru czujnik√≥w. </p>
+
+</div>
+</div>
+<a id="acacfa9bb4814ee9a259452621647393f" name="acacfa9bb4814ee9a259452621647393f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacfa9bb4814ee9a259452621647393f">&#9670;&#160;</a></span>loadStations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::loadStations </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>£aduje listÍ dostÍpnych stacji pomiarowych. </p>
+<p>≈Åaduje informacje o dostƒôpnych stacjach pomiarowych.</p>
+<p>Pr√≥buje pobraƒá dane o stacjach z API GIO≈ö, a je≈õli to siƒô nie powiedzie, pr√≥buje za≈Çadowaƒá dane z lokalnej bazy. Wype≈Çnia kontrolkƒô wyboru stacji. </p>
+
+</div>
+</div>
+<a id="a4d9b684a5665c1be078b0d6548eaa50d" name="a4d9b684a5665c1be078b0d6548eaa50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9b684a5665c1be078b0d6548eaa50d">&#9670;&#160;</a></span>OnApplyDateRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::OnApplyDateRange </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia zastosowania zakresu dat dla wykresu. </p>
+<p>Obs≈Çuguje zdarzenie zastosowania wybranego zakresu dat.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie przycisku</td></tr>
+    <tr><td class="paramname">event</td><td>Obiekt zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Filtruje dane pomiarowe aktualnie wybranego czujnika wed≈Çug wybranego zakresu dat i aktualizuje wykres oraz tekstowy format danych. </p>
+
+</div>
+</div>
+<a id="a8a6fe7c3f1335600d379df273ed8a800" name="a8a6fe7c3f1335600d379df273ed8a800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6fe7c3f1335600d379df273ed8a800">&#9670;&#160;</a></span>OnSaveAllToDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::OnSaveAllToDatabase </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia zapisania wszystkich danych do bazy danych. </p>
+<p>Obs≈Çuguje zdarzenie zapisywania danych wszystkich stacji do lokalnej bazy.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie przycisku</td></tr>
+    <tr><td class="paramname">event</td><td>Obiekt zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera dane o wszystkich stacjach, ich czujnikach, indeksach jako≈õci powietrza oraz dane pomiarowe i zapisuje je do lokalnej bazy danych. Wy≈õwietla pasek postƒôpu informujƒÖcy o statusie pobierania. </p>
+
+</div>
+</div>
+<a id="a1c7811f367d334c73b4df41b0c069452" name="a1c7811f367d334c73b4df41b0c069452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7811f367d334c73b4df41b0c069452">&#9670;&#160;</a></span>OnSaveCurrentToDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::OnSaveCurrentToDatabase </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia zapisania bieøπcego pomiaru do bazy danych. </p>
+<p>Obs≈Çuguje zdarzenie zapisywania danych bie≈ºƒÖcej stacji do lokalnej bazy.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie przycisku</td></tr>
+    <tr><td class="paramname">event</td><td>Obiekt zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera dane czujnik√≥w, indeksu jako≈õci powietrza oraz dane pomiarowe dla aktualnie wybranej stacji i zapisuje je do lokalnej bazy danych. Wy≈õwietla pasek postƒôpu informujƒÖcy o statusie pobierania. </p>
+
+</div>
+</div>
+<a id="a48c06ef33aa85f55aa502a75617d9028" name="a48c06ef33aa85f55aa502a75617d9028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c06ef33aa85f55aa502a75617d9028">&#9670;&#160;</a></span>OnSensorSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::OnSensorSelection </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia wyboru czujnika. </p>
+<p>Obs≈Çuguje zdarzenie wyboru czujnika.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie wyboru</td></tr>
+    <tr><td class="paramname">event</td><td>Obiekt zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Reaguje na wyb√≥r czujnika przez u≈ºytkownika, ≈ÇadujƒÖc dane pomiarowe dla wybranego czujnika i wy≈õwietlajƒÖc je na wykresie. </p>
+
+</div>
+</div>
+<a id="a61c5ef14af69b0a26eabe645fcad55b7" name="a61c5ef14af69b0a26eabe645fcad55b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c5ef14af69b0a26eabe645fcad55b7">&#9670;&#160;</a></span>OnShowAnalysis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::OnShowAnalysis </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia pokazania analizy danych. </p>
+<p>Obs≈Çuguje zdarzenie pokazania analizy danych.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie przycisku</td></tr>
+    <tr><td class="paramname">event</td><td>Obiekt zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Inicjuje analizƒô danych aktualnie wybranego czujnika i prze≈ÇƒÖcza na zak≈Çadkƒô wy≈õwietlajƒÖcƒÖ wyniki analizy. </p>
+
+</div>
+</div>
+<a id="a96400d992898bf8367616f535a4310cf" name="a96400d992898bf8367616f535a4310cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96400d992898bf8367616f535a4310cf">&#9670;&#160;</a></span>OnStationSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::OnStationSelection </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obs≥uga zdarzenia wyboru stacji. </p>
+<p>Obs≈Çuguje zdarzenie wyboru stacji.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie wyboru</td></tr>
+    <tr><td class="paramname">event</td><td>Obiekt zdarzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Reaguje na wyb√≥r stacji przez u≈ºytkownika, ≈ÇadujƒÖc czujniki i indeks jako≈õci powietrza dla wybranej stacji. </p>
+
+</div>
+</div>
+<a id="a12662474fd3554408f26d3fb6b1ce0a3" name="a12662474fd3554408f26d3fb6b1ce0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12662474fd3554408f26d3fb6b1ce0a3">&#9670;&#160;</a></span>parseDateTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxDateTime MainWindow::parseDateTime </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>dateStr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konwertuje string daty na obiekt wxDateTime. </p>
+<p>Parsuje string z datƒÖ na obiekt wxDateTime.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateStr</td><td>String zawierajπcy datÍ w odpowiednim formacie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wxDateTime Skonwertowany obiekt daty i czasu</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateStr</td><td>String zawierajƒÖcy datƒô w formacie "YYYY-MM-DD HH:MM:SS" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Obiekt wxDateTime reprezentujƒÖcy datƒô z wej≈õciowego stringa </dd></dl>
+
+</div>
+</div>
+<a id="aea7ee3310c0e9140d8e43f47023fd67d" name="aea7ee3310c0e9140d8e43f47023fd67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7ee3310c0e9140d8e43f47023fd67d">&#9670;&#160;</a></span>PerformDataAnalysis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::PerformDataAnalysis </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_measurement_data.html">MeasurementData</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxString &amp;</td>          <td class="paramname"><span class="paramname"><em>paramName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wykonuje analizÍ danych pomiarowych. </p>
+<p>Wykonuje analizƒô danych pomiarowych.</p>
+<p>Analizuje dane, obliczajπc statystyki i przygotowujπc raport.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Wektor danych pomiarowych do analizy </td></tr>
+    <tr><td class="paramname">paramName</td><td>Nazwa parametru, dla ktÛrego wykonywana jest analiza</td></tr>
+    <tr><td class="paramname">data</td><td>Wektor z danymi pomiarowymi do analizy </td></tr>
+    <tr><td class="paramname">paramName</td><td>Nazwa parametru, kt√≥rego dotyczƒÖ dane</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Przeprowadza analizƒô danych pomiarowych obejmujƒÖcƒÖ:</p><ul>
+<li>Znalezienie warto≈õci minimalnej i maksymalnej wraz z datami</li>
+<li>Obliczenie warto≈õci ≈õredniej</li>
+<li>Analizƒô trendu zmian warto≈õci</li>
+<li>Obliczenie zakresu zmian Wyniki analizy wy≈õwietla w formie tekstowej. </li>
+</ul>
+
+</div>
+</div>
+<a id="aef1054bb7be90e2cdf5ad7636e9463a2" name="aef1054bb7be90e2cdf5ad7636e9463a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1054bb7be90e2cdf5ad7636e9463a2">&#9670;&#160;</a></span>tryLoadAirQualityFromAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadAirQualityFromAPI </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ indeks jakoúci powietrza z API. </p>
+<p>Pr√≥buje za≈Çadowaƒá indeks jako≈õci powietrza dla stacji z API GIO≈ö</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>Identyfikator stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Pobiera indeks jako≈õci powietrza z API, przetwarza go i aktualizuje odpowiedniƒÖ etykietƒô. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. </p>
+
+</div>
+</div>
+<a id="ace6ca6411bfbb9592ee17ec013ea7aab" name="ace6ca6411bfbb9592ee17ec013ea7aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6ca6411bfbb9592ee17ec013ea7aab">&#9670;&#160;</a></span>tryLoadAirQualityFromDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadAirQualityFromDatabase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ indeks jakoúci powietrza z lokalnej bazy danych. </p>
+<p>Pr√≥buje za≈Çadowaƒá indeks jako≈õci powietrza dla stacji z lokalnej bazy danych.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>Identyfikator stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Odczytuje indeks jako≈õci powietrza z lokalnej bazy, przetwarza go i aktualizuje odpowiedniƒÖ etykietƒô. </p>
+
+</div>
+</div>
+<a id="a1b047756bbd1a3f48da831cb1c7deb62" name="a1b047756bbd1a3f48da831cb1c7deb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b047756bbd1a3f48da831cb1c7deb62">&#9670;&#160;</a></span>tryLoadMeasurementsFromAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadMeasurementsFromAPI </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sensorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ pomiary z API. </p>
+<p>Pr√≥buje za≈Çadowaƒá dane pomiarowe dla czujnika z API GIO≈ö</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>ID czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>Identyfikator czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Pobiera dane pomiarowe z API, przetwarza je i wy≈õwietla na wykresie oraz w formacie tekstowym. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. </p>
+
+</div>
+</div>
+<a id="ab4b5fe2c027db7deeeb84d3f767ff9e6" name="ab4b5fe2c027db7deeeb84d3f767ff9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b5fe2c027db7deeeb84d3f767ff9e6">&#9670;&#160;</a></span>tryLoadMeasurementsFromDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadMeasurementsFromDatabase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sensorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ pomiary z lokalnej bazy danych. </p>
+<p>Pr√≥buje za≈Çadowaƒá dane pomiarowe dla czujnika z lokalnej bazy danych.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>ID czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>Identyfikator czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Odczytuje dane pomiarowe z lokalnej bazy, przetwarza je i wy≈õwietla na wykresie oraz w formacie tekstowym. </p>
+
+</div>
+</div>
+<a id="a56e2315b6818efecca9b8d461dfc3ace" name="a56e2315b6818efecca9b8d461dfc3ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e2315b6818efecca9b8d461dfc3ace">&#9670;&#160;</a></span>tryLoadMeasurementsWithDateRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadMeasurementsWithDateRange </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sensorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat. </p>
+<p>Pr√≥buje za≈Çadowaƒá dane pomiarowe dla wybranego zakresu dat z API GIO≈ö</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>ID czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>Identyfikator czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Pobiera dane pomiarowe z API, filtruje je wed≈Çug wybranego zakresu dat, a nastƒôpnie aktualizuje wykres oraz tekstowy format danych. </p>
+
+</div>
+</div>
+<a id="a18f7722197a674f73ad0a9ca283b16c6" name="a18f7722197a674f73ad0a9ca283b16c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f7722197a674f73ad0a9ca283b16c6">&#9670;&#160;</a></span>tryLoadMeasurementsWithDateRangeFromDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadMeasurementsWithDateRangeFromDatabase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sensorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat z lokalnej bazy danych. </p>
+<p>Pr√≥buje za≈Çadowaƒá dane pomiarowe dla wybranego zakresu dat z lokalnej bazy danych.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>ID czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>Identyfikator czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Odczytuje dane pomiarowe z lokalnej bazy, filtruje je wed≈Çug wybranego zakresu dat, a nastƒôpnie aktualizuje wykres oraz tekstowy format danych. </p>
+
+</div>
+</div>
+<a id="aa91e8ca80d6168f15c62f321c8777042" name="aa91e8ca80d6168f15c62f321c8777042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91e8ca80d6168f15c62f321c8777042">&#9670;&#160;</a></span>tryLoadSensorsFromAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadSensorsFromAPI </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ czujniki dla stacji z API. </p>
+<p>Pr√≥buje za≈Çadowaƒá informacje o czujnikach dla stacji z API GIO≈ö</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>Identyfikator stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Pobiera dane o czujnikach z API, przetwarza je i wype≈Çnia kontrolkƒô wyboru czujnik√≥w. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. </p>
+
+</div>
+</div>
+<a id="a2390845772be8ad530d75c0cbac31a2f" name="a2390845772be8ad530d75c0cbac31a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2390845772be8ad530d75c0cbac31a2f">&#9670;&#160;</a></span>tryLoadSensorsFromDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadSensorsFromDatabase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ czujniki dla stacji z lokalnej bazy danych. </p>
+<p>Pr√≥buje za≈Çadowaƒá informacje o czujnikach dla stacji z lokalnej bazy danych.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>Identyfikator stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Odczytuje dane o czujnikach z lokalnej bazy, przetwarza je i wype≈Çnia kontrolkƒô wyboru czujnik√≥w. </p>
+
+</div>
+</div>
+<a id="a4728880029aa480f0beaf6bd6eedfa92" name="a4728880029aa480f0beaf6bd6eedfa92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4728880029aa480f0beaf6bd6eedfa92">&#9670;&#160;</a></span>tryLoadStationsFromAPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadStationsFromAPI </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ stacje z API. </p>
+<p>Pr√≥buje za≈Çadowaƒá informacje o stacjach z API GIO≈ö</p>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd>
+<dd>
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Pobiera dane o stacjach z API, przetwarza je i wype≈Çnia kontrolkƒô wyboru stacji. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. </p>
+
+</div>
+</div>
+<a id="ae9955baa7dd1b9fc6e0086445c1747d4" name="ae9955baa7dd1b9fc6e0086445c1747d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9955baa7dd1b9fc6e0086445c1747d4">&#9670;&#160;</a></span>tryLoadStationsFromDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::tryLoadStationsFromDatabase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PrÛbuje za≥adowaÊ stacje z lokalnej bazy danych. </p>
+<p>Pr√≥buje za≈Çadowaƒá informacje o stacjach z lokalnej bazy danych.</p>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeúli za≥adowanie siÍ powiod≥o </dd>
+<dd>
+false Jeúli wystπpi≥ b≥πd</dd>
+<dd>
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku</dd></dl>
+<p>Odczytuje dane o stacjach z lokalnej bazy, przetwarza je i wype≈Çnia kontrolkƒô wyboru stacji. </p>
+
+</div>
+</div>
+<a id="a45208115e4963a492e207ab26fccdeca" name="a45208115e4963a492e207ab26fccdeca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45208115e4963a492e207ab26fccdeca">&#9670;&#160;</a></span>updateDatabaseStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::updateDatabaseStatus </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aktualizuje wyúwietlany status bazy danych. </p>
+<p>Aktualizuje informacje o statusie bazy danych lokalnych.</p>
+<p>Sprawdza czy lokalna baza danych zawiera informacje o stacjach, a nastƒôpnie aktualizuje tekst statusu wraz z odpowiednim kolorem. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybut√≥w sk≈Çadowych</h2>
+<a id="ad1a1f8acd5d787b694b869d978de9e6d" name="ad1a1f8acd5d787b694b869d978de9e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a1f8acd5d787b694b869d978de9e6d">&#9670;&#160;</a></span>airQualityIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxStaticText* MainWindow::airQualityIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Etykieta wyúwietlajπca indeks jakoúci powietrza. </p>
+
+</div>
+</div>
+<a id="a0ad0d86f22bde498e1bc8a99741d2f65" name="a0ad0d86f22bde498e1bc8a99741d2f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad0d86f22bde498e1bc8a99741d2f65">&#9670;&#160;</a></span>analysisText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxTextCtrl* MainWindow::analysisText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pole tekstowe do wyúwietlania analizy danych. </p>
+
+</div>
+</div>
+<a id="a3ef063480515f1ab331f8aab59585023" name="a3ef063480515f1ab331f8aab59585023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef063480515f1ab331f8aab59585023">&#9670;&#160;</a></span>applyDateRangeButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxButton* MainWindow::applyDateRangeButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk do zastosowania wybranego zakresu dat. </p>
+
+</div>
+</div>
+<a id="a0e4eaff0f50b3d6d2152d332db7d27e0" name="a0e4eaff0f50b3d6d2152d332db7d27e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4eaff0f50b3d6d2152d332db7d27e0">&#9670;&#160;</a></span>chartPanel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chart_panel.html">ChartPanel</a>* MainWindow::chartPanel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Panel wykresu do wizualizacji danych pomiarowych. </p>
+
+</div>
+</div>
+<a id="a30db2afc9192fd802ca58d70ac480004" name="a30db2afc9192fd802ca58d70ac480004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30db2afc9192fd802ca58d70ac480004">&#9670;&#160;</a></span>dataNotebook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxNotebook* MainWindow::dataNotebook</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kontrolka z zak≥adkami dla rÛønych widokÛw danych. </p>
+
+</div>
+</div>
+<a id="acdc3119578b9103be36bbb7c5647cb1f" name="acdc3119578b9103be36bbb7c5647cb1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc3119578b9103be36bbb7c5647cb1f">&#9670;&#160;</a></span>dbService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_database_service.html">DatabaseService</a> MainWindow::dbService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Us≥uga do obs≥ugi lokalnej bazy danych. </p>
+
+</div>
+</div>
+<a id="a89414ee8ccd74ab984f45c8b201fdc09" name="a89414ee8ccd74ab984f45c8b201fdc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89414ee8ccd74ab984f45c8b201fdc09">&#9670;&#160;</a></span>dbStatusText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxStaticText* MainWindow::dbStatusText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Etykieta wyúwietlajπca status bazy danych. </p>
+
+</div>
+</div>
+<a id="adf62a35a38deafdc57fc6542edbbe96f" name="adf62a35a38deafdc57fc6542edbbe96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf62a35a38deafdc57fc6542edbbe96f">&#9670;&#160;</a></span>endDatePicker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxDatePickerCtrl* MainWindow::endDatePicker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kontrolka do wyboru daty koÒcowej zakresu. </p>
+
+</div>
+</div>
+<a id="a5cc65f39a7063fce43a43dbfbffee5a7" name="a5cc65f39a7063fce43a43dbfbffee5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc65f39a7063fce43a43dbfbffee5a7">&#9670;&#160;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxFont MainWindow::font</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czcionka uøywana w interfejsie. </p>
+
+</div>
+</div>
+<a id="a7f60679de553bda949c1cd012e7ca1f7" name="a7f60679de553bda949c1cd012e7ca1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f60679de553bda949c1cd012e7ca1f7">&#9670;&#160;</a></span>measurementText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxTextCtrl* MainWindow::measurementText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pole tekstowe do wyúwietlania danych pomiarowych. </p>
+
+</div>
+</div>
+<a id="a498d116e07b21d0c37c89b75a2f057ce" name="a498d116e07b21d0c37c89b75a2f057ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498d116e07b21d0c37c89b75a2f057ce">&#9670;&#160;</a></span>saveAllToDbButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxButton* MainWindow::saveAllToDbButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk do zapisania wszystkich danych do bazy danych. </p>
+
+</div>
+</div>
+<a id="a371a0f887e59c6f3f398a1d809313e26" name="a371a0f887e59c6f3f398a1d809313e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a371a0f887e59c6f3f398a1d809313e26">&#9670;&#160;</a></span>saveCurrentToDbButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxButton* MainWindow::saveCurrentToDbButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk do zapisania bieøπcego pomiaru do bazy danych. </p>
+
+</div>
+</div>
+<a id="a9ad4ea66cd6943ef7f290abb7bd2af02" name="a9ad4ea66cd6943ef7f290abb7bd2af02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad4ea66cd6943ef7f290abb7bd2af02">&#9670;&#160;</a></span>sensorChoice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxChoice* MainWindow::sensorChoice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista rozwijana do wyboru czujnika. </p>
+
+</div>
+</div>
+<a id="abac5b47c1c2bf5886d5ba2aa84c04f8e" name="abac5b47c1c2bf5886d5ba2aa84c04f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac5b47c1c2bf5886d5ba2aa84c04f8e">&#9670;&#160;</a></span>sensors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;int, std::string&gt; &gt; MainWindow::sensors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor przechowujπcy pary (ID, nazwa) dostÍpnych czujnikÛw. </p>
+
+</div>
+</div>
+<a id="a87d20b3b108146cfa227fe0a30010c5f" name="a87d20b3b108146cfa227fe0a30010c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d20b3b108146cfa227fe0a30010c5f">&#9670;&#160;</a></span>showAnalysisButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxButton* MainWindow::showAnalysisButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk do pokazania analizy danych. </p>
+
+</div>
+</div>
+<a id="a9c944ddf631912ab4a78b79ad8294035" name="a9c944ddf631912ab4a78b79ad8294035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c944ddf631912ab4a78b79ad8294035">&#9670;&#160;</a></span>startDatePicker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxDatePickerCtrl* MainWindow::startDatePicker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kontrolka do wyboru daty poczπtkowej zakresu. </p>
+
+</div>
+</div>
+<a id="ab79901ef3927ef8d4fc9808454289e9c" name="ab79901ef3927ef8d4fc9808454289e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79901ef3927ef8d4fc9808454289e9c">&#9670;&#160;</a></span>stationChoice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxChoice* MainWindow::stationChoice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista rozwijana do wyboru stacji pomiarowej. </p>
+
+</div>
+</div>
+<a id="a611a09e2a5cca43d88bfe9115fe8b118" name="a611a09e2a5cca43d88bfe9115fe8b118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611a09e2a5cca43d88bfe9115fe8b118">&#9670;&#160;</a></span>stations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;int, std::string&gt; &gt; MainWindow::stations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wektor przechowujπcy pary (ID, nazwa) dostÍpnych stacji. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w:<ul>
+<li>src/<a class="el" href="_main_window_8h_source.html">MainWindow.h</a></li>
+<li>src/<a class="el" href="_main_window_8cpp.html">MainWindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_main_window.html">MainWindow</a></li>
+    <li class="footer">Wygenerowano za pomocƒÖ <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LNWeather: Plik ÅºrÃ³dÅ‚owy src/MainWindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LNWeather<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">Dane pogodowe</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocÄ… Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_main_window_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowaÅ„</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MainWindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_main_window_8h.html">IdÅº do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;wx/wx.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;wx/choice.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;wx/progdlg.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wx/datectrl.h&gt;</span>  </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;wx/dateevt.h&gt;</span>   </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;wx/notebook.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_chart_panel_8h.html">ChartPanel.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_database_service_8h.html">DatabaseService.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_main_window.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="class_main_window.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow</a> : <span class="keyword">public</span> wxFrame {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="class_main_window.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_main_window.html#ab79901ef3927ef8d4fc9808454289e9c">   39</a></span>    wxChoice* <a class="code hl_variable" href="class_main_window.html#ab79901ef3927ef8d4fc9808454289e9c">stationChoice</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_main_window.html#a9ad4ea66cd6943ef7f290abb7bd2af02">   44</a></span>    wxChoice* <a class="code hl_variable" href="class_main_window.html#a9ad4ea66cd6943ef7f290abb7bd2af02">sensorChoice</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_main_window.html#a7f60679de553bda949c1cd012e7ca1f7">   49</a></span>    wxTextCtrl* <a class="code hl_variable" href="class_main_window.html#a7f60679de553bda949c1cd012e7ca1f7">measurementText</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_main_window.html#a5cc65f39a7063fce43a43dbfbffee5a7">   54</a></span>    wxFont <a class="code hl_variable" href="class_main_window.html#a5cc65f39a7063fce43a43dbfbffee5a7">font</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_main_window.html#ad1a1f8acd5d787b694b869d978de9e6d">   59</a></span>    wxStaticText* <a class="code hl_variable" href="class_main_window.html#ad1a1f8acd5d787b694b869d978de9e6d">airQualityIndex</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_main_window.html#a371a0f887e59c6f3f398a1d809313e26">   64</a></span>    wxButton* <a class="code hl_variable" href="class_main_window.html#a371a0f887e59c6f3f398a1d809313e26">saveCurrentToDbButton</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_main_window.html#a498d116e07b21d0c37c89b75a2f057ce">   69</a></span>    wxButton* <a class="code hl_variable" href="class_main_window.html#a498d116e07b21d0c37c89b75a2f057ce">saveAllToDbButton</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_main_window.html#a89414ee8ccd74ab984f45c8b201fdc09">   74</a></span>    wxStaticText* <a class="code hl_variable" href="class_main_window.html#a89414ee8ccd74ab984f45c8b201fdc09">dbStatusText</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//Analiza danych</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_main_window.html#a87d20b3b108146cfa227fe0a30010c5f">   80</a></span>    wxButton* <a class="code hl_variable" href="class_main_window.html#a87d20b3b108146cfa227fe0a30010c5f">showAnalysisButton</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_main_window.html#a0ad0d86f22bde498e1bc8a99741d2f65">   85</a></span>    wxTextCtrl* <a class="code hl_variable" href="class_main_window.html#a0ad0d86f22bde498e1bc8a99741d2f65">analysisText</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_main_window.html#a30db2afc9192fd802ca58d70ac480004">   90</a></span>    wxNotebook* <a class="code hl_variable" href="class_main_window.html#a30db2afc9192fd802ca58d70ac480004">dataNotebook</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">//Chart Stuff</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_main_window.html#a0e4eaff0f50b3d6d2152d332db7d27e0">   96</a></span>    <a class="code hl_class" href="class_chart_panel.html">ChartPanel</a>* <a class="code hl_variable" href="class_main_window.html#a0e4eaff0f50b3d6d2152d332db7d27e0">chartPanel</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_main_window.html#a9c944ddf631912ab4a78b79ad8294035">  101</a></span>    wxDatePickerCtrl* <a class="code hl_variable" href="class_main_window.html#a9c944ddf631912ab4a78b79ad8294035">startDatePicker</a>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_main_window.html#adf62a35a38deafdc57fc6542edbbe96f">  106</a></span>    wxDatePickerCtrl* <a class="code hl_variable" href="class_main_window.html#adf62a35a38deafdc57fc6542edbbe96f">endDatePicker</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_main_window.html#a3ef063480515f1ab331f8aab59585023">  111</a></span>    wxButton* <a class="code hl_variable" href="class_main_window.html#a3ef063480515f1ab331f8aab59585023">applyDateRangeButton</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// Data Storage</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_main_window.html#a611a09e2a5cca43d88bfe9115fe8b118">  117</a></span>    std::vector&lt;std::pair&lt;int, std::string&gt;&gt; <a class="code hl_variable" href="class_main_window.html#a611a09e2a5cca43d88bfe9115fe8b118">stations</a>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_main_window.html#abac5b47c1c2bf5886d5ba2aa84c04f8e">  122</a></span>    std::vector&lt;std::pair&lt;int, std::string&gt;&gt; <a class="code hl_variable" href="class_main_window.html#abac5b47c1c2bf5886d5ba2aa84c04f8e">sensors</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_main_window.html#acdc3119578b9103be36bbb7c5647cb1f">  127</a></span>    <a class="code hl_class" href="class_database_service.html">DatabaseService</a> <a class="code hl_variable" href="class_main_window.html#acdc3119578b9103be36bbb7c5647cb1f">dbService</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#acacfa9bb4814ee9a259452621647393f">loadStations</a>();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a323ab9794e4e9511ba39336e2dc459e8">loadSensorsForStation</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a38c47a87d3a4cfe1c7518be1fd20e402">loadAirQualityIndex</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    wxDateTime <a class="code hl_function" href="class_main_window.html#a12662474fd3554408f26d3fb6b1ce0a3">parseDateTime</a>(<span class="keyword">const</span> std::string&amp; dateStr);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a96400d992898bf8367616f535a4310cf">OnStationSelection</a>(wxCommandEvent&amp; event);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a48c06ef33aa85f55aa502a75617d9028">OnSensorSelection</a>(wxCommandEvent&amp; event);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a1c7811f367d334c73b4df41b0c069452">OnSaveCurrentToDatabase</a>(wxCommandEvent&amp; event);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a8a6fe7c3f1335600d379df273ed8a800">OnSaveAllToDatabase</a>(wxCommandEvent&amp; event);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a4d9b684a5665c1be078b0d6548eaa50d">OnApplyDateRange</a>(wxCommandEvent&amp; event);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="comment">// Metody</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#a4728880029aa480f0beaf6bd6eedfa92">tryLoadStationsFromAPI</a>();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#ae9955baa7dd1b9fc6e0086445c1747d4">tryLoadStationsFromDatabase</a>();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#aa91e8ca80d6168f15c62f321c8777042">tryLoadSensorsFromAPI</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#a2390845772be8ad530d75c0cbac31a2f">tryLoadSensorsFromDatabase</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#a1b047756bbd1a3f48da831cb1c7deb62">tryLoadMeasurementsFromAPI</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#ab4b5fe2c027db7deeeb84d3f767ff9e6">tryLoadMeasurementsFromDatabase</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#aef1054bb7be90e2cdf5ad7636e9463a2">tryLoadAirQualityFromAPI</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#ace6ca6411bfbb9592ee17ec013ea7aab">tryLoadAirQualityFromDatabase</a>(<span class="keywordtype">int</span> stationId);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#a56e2315b6818efecca9b8d461dfc3ace">tryLoadMeasurementsWithDateRange</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_main_window.html#a18f7722197a674f73ad0a9ca283b16c6">tryLoadMeasurementsWithDateRangeFromDatabase</a>(<span class="keywordtype">int</span> sensorId);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a61c5ef14af69b0a26eabe645fcad55b7">OnShowAnalysis</a>(wxCommandEvent&amp; event);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#aea7ee3310c0e9140d8e43f47023fd67d">PerformDataAnalysis</a>(<span class="keyword">const</span> std::vector&lt;MeasurementData&gt;&amp; data, <span class="keyword">const</span> wxString&amp; paramName);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a45208115e4963a492e207ab26fccdeca">updateDatabaseStatus</a>();</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>};</div>
+</div>
+<div class="ttc" id="a_chart_panel_8h_html"><div class="ttname"><a href="_chart_panel_8h.html">ChartPanel.h</a></div><div class="ttdoc">Panel wykresu do wizualizacji danych pomiarowych.</div></div>
+<div class="ttc" id="a_database_service_8h_html"><div class="ttname"><a href="_database_service_8h.html">DatabaseService.h</a></div><div class="ttdoc">Us³uga zarz¹dzaj¹ca lokaln¹ baz¹ danych.</div></div>
+<div class="ttc" id="aclass_chart_panel_html"><div class="ttname"><a href="class_chart_panel.html">ChartPanel</a></div><div class="ttdoc">Panel wyœwietlaj¹cy wykres danych pomiarowych.</div><div class="ttdef"><b>Definicja</b> ChartPanel.h:29</div></div>
+<div class="ttc" id="aclass_database_service_html"><div class="ttname"><a href="class_database_service.html">DatabaseService</a></div><div class="ttdoc">Klasa obs³uguj¹ca lokaln¹ &quot;bazê danych&quot; (pliki JSON).</div><div class="ttdef"><b>Definicja</b> DatabaseService.h:21</div></div>
+<div class="ttc" id="aclass_main_window_html_a0ad0d86f22bde498e1bc8a99741d2f65"><div class="ttname"><a href="class_main_window.html#a0ad0d86f22bde498e1bc8a99741d2f65">MainWindow::analysisText</a></div><div class="ttdeci">wxTextCtrl * analysisText</div><div class="ttdoc">Pole tekstowe do wyœwietlania analizy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:85</div></div>
+<div class="ttc" id="aclass_main_window_html_a0e4eaff0f50b3d6d2152d332db7d27e0"><div class="ttname"><a href="class_main_window.html#a0e4eaff0f50b3d6d2152d332db7d27e0">MainWindow::chartPanel</a></div><div class="ttdeci">ChartPanel * chartPanel</div><div class="ttdoc">Panel wykresu do wizualizacji danych pomiarowych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:96</div></div>
+<div class="ttc" id="aclass_main_window_html_a12662474fd3554408f26d3fb6b1ce0a3"><div class="ttname"><a href="class_main_window.html#a12662474fd3554408f26d3fb6b1ce0a3">MainWindow::parseDateTime</a></div><div class="ttdeci">wxDateTime parseDateTime(const std::string &amp;dateStr)</div><div class="ttdoc">Konwertuje string daty na obiekt wxDateTime.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:1525</div></div>
+<div class="ttc" id="aclass_main_window_html_a18f7722197a674f73ad0a9ca283b16c6"><div class="ttname"><a href="class_main_window.html#a18f7722197a674f73ad0a9ca283b16c6">MainWindow::tryLoadMeasurementsWithDateRangeFromDatabase</a></div><div class="ttdeci">bool tryLoadMeasurementsWithDateRangeFromDatabase(int sensorId)</div><div class="ttdoc">Próbuje za³adowaæ pomiary z okreœlonego zakresu dat z lokalnej bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:1274</div></div>
+<div class="ttc" id="aclass_main_window_html_a1b047756bbd1a3f48da831cb1c7deb62"><div class="ttname"><a href="class_main_window.html#a1b047756bbd1a3f48da831cb1c7deb62">MainWindow::tryLoadMeasurementsFromAPI</a></div><div class="ttdeci">bool tryLoadMeasurementsFromAPI(int sensorId)</div><div class="ttdoc">Próbuje za³adowaæ pomiary z API.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:597</div></div>
+<div class="ttc" id="aclass_main_window_html_a1c7811f367d334c73b4df41b0c069452"><div class="ttname"><a href="class_main_window.html#a1c7811f367d334c73b4df41b0c069452">MainWindow::OnSaveCurrentToDatabase</a></div><div class="ttdeci">void OnSaveCurrentToDatabase(wxCommandEvent &amp;event)</div><div class="ttdoc">Obs³uga zdarzenia zapisania bie¿¹cego pomiaru do bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:897</div></div>
+<div class="ttc" id="aclass_main_window_html_a2390845772be8ad530d75c0cbac31a2f"><div class="ttname"><a href="class_main_window.html#a2390845772be8ad530d75c0cbac31a2f">MainWindow::tryLoadSensorsFromDatabase</a></div><div class="ttdeci">bool tryLoadSensorsFromDatabase(int stationId)</div><div class="ttdoc">Próbuje za³adowaæ czujniki dla stacji z lokalnej bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:493</div></div>
+<div class="ttc" id="aclass_main_window_html_a30db2afc9192fd802ca58d70ac480004"><div class="ttname"><a href="class_main_window.html#a30db2afc9192fd802ca58d70ac480004">MainWindow::dataNotebook</a></div><div class="ttdeci">wxNotebook * dataNotebook</div><div class="ttdoc">Kontrolka z zak³adkami dla ró¿nych widoków danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:90</div></div>
+<div class="ttc" id="aclass_main_window_html_a323ab9794e4e9511ba39336e2dc459e8"><div class="ttname"><a href="class_main_window.html#a323ab9794e4e9511ba39336e2dc459e8">MainWindow::loadSensorsForStation</a></div><div class="ttdeci">void loadSensorsForStation(int stationId)</div><div class="ttdoc">£aduje czujniki dla wybranej stacji.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:218</div></div>
+<div class="ttc" id="aclass_main_window_html_a34c4b4207b46d11a4100c9b19f0e81bb"><div class="ttname"><a href="class_main_window.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow()</div><div class="ttdoc">Konstruktor g³ównego okna.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:26</div></div>
+<div class="ttc" id="aclass_main_window_html_a371a0f887e59c6f3f398a1d809313e26"><div class="ttname"><a href="class_main_window.html#a371a0f887e59c6f3f398a1d809313e26">MainWindow::saveCurrentToDbButton</a></div><div class="ttdeci">wxButton * saveCurrentToDbButton</div><div class="ttdoc">Przycisk do zapisania bie¿¹cego pomiaru do bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:64</div></div>
+<div class="ttc" id="aclass_main_window_html_a38c47a87d3a4cfe1c7518be1fd20e402"><div class="ttname"><a href="class_main_window.html#a38c47a87d3a4cfe1c7518be1fd20e402">MainWindow::loadAirQualityIndex</a></div><div class="ttdeci">void loadAirQualityIndex(int stationId)</div><div class="ttdoc">£aduje indeks jakoœci powietrza dla stacji.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:256</div></div>
+<div class="ttc" id="aclass_main_window_html_a3ef063480515f1ab331f8aab59585023"><div class="ttname"><a href="class_main_window.html#a3ef063480515f1ab331f8aab59585023">MainWindow::applyDateRangeButton</a></div><div class="ttdeci">wxButton * applyDateRangeButton</div><div class="ttdoc">Przycisk do zastosowania wybranego zakresu dat.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:111</div></div>
+<div class="ttc" id="aclass_main_window_html_a45208115e4963a492e207ab26fccdeca"><div class="ttname"><a href="class_main_window.html#a45208115e4963a492e207ab26fccdeca">MainWindow::updateDatabaseStatus</a></div><div class="ttdeci">void updateDatabaseStatus()</div><div class="ttdoc">Aktualizuje wyœwietlany status bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:155</div></div>
+<div class="ttc" id="aclass_main_window_html_a4728880029aa480f0beaf6bd6eedfa92"><div class="ttname"><a href="class_main_window.html#a4728880029aa480f0beaf6bd6eedfa92">MainWindow::tryLoadStationsFromAPI</a></div><div class="ttdeci">bool tryLoadStationsFromAPI()</div><div class="ttdoc">Próbuje za³adowaæ stacje z API.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:322</div></div>
+<div class="ttc" id="aclass_main_window_html_a48c06ef33aa85f55aa502a75617d9028"><div class="ttname"><a href="class_main_window.html#a48c06ef33aa85f55aa502a75617d9028">MainWindow::OnSensorSelection</a></div><div class="ttdeci">void OnSensorSelection(wxCommandEvent &amp;event)</div><div class="ttdoc">Obs³uga zdarzenia wyboru czujnika.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:549</div></div>
+<div class="ttc" id="aclass_main_window_html_a498d116e07b21d0c37c89b75a2f057ce"><div class="ttname"><a href="class_main_window.html#a498d116e07b21d0c37c89b75a2f057ce">MainWindow::saveAllToDbButton</a></div><div class="ttdeci">wxButton * saveAllToDbButton</div><div class="ttdoc">Przycisk do zapisania wszystkich danych do bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:69</div></div>
+<div class="ttc" id="aclass_main_window_html_a4d9b684a5665c1be078b0d6548eaa50d"><div class="ttname"><a href="class_main_window.html#a4d9b684a5665c1be078b0d6548eaa50d">MainWindow::OnApplyDateRange</a></div><div class="ttdeci">void OnApplyDateRange(wxCommandEvent &amp;event)</div><div class="ttdoc">Obs³uga zdarzenia zastosowania zakresu dat dla wykresu.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:1121</div></div>
+<div class="ttc" id="aclass_main_window_html_a56e2315b6818efecca9b8d461dfc3ace"><div class="ttname"><a href="class_main_window.html#a56e2315b6818efecca9b8d461dfc3ace">MainWindow::tryLoadMeasurementsWithDateRange</a></div><div class="ttdeci">bool tryLoadMeasurementsWithDateRange(int sensorId)</div><div class="ttdoc">Próbuje za³adowaæ pomiary z okreœlonego zakresu dat.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:1161</div></div>
+<div class="ttc" id="aclass_main_window_html_a5cc65f39a7063fce43a43dbfbffee5a7"><div class="ttname"><a href="class_main_window.html#a5cc65f39a7063fce43a43dbfbffee5a7">MainWindow::font</a></div><div class="ttdeci">wxFont font</div><div class="ttdoc">Czcionka u¿ywana w interfejsie.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:54</div></div>
+<div class="ttc" id="aclass_main_window_html_a611a09e2a5cca43d88bfe9115fe8b118"><div class="ttname"><a href="class_main_window.html#a611a09e2a5cca43d88bfe9115fe8b118">MainWindow::stations</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, std::string &gt; &gt; stations</div><div class="ttdoc">Wektor przechowuj¹cy pary (ID, nazwa) dostêpnych stacji.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:117</div></div>
+<div class="ttc" id="aclass_main_window_html_a61c5ef14af69b0a26eabe645fcad55b7"><div class="ttname"><a href="class_main_window.html#a61c5ef14af69b0a26eabe645fcad55b7">MainWindow::OnShowAnalysis</a></div><div class="ttdeci">void OnShowAnalysis(wxCommandEvent &amp;event)</div><div class="ttdoc">Obs³uga zdarzenia pokazania analizy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:1388</div></div>
+<div class="ttc" id="aclass_main_window_html_a7f60679de553bda949c1cd012e7ca1f7"><div class="ttname"><a href="class_main_window.html#a7f60679de553bda949c1cd012e7ca1f7">MainWindow::measurementText</a></div><div class="ttdeci">wxTextCtrl * measurementText</div><div class="ttdoc">Pole tekstowe do wyœwietlania danych pomiarowych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:49</div></div>
+<div class="ttc" id="aclass_main_window_html_a87d20b3b108146cfa227fe0a30010c5f"><div class="ttname"><a href="class_main_window.html#a87d20b3b108146cfa227fe0a30010c5f">MainWindow::showAnalysisButton</a></div><div class="ttdeci">wxButton * showAnalysisButton</div><div class="ttdoc">Przycisk do pokazania analizy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:80</div></div>
+<div class="ttc" id="aclass_main_window_html_a89414ee8ccd74ab984f45c8b201fdc09"><div class="ttname"><a href="class_main_window.html#a89414ee8ccd74ab984f45c8b201fdc09">MainWindow::dbStatusText</a></div><div class="ttdeci">wxStaticText * dbStatusText</div><div class="ttdoc">Etykieta wyœwietlaj¹ca status bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:74</div></div>
+<div class="ttc" id="aclass_main_window_html_a8a6fe7c3f1335600d379df273ed8a800"><div class="ttname"><a href="class_main_window.html#a8a6fe7c3f1335600d379df273ed8a800">MainWindow::OnSaveAllToDatabase</a></div><div class="ttdeci">void OnSaveAllToDatabase(wxCommandEvent &amp;event)</div><div class="ttdoc">Obs³uga zdarzenia zapisania wszystkich danych do bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:999</div></div>
+<div class="ttc" id="aclass_main_window_html_a96400d992898bf8367616f535a4310cf"><div class="ttname"><a href="class_main_window.html#a96400d992898bf8367616f535a4310cf">MainWindow::OnStationSelection</a></div><div class="ttdeci">void OnStationSelection(wxCommandEvent &amp;event)</div><div class="ttdoc">Obs³uga zdarzenia wyboru stacji.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:300</div></div>
+<div class="ttc" id="aclass_main_window_html_a9ad4ea66cd6943ef7f290abb7bd2af02"><div class="ttname"><a href="class_main_window.html#a9ad4ea66cd6943ef7f290abb7bd2af02">MainWindow::sensorChoice</a></div><div class="ttdeci">wxChoice * sensorChoice</div><div class="ttdoc">Lista rozwijana do wyboru czujnika.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:44</div></div>
+<div class="ttc" id="aclass_main_window_html_a9c944ddf631912ab4a78b79ad8294035"><div class="ttname"><a href="class_main_window.html#a9c944ddf631912ab4a78b79ad8294035">MainWindow::startDatePicker</a></div><div class="ttdeci">wxDatePickerCtrl * startDatePicker</div><div class="ttdoc">Kontrolka do wyboru daty pocz¹tkowej zakresu.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:101</div></div>
+<div class="ttc" id="aclass_main_window_html_aa91e8ca80d6168f15c62f321c8777042"><div class="ttname"><a href="class_main_window.html#aa91e8ca80d6168f15c62f321c8777042">MainWindow::tryLoadSensorsFromAPI</a></div><div class="ttdeci">bool tryLoadSensorsFromAPI(int stationId)</div><div class="ttdoc">Próbuje za³adowaæ czujniki dla stacji z API.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:437</div></div>
+<div class="ttc" id="aclass_main_window_html_ab4b5fe2c027db7deeeb84d3f767ff9e6"><div class="ttname"><a href="class_main_window.html#ab4b5fe2c027db7deeeb84d3f767ff9e6">MainWindow::tryLoadMeasurementsFromDatabase</a></div><div class="ttdeci">bool tryLoadMeasurementsFromDatabase(int sensorId)</div><div class="ttdoc">Próbuje za³adowaæ pomiary z lokalnej bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:685</div></div>
+<div class="ttc" id="aclass_main_window_html_ab79901ef3927ef8d4fc9808454289e9c"><div class="ttname"><a href="class_main_window.html#ab79901ef3927ef8d4fc9808454289e9c">MainWindow::stationChoice</a></div><div class="ttdeci">wxChoice * stationChoice</div><div class="ttdoc">Lista rozwijana do wyboru stacji pomiarowej.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:39</div></div>
+<div class="ttc" id="aclass_main_window_html_abac5b47c1c2bf5886d5ba2aa84c04f8e"><div class="ttname"><a href="class_main_window.html#abac5b47c1c2bf5886d5ba2aa84c04f8e">MainWindow::sensors</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, std::string &gt; &gt; sensors</div><div class="ttdoc">Wektor przechowuj¹cy pary (ID, nazwa) dostêpnych czujników.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:122</div></div>
+<div class="ttc" id="aclass_main_window_html_acacfa9bb4814ee9a259452621647393f"><div class="ttname"><a href="class_main_window.html#acacfa9bb4814ee9a259452621647393f">MainWindow::loadStations</a></div><div class="ttdeci">void loadStations()</div><div class="ttdoc">£aduje listê dostêpnych stacji pomiarowych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:180</div></div>
+<div class="ttc" id="aclass_main_window_html_acdc3119578b9103be36bbb7c5647cb1f"><div class="ttname"><a href="class_main_window.html#acdc3119578b9103be36bbb7c5647cb1f">MainWindow::dbService</a></div><div class="ttdeci">DatabaseService dbService</div><div class="ttdoc">Us³uga do obs³ugi lokalnej bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:127</div></div>
+<div class="ttc" id="aclass_main_window_html_ace6ca6411bfbb9592ee17ec013ea7aab"><div class="ttname"><a href="class_main_window.html#ace6ca6411bfbb9592ee17ec013ea7aab">MainWindow::tryLoadAirQualityFromDatabase</a></div><div class="ttdeci">bool tryLoadAirQualityFromDatabase(int stationId)</div><div class="ttdoc">Próbuje za³adowaæ indeks jakoœci powietrza z lokalnej bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:835</div></div>
+<div class="ttc" id="aclass_main_window_html_ad1a1f8acd5d787b694b869d978de9e6d"><div class="ttname"><a href="class_main_window.html#ad1a1f8acd5d787b694b869d978de9e6d">MainWindow::airQualityIndex</a></div><div class="ttdeci">wxStaticText * airQualityIndex</div><div class="ttdoc">Etykieta wyœwietlaj¹ca indeks jakoœci powietrza.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:59</div></div>
+<div class="ttc" id="aclass_main_window_html_adf62a35a38deafdc57fc6542edbbe96f"><div class="ttname"><a href="class_main_window.html#adf62a35a38deafdc57fc6542edbbe96f">MainWindow::endDatePicker</a></div><div class="ttdeci">wxDatePickerCtrl * endDatePicker</div><div class="ttdoc">Kontrolka do wyboru daty koñcowej zakresu.</div><div class="ttdef"><b>Definicja</b> MainWindow.h:106</div></div>
+<div class="ttc" id="aclass_main_window_html_ae9955baa7dd1b9fc6e0086445c1747d4"><div class="ttname"><a href="class_main_window.html#ae9955baa7dd1b9fc6e0086445c1747d4">MainWindow::tryLoadStationsFromDatabase</a></div><div class="ttdeci">bool tryLoadStationsFromDatabase()</div><div class="ttdoc">Próbuje za³adowaæ stacje z lokalnej bazy danych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:377</div></div>
+<div class="ttc" id="aclass_main_window_html_aea7ee3310c0e9140d8e43f47023fd67d"><div class="ttname"><a href="class_main_window.html#aea7ee3310c0e9140d8e43f47023fd67d">MainWindow::PerformDataAnalysis</a></div><div class="ttdeci">void PerformDataAnalysis(const std::vector&lt; MeasurementData &gt; &amp;data, const wxString &amp;paramName)</div><div class="ttdoc">Wykonuje analizê danych pomiarowych.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:1425</div></div>
+<div class="ttc" id="aclass_main_window_html_aef1054bb7be90e2cdf5ad7636e9463a2"><div class="ttname"><a href="class_main_window.html#aef1054bb7be90e2cdf5ad7636e9463a2">MainWindow::tryLoadAirQualityFromAPI</a></div><div class="ttdeci">bool tryLoadAirQualityFromAPI(int stationId)</div><div class="ttdoc">Próbuje za³adowaæ indeks jakoœci powietrza z API.</div><div class="ttdef"><b>Definicja</b> MainWindow.cpp:775</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_main_window_8h.html">MainWindow.h</a></li>
+    <li class="footer">Wygenerowano za pomocÄ… <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

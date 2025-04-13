@@ -1,0 +1,57 @@
+\doxysection{Dokumentacja pliku src/\+Utils.cpp}
+\hypertarget{_utils_8cpp}{}\label{_utils_8cpp}\index{src/Utils.cpp@{src/Utils.cpp}}
+
+
+Implementacja narzêdzi pomocniczych.  
+
+
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+{\ttfamily \#include $<$wx/wx.\+h$>$}\newline
+\doxysubsubsection*{Przestrzenie nazw}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_utils}{Utils}}
+\begin{DoxyCompactList}\small\item\em Przestrzeñ nazw zawieraj¹ca funkcje narzêdziowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{_utils_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}{Write\+Callback}} (void \texorpdfstring{$\ast$}{*}contents, size\+\_\+t size, size\+\_\+t nmemb, std\+::string \texorpdfstring{$\ast$}{*}output)
+\begin{DoxyCompactList}\small\item\em Funkcja callback do zapisywania odpowiedzi HTTP. \end{DoxyCompactList}\item 
+wx\+Date\+Time \mbox{\hyperlink{namespace_utils_aa20a07bde0741b62434b25ea9d59ed19}{Utils\+::parse\+Date\+Time}} (const std\+::string \&date\+Str)
+\begin{DoxyCompactList}\small\item\em Konwertuje string daty na obiekt wx\+Date\+Time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegÃ³Å‚owy}
+Implementacja narzêdzi pomocniczych. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{_utils_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}\index{Utils.cpp@{Utils.cpp}!WriteCallback@{WriteCallback}}
+\index{WriteCallback@{WriteCallback}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{WriteCallback()}{WriteCallback()}}
+{\footnotesize\ttfamily \label{_utils_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f} 
+size\+\_\+t Write\+Callback (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{contents}{, }\item[{size\+\_\+t}]{size}{, }\item[{size\+\_\+t}]{nmemb}{, }\item[{std\+::string \texorpdfstring{$\ast$}{*}}]{output}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja callback do zapisywania odpowiedzi HTTP. 
+
+Funkcja callback do odbierania danych HTTP poprzez libcurl.
+
+U¿ywana jako callback w libcurl do odbierania danych HTTP.
+
+
+\begin{DoxyParams}{Parametry}
+{\em contents} & WskaŸnik do odebranych danych \\
+\hline
+{\em size} & Rozmiar pojedynczego elementu \\
+\hline
+{\em nmemb} & Liczba elementów \\
+\hline
+{\em output} & WskaŸnik do bufora wyjœciowego (std\+::string) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Ca³kowity rozmiar odebranych danych w bajtach 
+\end{DoxyReturn}

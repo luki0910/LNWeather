@@ -1,0 +1,835 @@
+\doxysection{Dokumentacja klasy Main\+Window}
+\hypertarget{class_main_window}{}\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Klasa implementujπca g≥Ûwne okno aplikacji.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Window.\+h$>$}
+
+Diagram dziedziczenia dla Main\+Window\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}{Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor g≥Ûwnego okna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_acacfa9bb4814ee9a259452621647393f}{load\+Stations}} ()
+\begin{DoxyCompactList}\small\item\em £aduje listÍ dostÍpnych stacji pomiarowych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a323ab9794e4e9511ba39336e2dc459e8}{load\+Sensors\+For\+Station}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em £aduje czujniki dla wybranej stacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a38c47a87d3a4cfe1c7518be1fd20e402}{load\+Air\+Quality\+Index}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em £aduje indeks jakoúci powietrza dla stacji. \end{DoxyCompactList}\item 
+wx\+Date\+Time \mbox{\hyperlink{class_main_window_a12662474fd3554408f26d3fb6b1ce0a3}{parse\+Date\+Time}} (const std\+::string \&date\+Str)
+\begin{DoxyCompactList}\small\item\em Konwertuje string daty na obiekt wx\+Date\+Time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a96400d992898bf8367616f535a4310cf}{On\+Station\+Selection}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia wyboru stacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a48c06ef33aa85f55aa502a75617d9028}{On\+Sensor\+Selection}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia wyboru czujnika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a1c7811f367d334c73b4df41b0c069452}{On\+Save\+Current\+To\+Database}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia zapisania bieøπcego pomiaru do bazy danych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8a6fe7c3f1335600d379df273ed8a800}{On\+Save\+All\+To\+Database}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia zapisania wszystkich danych do bazy danych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a4d9b684a5665c1be078b0d6548eaa50d}{On\+Apply\+Date\+Range}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia zastosowania zakresu dat dla wykresu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_a4728880029aa480f0beaf6bd6eedfa92}{try\+Load\+Stations\+From\+API}} ()
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ stacje z API. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_ae9955baa7dd1b9fc6e0086445c1747d4}{try\+Load\+Stations\+From\+Database}} ()
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ stacje z lokalnej bazy danych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_aa91e8ca80d6168f15c62f321c8777042}{try\+Load\+Sensors\+From\+API}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ czujniki dla stacji z API. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_a2390845772be8ad530d75c0cbac31a2f}{try\+Load\+Sensors\+From\+Database}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ czujniki dla stacji z lokalnej bazy danych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_a1b047756bbd1a3f48da831cb1c7deb62}{try\+Load\+Measurements\+From\+API}} (int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ pomiary z API. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_ab4b5fe2c027db7deeeb84d3f767ff9e6}{try\+Load\+Measurements\+From\+Database}} (int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ pomiary z lokalnej bazy danych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_aef1054bb7be90e2cdf5ad7636e9463a2}{try\+Load\+Air\+Quality\+From\+API}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ indeks jakoúci powietrza z API. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_ace6ca6411bfbb9592ee17ec013ea7aab}{try\+Load\+Air\+Quality\+From\+Database}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ indeks jakoúci powietrza z lokalnej bazy danych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_a56e2315b6818efecca9b8d461dfc3ace}{try\+Load\+Measurements\+With\+Date\+Range}} (int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_main_window_a18f7722197a674f73ad0a9ca283b16c6}{try\+Load\+Measurements\+With\+Date\+Range\+From\+Database}} (int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat z lokalnej bazy danych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a61c5ef14af69b0a26eabe645fcad55b7}{On\+Show\+Analysis}} (wx\+Command\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Obs≥uga zdarzenia pokazania analizy danych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aea7ee3310c0e9140d8e43f47023fd67d}{Perform\+Data\+Analysis}} (const std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \&data, const wx\+String \&param\+Name)
+\begin{DoxyCompactList}\small\item\em Wykonuje analizÍ danych pomiarowych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a45208115e4963a492e207ab26fccdeca}{update\+Database\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje wyúwietlany status bazy danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+wx\+Choice \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_ab79901ef3927ef8d4fc9808454289e9c}{station\+Choice}}
+\begin{DoxyCompactList}\small\item\em Lista rozwijana do wyboru stacji pomiarowej. \end{DoxyCompactList}\item 
+wx\+Choice \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a9ad4ea66cd6943ef7f290abb7bd2af02}{sensor\+Choice}}
+\begin{DoxyCompactList}\small\item\em Lista rozwijana do wyboru czujnika. \end{DoxyCompactList}\item 
+wx\+Text\+Ctrl \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a7f60679de553bda949c1cd012e7ca1f7}{measurement\+Text}}
+\begin{DoxyCompactList}\small\item\em Pole tekstowe do wyúwietlania danych pomiarowych. \end{DoxyCompactList}\item 
+wx\+Font \mbox{\hyperlink{class_main_window_a5cc65f39a7063fce43a43dbfbffee5a7}{font}}
+\begin{DoxyCompactList}\small\item\em Czcionka uøywana w interfejsie. \end{DoxyCompactList}\item 
+wx\+Static\+Text \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_ad1a1f8acd5d787b694b869d978de9e6d}{air\+Quality\+Index}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyúwietlajπca indeks jakoúci powietrza. \end{DoxyCompactList}\item 
+wx\+Button \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a371a0f887e59c6f3f398a1d809313e26}{save\+Current\+To\+Db\+Button}}
+\begin{DoxyCompactList}\small\item\em Przycisk do zapisania bieøπcego pomiaru do bazy danych. \end{DoxyCompactList}\item 
+wx\+Button \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a498d116e07b21d0c37c89b75a2f057ce}{save\+All\+To\+Db\+Button}}
+\begin{DoxyCompactList}\small\item\em Przycisk do zapisania wszystkich danych do bazy danych. \end{DoxyCompactList}\item 
+wx\+Static\+Text \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a89414ee8ccd74ab984f45c8b201fdc09}{db\+Status\+Text}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyúwietlajπca status bazy danych. \end{DoxyCompactList}\item 
+wx\+Button \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a87d20b3b108146cfa227fe0a30010c5f}{show\+Analysis\+Button}}
+\begin{DoxyCompactList}\small\item\em Przycisk do pokazania analizy danych. \end{DoxyCompactList}\item 
+wx\+Text\+Ctrl \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a0ad0d86f22bde498e1bc8a99741d2f65}{analysis\+Text}}
+\begin{DoxyCompactList}\small\item\em Pole tekstowe do wyúwietlania analizy danych. \end{DoxyCompactList}\item 
+wx\+Notebook \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a30db2afc9192fd802ca58d70ac480004}{data\+Notebook}}
+\begin{DoxyCompactList}\small\item\em Kontrolka z zak≥adkami dla rÛønych widokÛw danych. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chart_panel}{Chart\+Panel}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a0e4eaff0f50b3d6d2152d332db7d27e0}{chart\+Panel}}
+\begin{DoxyCompactList}\small\item\em Panel wykresu do wizualizacji danych pomiarowych. \end{DoxyCompactList}\item 
+wx\+Date\+Picker\+Ctrl \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a9c944ddf631912ab4a78b79ad8294035}{start\+Date\+Picker}}
+\begin{DoxyCompactList}\small\item\em Kontrolka do wyboru daty poczπtkowej zakresu. \end{DoxyCompactList}\item 
+wx\+Date\+Picker\+Ctrl \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_adf62a35a38deafdc57fc6542edbbe96f}{end\+Date\+Picker}}
+\begin{DoxyCompactList}\small\item\em Kontrolka do wyboru daty koÒcowej zakresu. \end{DoxyCompactList}\item 
+wx\+Button \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a3ef063480515f1ab331f8aab59585023}{apply\+Date\+Range\+Button}}
+\begin{DoxyCompactList}\small\item\em Przycisk do zastosowania wybranego zakresu dat. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ int, std\+::string $>$ $>$ \mbox{\hyperlink{class_main_window_a611a09e2a5cca43d88bfe9115fe8b118}{stations}}
+\begin{DoxyCompactList}\small\item\em Wektor przechowujπcy pary (ID, nazwa) dostÍpnych stacji. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ int, std\+::string $>$ $>$ \mbox{\hyperlink{class_main_window_abac5b47c1c2bf5886d5ba2aa84c04f8e}{sensors}}
+\begin{DoxyCompactList}\small\item\em Wektor przechowujπcy pary (ID, nazwa) dostÍpnych czujnikÛw. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_database_service}{Database\+Service}} \mbox{\hyperlink{class_main_window_acdc3119578b9103be36bbb7c5647cb1f}{db\+Service}}
+\begin{DoxyCompactList}\small\item\em Us≥uga do obs≥ugi lokalnej bazy danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczeg√≥≈Çowy}
+Klasa implementujπca g≥Ûwne okno aplikacji. 
+
+Zarzπdza interfejsem uøytkownika, pobieraniem i wyúwietlaniem danych z API jakoúci powietrza oraz lokalnej bazy danych. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb}\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily \label{class_main_window_a34c4b4207b46d11a4100c9b19f0e81bb} 
+Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor g≥Ûwnego okna. 
+
+Konstruktor klasy \doxylink{class_main_window}{Main\+Window}.
+
+Inicjalizuje interfejs aplikacji i ≥aduje dane stacji.
+
+Inicjalizuje g≈Ç√≥wne okno aplikacji, tworzy wszystkie kontrolki interfejsu u≈ºytkownika, ustawia uk≈Çad element√≥w, wiƒÖ≈ºe zdarzenia oraz inicjalizuje bazƒô danych. 
+
+\doxysubsection{Dokumentacja funkcji sk≈Çadowych}
+\Hypertarget{class_main_window_a38c47a87d3a4cfe1c7518be1fd20e402}\index{MainWindow@{MainWindow}!loadAirQualityIndex@{loadAirQualityIndex}}
+\index{loadAirQualityIndex@{loadAirQualityIndex}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{loadAirQualityIndex()}{loadAirQualityIndex()}}
+{\footnotesize\ttfamily \label{class_main_window_a38c47a87d3a4cfe1c7518be1fd20e402} 
+void Main\+Window\+::load\+Air\+Quality\+Index (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+£aduje indeks jakoúci powietrza dla stacji. 
+
+≈Åaduje informacje o indeksie jako≈õci powietrza dla wybranej stacji.
+
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & ID stacji, dla ktÛrej naleøy za≥adowaÊ indeks jakoúci powietrza\\
+\hline
+{\em station\+Id} & Identyfikator wybranej stacji\\
+\hline
+\end{DoxyParams}
+Pobiera indeks jako≈õci powietrza z API lub z lokalnej bazy danych. Aktualizuje etykietƒô indeksu jako≈õci powietrza z odpowiednim kolorem. \Hypertarget{class_main_window_a323ab9794e4e9511ba39336e2dc459e8}\index{MainWindow@{MainWindow}!loadSensorsForStation@{loadSensorsForStation}}
+\index{loadSensorsForStation@{loadSensorsForStation}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{loadSensorsForStation()}{loadSensorsForStation()}}
+{\footnotesize\ttfamily \label{class_main_window_a323ab9794e4e9511ba39336e2dc459e8} 
+void Main\+Window\+::load\+Sensors\+For\+Station (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+£aduje czujniki dla wybranej stacji. 
+
+≈Åaduje informacje o czujnikach dla wybranej stacji.
+
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & ID stacji, dla ktÛrej naleøy za≥adowaÊ czujniki\\
+\hline
+{\em station\+Id} & Identyfikator wybranej stacji\\
+\hline
+\end{DoxyParams}
+Pobiera dane o czujnikach dla stacji z API lub z lokalnej bazy danych. Wype≈Çnia kontrolkƒô wyboru czujnik√≥w. \Hypertarget{class_main_window_acacfa9bb4814ee9a259452621647393f}\index{MainWindow@{MainWindow}!loadStations@{loadStations}}
+\index{loadStations@{loadStations}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{loadStations()}{loadStations()}}
+{\footnotesize\ttfamily \label{class_main_window_acacfa9bb4814ee9a259452621647393f} 
+void Main\+Window\+::load\+Stations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+£aduje listÍ dostÍpnych stacji pomiarowych. 
+
+≈Åaduje informacje o dostƒôpnych stacjach pomiarowych.
+
+Pr√≥buje pobraƒá dane o stacjach z API GIO≈ö, a je≈õli to siƒô nie powiedzie, pr√≥buje za≈Çadowaƒá dane z lokalnej bazy. Wype≈Çnia kontrolkƒô wyboru stacji. \Hypertarget{class_main_window_a4d9b684a5665c1be078b0d6548eaa50d}\index{MainWindow@{MainWindow}!OnApplyDateRange@{OnApplyDateRange}}
+\index{OnApplyDateRange@{OnApplyDateRange}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{OnApplyDateRange()}{OnApplyDateRange()}}
+{\footnotesize\ttfamily \label{class_main_window_a4d9b684a5665c1be078b0d6548eaa50d} 
+void Main\+Window\+::\+On\+Apply\+Date\+Range (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia zastosowania zakresu dat dla wykresu. 
+
+Obs≈Çuguje zdarzenie zastosowania wybranego zakresu dat.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie przycisku\\
+\hline
+{\em event} & Obiekt zdarzenia\\
+\hline
+\end{DoxyParams}
+Filtruje dane pomiarowe aktualnie wybranego czujnika wed≈Çug wybranego zakresu dat i aktualizuje wykres oraz tekstowy format danych. \Hypertarget{class_main_window_a8a6fe7c3f1335600d379df273ed8a800}\index{MainWindow@{MainWindow}!OnSaveAllToDatabase@{OnSaveAllToDatabase}}
+\index{OnSaveAllToDatabase@{OnSaveAllToDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{OnSaveAllToDatabase()}{OnSaveAllToDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_a8a6fe7c3f1335600d379df273ed8a800} 
+void Main\+Window\+::\+On\+Save\+All\+To\+Database (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia zapisania wszystkich danych do bazy danych. 
+
+Obs≈Çuguje zdarzenie zapisywania danych wszystkich stacji do lokalnej bazy.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie przycisku\\
+\hline
+{\em event} & Obiekt zdarzenia\\
+\hline
+\end{DoxyParams}
+Pobiera dane o wszystkich stacjach, ich czujnikach, indeksach jako≈õci powietrza oraz dane pomiarowe i zapisuje je do lokalnej bazy danych. Wy≈õwietla pasek postƒôpu informujƒÖcy o statusie pobierania. \Hypertarget{class_main_window_a1c7811f367d334c73b4df41b0c069452}\index{MainWindow@{MainWindow}!OnSaveCurrentToDatabase@{OnSaveCurrentToDatabase}}
+\index{OnSaveCurrentToDatabase@{OnSaveCurrentToDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{OnSaveCurrentToDatabase()}{OnSaveCurrentToDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_a1c7811f367d334c73b4df41b0c069452} 
+void Main\+Window\+::\+On\+Save\+Current\+To\+Database (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia zapisania bieøπcego pomiaru do bazy danych. 
+
+Obs≈Çuguje zdarzenie zapisywania danych bie≈ºƒÖcej stacji do lokalnej bazy.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie przycisku\\
+\hline
+{\em event} & Obiekt zdarzenia\\
+\hline
+\end{DoxyParams}
+Pobiera dane czujnik√≥w, indeksu jako≈õci powietrza oraz dane pomiarowe dla aktualnie wybranej stacji i zapisuje je do lokalnej bazy danych. Wy≈õwietla pasek postƒôpu informujƒÖcy o statusie pobierania. \Hypertarget{class_main_window_a48c06ef33aa85f55aa502a75617d9028}\index{MainWindow@{MainWindow}!OnSensorSelection@{OnSensorSelection}}
+\index{OnSensorSelection@{OnSensorSelection}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{OnSensorSelection()}{OnSensorSelection()}}
+{\footnotesize\ttfamily \label{class_main_window_a48c06ef33aa85f55aa502a75617d9028} 
+void Main\+Window\+::\+On\+Sensor\+Selection (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia wyboru czujnika. 
+
+Obs≈Çuguje zdarzenie wyboru czujnika.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie wyboru\\
+\hline
+{\em event} & Obiekt zdarzenia\\
+\hline
+\end{DoxyParams}
+Reaguje na wyb√≥r czujnika przez u≈ºytkownika, ≈ÇadujƒÖc dane pomiarowe dla wybranego czujnika i wy≈õwietlajƒÖc je na wykresie. \Hypertarget{class_main_window_a61c5ef14af69b0a26eabe645fcad55b7}\index{MainWindow@{MainWindow}!OnShowAnalysis@{OnShowAnalysis}}
+\index{OnShowAnalysis@{OnShowAnalysis}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{OnShowAnalysis()}{OnShowAnalysis()}}
+{\footnotesize\ttfamily \label{class_main_window_a61c5ef14af69b0a26eabe645fcad55b7} 
+void Main\+Window\+::\+On\+Show\+Analysis (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia pokazania analizy danych. 
+
+Obs≈Çuguje zdarzenie pokazania analizy danych.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie przycisku\\
+\hline
+{\em event} & Obiekt zdarzenia\\
+\hline
+\end{DoxyParams}
+Inicjuje analizƒô danych aktualnie wybranego czujnika i prze≈ÇƒÖcza na zak≈Çadkƒô wy≈õwietlajƒÖcƒÖ wyniki analizy. \Hypertarget{class_main_window_a96400d992898bf8367616f535a4310cf}\index{MainWindow@{MainWindow}!OnStationSelection@{OnStationSelection}}
+\index{OnStationSelection@{OnStationSelection}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{OnStationSelection()}{OnStationSelection()}}
+{\footnotesize\ttfamily \label{class_main_window_a96400d992898bf8367616f535a4310cf} 
+void Main\+Window\+::\+On\+Station\+Selection (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obs≥uga zdarzenia wyboru stacji. 
+
+Obs≈Çuguje zdarzenie wyboru stacji.
+
+
+\begin{DoxyParams}{Parametry}
+{\em event} & Zdarzenie wyboru\\
+\hline
+{\em event} & Obiekt zdarzenia\\
+\hline
+\end{DoxyParams}
+Reaguje na wyb√≥r stacji przez u≈ºytkownika, ≈ÇadujƒÖc czujniki i indeks jako≈õci powietrza dla wybranej stacji. \Hypertarget{class_main_window_a12662474fd3554408f26d3fb6b1ce0a3}\index{MainWindow@{MainWindow}!parseDateTime@{parseDateTime}}
+\index{parseDateTime@{parseDateTime}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{parseDateTime()}{parseDateTime()}}
+{\footnotesize\ttfamily \label{class_main_window_a12662474fd3554408f26d3fb6b1ce0a3} 
+wx\+Date\+Time Main\+Window\+::parse\+Date\+Time (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date\+Str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Konwertuje string daty na obiekt wx\+Date\+Time. 
+
+Parsuje string z datƒÖ na obiekt wx\+Date\+Time.
+
+
+\begin{DoxyParams}{Parametry}
+{\em date\+Str} & String zawierajπcy datÍ w odpowiednim formacie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wx\+Date\+Time Skonwertowany obiekt daty i czasu
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em date\+Str} & String zawierajƒÖcy datƒô w formacie "{}\+YYYY-\/\+MM-\/\+DD HH\+:\+MM\+:\+SS"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Obiekt wx\+Date\+Time reprezentujƒÖcy datƒô z wej≈õciowego stringa 
+\end{DoxyReturn}
+\Hypertarget{class_main_window_aea7ee3310c0e9140d8e43f47023fd67d}\index{MainWindow@{MainWindow}!PerformDataAnalysis@{PerformDataAnalysis}}
+\index{PerformDataAnalysis@{PerformDataAnalysis}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{PerformDataAnalysis()}{PerformDataAnalysis()}}
+{\footnotesize\ttfamily \label{class_main_window_aea7ee3310c0e9140d8e43f47023fd67d} 
+void Main\+Window\+::\+Perform\+Data\+Analysis (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} $>$ \&}]{data}{, }\item[{const wx\+String \&}]{param\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wykonuje analizÍ danych pomiarowych. 
+
+Wykonuje analizƒô danych pomiarowych.
+
+Analizuje dane, obliczajπc statystyki i przygotowujπc raport.
+
+
+\begin{DoxyParams}{Parametry}
+{\em data} & Wektor danych pomiarowych do analizy \\
+\hline
+{\em param\+Name} & Nazwa parametru, dla ktÛrego wykonywana jest analiza\\
+\hline
+{\em data} & Wektor z danymi pomiarowymi do analizy \\
+\hline
+{\em param\+Name} & Nazwa parametru, kt√≥rego dotyczƒÖ dane\\
+\hline
+\end{DoxyParams}
+Przeprowadza analizƒô danych pomiarowych obejmujƒÖcƒÖ\+:
+\begin{DoxyItemize}
+\item Znalezienie warto≈õci minimalnej i maksymalnej wraz z datami
+\item Obliczenie warto≈õci ≈õredniej
+\item Analizƒô trendu zmian warto≈õci
+\item Obliczenie zakresu zmian Wyniki analizy wy≈õwietla w formie tekstowej. 
+\end{DoxyItemize}\Hypertarget{class_main_window_aef1054bb7be90e2cdf5ad7636e9463a2}\index{MainWindow@{MainWindow}!tryLoadAirQualityFromAPI@{tryLoadAirQualityFromAPI}}
+\index{tryLoadAirQualityFromAPI@{tryLoadAirQualityFromAPI}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadAirQualityFromAPI()}{tryLoadAirQualityFromAPI()}}
+{\footnotesize\ttfamily \label{class_main_window_aef1054bb7be90e2cdf5ad7636e9463a2} 
+bool Main\+Window\+::try\+Load\+Air\+Quality\+From\+API (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ indeks jakoúci powietrza z API. 
+
+Pr√≥buje za≈Çadowaƒá indeks jako≈õci powietrza dla stacji z API GIO≈ö
+
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & ID stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & Identyfikator stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Pobiera indeks jako≈õci powietrza z API, przetwarza go i aktualizuje odpowiedniƒÖ etykietƒô. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. \Hypertarget{class_main_window_ace6ca6411bfbb9592ee17ec013ea7aab}\index{MainWindow@{MainWindow}!tryLoadAirQualityFromDatabase@{tryLoadAirQualityFromDatabase}}
+\index{tryLoadAirQualityFromDatabase@{tryLoadAirQualityFromDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadAirQualityFromDatabase()}{tryLoadAirQualityFromDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_ace6ca6411bfbb9592ee17ec013ea7aab} 
+bool Main\+Window\+::try\+Load\+Air\+Quality\+From\+Database (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ indeks jakoúci powietrza z lokalnej bazy danych. 
+
+Pr√≥buje za≈Çadowaƒá indeks jako≈õci powietrza dla stacji z lokalnej bazy danych.
+
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & ID stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & Identyfikator stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Odczytuje indeks jako≈õci powietrza z lokalnej bazy, przetwarza go i aktualizuje odpowiedniƒÖ etykietƒô. \Hypertarget{class_main_window_a1b047756bbd1a3f48da831cb1c7deb62}\index{MainWindow@{MainWindow}!tryLoadMeasurementsFromAPI@{tryLoadMeasurementsFromAPI}}
+\index{tryLoadMeasurementsFromAPI@{tryLoadMeasurementsFromAPI}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadMeasurementsFromAPI()}{tryLoadMeasurementsFromAPI()}}
+{\footnotesize\ttfamily \label{class_main_window_a1b047756bbd1a3f48da831cb1c7deb62} 
+bool Main\+Window\+::try\+Load\+Measurements\+From\+API (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ pomiary z API. 
+
+Pr√≥buje za≈Çadowaƒá dane pomiarowe dla czujnika z API GIO≈ö
+
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & ID czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & Identyfikator czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Pobiera dane pomiarowe z API, przetwarza je i wy≈õwietla na wykresie oraz w formacie tekstowym. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. \Hypertarget{class_main_window_ab4b5fe2c027db7deeeb84d3f767ff9e6}\index{MainWindow@{MainWindow}!tryLoadMeasurementsFromDatabase@{tryLoadMeasurementsFromDatabase}}
+\index{tryLoadMeasurementsFromDatabase@{tryLoadMeasurementsFromDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadMeasurementsFromDatabase()}{tryLoadMeasurementsFromDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_ab4b5fe2c027db7deeeb84d3f767ff9e6} 
+bool Main\+Window\+::try\+Load\+Measurements\+From\+Database (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ pomiary z lokalnej bazy danych. 
+
+Pr√≥buje za≈Çadowaƒá dane pomiarowe dla czujnika z lokalnej bazy danych.
+
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & ID czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & Identyfikator czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Odczytuje dane pomiarowe z lokalnej bazy, przetwarza je i wy≈õwietla na wykresie oraz w formacie tekstowym. \Hypertarget{class_main_window_a56e2315b6818efecca9b8d461dfc3ace}\index{MainWindow@{MainWindow}!tryLoadMeasurementsWithDateRange@{tryLoadMeasurementsWithDateRange}}
+\index{tryLoadMeasurementsWithDateRange@{tryLoadMeasurementsWithDateRange}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadMeasurementsWithDateRange()}{tryLoadMeasurementsWithDateRange()}}
+{\footnotesize\ttfamily \label{class_main_window_a56e2315b6818efecca9b8d461dfc3ace} 
+bool Main\+Window\+::try\+Load\+Measurements\+With\+Date\+Range (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat. 
+
+Pr√≥buje za≈Çadowaƒá dane pomiarowe dla wybranego zakresu dat z API GIO≈ö
+
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & ID czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & Identyfikator czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Pobiera dane pomiarowe z API, filtruje je wed≈Çug wybranego zakresu dat, a nastƒôpnie aktualizuje wykres oraz tekstowy format danych. \Hypertarget{class_main_window_a18f7722197a674f73ad0a9ca283b16c6}\index{MainWindow@{MainWindow}!tryLoadMeasurementsWithDateRangeFromDatabase@{tryLoadMeasurementsWithDateRangeFromDatabase}}
+\index{tryLoadMeasurementsWithDateRangeFromDatabase@{tryLoadMeasurementsWithDateRangeFromDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadMeasurementsWithDateRangeFromDatabase()}{tryLoadMeasurementsWithDateRangeFromDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_a18f7722197a674f73ad0a9ca283b16c6} 
+bool Main\+Window\+::try\+Load\+Measurements\+With\+Date\+Range\+From\+Database (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ pomiary z okreúlonego zakresu dat z lokalnej bazy danych. 
+
+Pr√≥buje za≈Çadowaƒá dane pomiarowe dla wybranego zakresu dat z lokalnej bazy danych.
+
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & ID czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em sensor\+Id} & Identyfikator czujnika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Odczytuje dane pomiarowe z lokalnej bazy, filtruje je wed≈Çug wybranego zakresu dat, a nastƒôpnie aktualizuje wykres oraz tekstowy format danych. \Hypertarget{class_main_window_aa91e8ca80d6168f15c62f321c8777042}\index{MainWindow@{MainWindow}!tryLoadSensorsFromAPI@{tryLoadSensorsFromAPI}}
+\index{tryLoadSensorsFromAPI@{tryLoadSensorsFromAPI}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadSensorsFromAPI()}{tryLoadSensorsFromAPI()}}
+{\footnotesize\ttfamily \label{class_main_window_aa91e8ca80d6168f15c62f321c8777042} 
+bool Main\+Window\+::try\+Load\+Sensors\+From\+API (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ czujniki dla stacji z API. 
+
+Pr√≥buje za≈Çadowaƒá informacje o czujnikach dla stacji z API GIO≈ö
+
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & ID stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & Identyfikator stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Pobiera dane o czujnikach z API, przetwarza je i wype≈Çnia kontrolkƒô wyboru czujnik√≥w. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. \Hypertarget{class_main_window_a2390845772be8ad530d75c0cbac31a2f}\index{MainWindow@{MainWindow}!tryLoadSensorsFromDatabase@{tryLoadSensorsFromDatabase}}
+\index{tryLoadSensorsFromDatabase@{tryLoadSensorsFromDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadSensorsFromDatabase()}{tryLoadSensorsFromDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_a2390845772be8ad530d75c0cbac31a2f} 
+bool Main\+Window\+::try\+Load\+Sensors\+From\+Database (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ czujniki dla stacji z lokalnej bazy danych. 
+
+Pr√≥buje za≈Çadowaƒá informacje o czujnikach dla stacji z lokalnej bazy danych.
+
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & ID stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+{\em station\+Id} & Identyfikator stacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Odczytuje dane o czujnikach z lokalnej bazy, przetwarza je i wype≈Çnia kontrolkƒô wyboru czujnik√≥w. \Hypertarget{class_main_window_a4728880029aa480f0beaf6bd6eedfa92}\index{MainWindow@{MainWindow}!tryLoadStationsFromAPI@{tryLoadStationsFromAPI}}
+\index{tryLoadStationsFromAPI@{tryLoadStationsFromAPI}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadStationsFromAPI()}{tryLoadStationsFromAPI()}}
+{\footnotesize\ttfamily \label{class_main_window_a4728880029aa480f0beaf6bd6eedfa92} 
+bool Main\+Window\+::try\+Load\+Stations\+From\+API (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ stacje z API. 
+
+Pr√≥buje za≈Çadowaƒá informacje o stacjach z API GIO≈ö
+
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Pobiera dane o stacjach z API, przetwarza je i wype≈Çnia kontrolkƒô wyboru stacji. Zapisuje r√≥wnie≈º pobrane dane do lokalnej bazy. \Hypertarget{class_main_window_ae9955baa7dd1b9fc6e0086445c1747d4}\index{MainWindow@{MainWindow}!tryLoadStationsFromDatabase@{tryLoadStationsFromDatabase}}
+\index{tryLoadStationsFromDatabase@{tryLoadStationsFromDatabase}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{tryLoadStationsFromDatabase()}{tryLoadStationsFromDatabase()}}
+{\footnotesize\ttfamily \label{class_main_window_ae9955baa7dd1b9fc6e0086445c1747d4} 
+bool Main\+Window\+::try\+Load\+Stations\+From\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+PrÛbuje za≥adowaÊ stacje z lokalnej bazy danych. 
+
+Pr√≥buje za≈Çadowaƒá informacje o stacjach z lokalnej bazy danych.
+
+\begin{DoxyReturn}{Zwraca}
+true Jeúli za≥adowanie siÍ powiod≥o 
+
+false Jeúli wystπpi≥ b≥πd
+
+true je≈õli operacja zako≈Ñczy≈Ça siƒô sukcesem, false w przeciwnym przypadku
+\end{DoxyReturn}
+Odczytuje dane o stacjach z lokalnej bazy, przetwarza je i wype≈Çnia kontrolkƒô wyboru stacji. \Hypertarget{class_main_window_a45208115e4963a492e207ab26fccdeca}\index{MainWindow@{MainWindow}!updateDatabaseStatus@{updateDatabaseStatus}}
+\index{updateDatabaseStatus@{updateDatabaseStatus}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateDatabaseStatus()}{updateDatabaseStatus()}}
+{\footnotesize\ttfamily \label{class_main_window_a45208115e4963a492e207ab26fccdeca} 
+void Main\+Window\+::update\+Database\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktualizuje wyúwietlany status bazy danych. 
+
+Aktualizuje informacje o statusie bazy danych lokalnych.
+
+Sprawdza czy lokalna baza danych zawiera informacje o stacjach, a nastƒôpnie aktualizuje tekst statusu wraz z odpowiednim kolorem. 
+
+\doxysubsection{Dokumentacja atrybut√≥w sk≈Çadowych}
+\Hypertarget{class_main_window_ad1a1f8acd5d787b694b869d978de9e6d}\index{MainWindow@{MainWindow}!airQualityIndex@{airQualityIndex}}
+\index{airQualityIndex@{airQualityIndex}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{airQualityIndex}{airQualityIndex}}
+{\footnotesize\ttfamily \label{class_main_window_ad1a1f8acd5d787b694b869d978de9e6d} 
+wx\+Static\+Text\texorpdfstring{$\ast$}{*} Main\+Window\+::air\+Quality\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyúwietlajπca indeks jakoúci powietrza. 
+
+\Hypertarget{class_main_window_a0ad0d86f22bde498e1bc8a99741d2f65}\index{MainWindow@{MainWindow}!analysisText@{analysisText}}
+\index{analysisText@{analysisText}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{analysisText}{analysisText}}
+{\footnotesize\ttfamily \label{class_main_window_a0ad0d86f22bde498e1bc8a99741d2f65} 
+wx\+Text\+Ctrl\texorpdfstring{$\ast$}{*} Main\+Window\+::analysis\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole tekstowe do wyúwietlania analizy danych. 
+
+\Hypertarget{class_main_window_a3ef063480515f1ab331f8aab59585023}\index{MainWindow@{MainWindow}!applyDateRangeButton@{applyDateRangeButton}}
+\index{applyDateRangeButton@{applyDateRangeButton}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{applyDateRangeButton}{applyDateRangeButton}}
+{\footnotesize\ttfamily \label{class_main_window_a3ef063480515f1ab331f8aab59585023} 
+wx\+Button\texorpdfstring{$\ast$}{*} Main\+Window\+::apply\+Date\+Range\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk do zastosowania wybranego zakresu dat. 
+
+\Hypertarget{class_main_window_a0e4eaff0f50b3d6d2152d332db7d27e0}\index{MainWindow@{MainWindow}!chartPanel@{chartPanel}}
+\index{chartPanel@{chartPanel}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{chartPanel}{chartPanel}}
+{\footnotesize\ttfamily \label{class_main_window_a0e4eaff0f50b3d6d2152d332db7d27e0} 
+\mbox{\hyperlink{class_chart_panel}{Chart\+Panel}}\texorpdfstring{$\ast$}{*} Main\+Window\+::chart\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Panel wykresu do wizualizacji danych pomiarowych. 
+
+\Hypertarget{class_main_window_a30db2afc9192fd802ca58d70ac480004}\index{MainWindow@{MainWindow}!dataNotebook@{dataNotebook}}
+\index{dataNotebook@{dataNotebook}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{dataNotebook}{dataNotebook}}
+{\footnotesize\ttfamily \label{class_main_window_a30db2afc9192fd802ca58d70ac480004} 
+wx\+Notebook\texorpdfstring{$\ast$}{*} Main\+Window\+::data\+Notebook\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kontrolka z zak≥adkami dla rÛønych widokÛw danych. 
+
+\Hypertarget{class_main_window_acdc3119578b9103be36bbb7c5647cb1f}\index{MainWindow@{MainWindow}!dbService@{dbService}}
+\index{dbService@{dbService}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{dbService}{dbService}}
+{\footnotesize\ttfamily \label{class_main_window_acdc3119578b9103be36bbb7c5647cb1f} 
+\mbox{\hyperlink{class_database_service}{Database\+Service}} Main\+Window\+::db\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Us≥uga do obs≥ugi lokalnej bazy danych. 
+
+\Hypertarget{class_main_window_a89414ee8ccd74ab984f45c8b201fdc09}\index{MainWindow@{MainWindow}!dbStatusText@{dbStatusText}}
+\index{dbStatusText@{dbStatusText}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{dbStatusText}{dbStatusText}}
+{\footnotesize\ttfamily \label{class_main_window_a89414ee8ccd74ab984f45c8b201fdc09} 
+wx\+Static\+Text\texorpdfstring{$\ast$}{*} Main\+Window\+::db\+Status\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyúwietlajπca status bazy danych. 
+
+\Hypertarget{class_main_window_adf62a35a38deafdc57fc6542edbbe96f}\index{MainWindow@{MainWindow}!endDatePicker@{endDatePicker}}
+\index{endDatePicker@{endDatePicker}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{endDatePicker}{endDatePicker}}
+{\footnotesize\ttfamily \label{class_main_window_adf62a35a38deafdc57fc6542edbbe96f} 
+wx\+Date\+Picker\+Ctrl\texorpdfstring{$\ast$}{*} Main\+Window\+::end\+Date\+Picker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kontrolka do wyboru daty koÒcowej zakresu. 
+
+\Hypertarget{class_main_window_a5cc65f39a7063fce43a43dbfbffee5a7}\index{MainWindow@{MainWindow}!font@{font}}
+\index{font@{font}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{class_main_window_a5cc65f39a7063fce43a43dbfbffee5a7} 
+wx\+Font Main\+Window\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Czcionka uøywana w interfejsie. 
+
+\Hypertarget{class_main_window_a7f60679de553bda949c1cd012e7ca1f7}\index{MainWindow@{MainWindow}!measurementText@{measurementText}}
+\index{measurementText@{measurementText}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{measurementText}{measurementText}}
+{\footnotesize\ttfamily \label{class_main_window_a7f60679de553bda949c1cd012e7ca1f7} 
+wx\+Text\+Ctrl\texorpdfstring{$\ast$}{*} Main\+Window\+::measurement\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole tekstowe do wyúwietlania danych pomiarowych. 
+
+\Hypertarget{class_main_window_a498d116e07b21d0c37c89b75a2f057ce}\index{MainWindow@{MainWindow}!saveAllToDbButton@{saveAllToDbButton}}
+\index{saveAllToDbButton@{saveAllToDbButton}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{saveAllToDbButton}{saveAllToDbButton}}
+{\footnotesize\ttfamily \label{class_main_window_a498d116e07b21d0c37c89b75a2f057ce} 
+wx\+Button\texorpdfstring{$\ast$}{*} Main\+Window\+::save\+All\+To\+Db\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk do zapisania wszystkich danych do bazy danych. 
+
+\Hypertarget{class_main_window_a371a0f887e59c6f3f398a1d809313e26}\index{MainWindow@{MainWindow}!saveCurrentToDbButton@{saveCurrentToDbButton}}
+\index{saveCurrentToDbButton@{saveCurrentToDbButton}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{saveCurrentToDbButton}{saveCurrentToDbButton}}
+{\footnotesize\ttfamily \label{class_main_window_a371a0f887e59c6f3f398a1d809313e26} 
+wx\+Button\texorpdfstring{$\ast$}{*} Main\+Window\+::save\+Current\+To\+Db\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk do zapisania bieøπcego pomiaru do bazy danych. 
+
+\Hypertarget{class_main_window_a9ad4ea66cd6943ef7f290abb7bd2af02}\index{MainWindow@{MainWindow}!sensorChoice@{sensorChoice}}
+\index{sensorChoice@{sensorChoice}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sensorChoice}{sensorChoice}}
+{\footnotesize\ttfamily \label{class_main_window_a9ad4ea66cd6943ef7f290abb7bd2af02} 
+wx\+Choice\texorpdfstring{$\ast$}{*} Main\+Window\+::sensor\+Choice\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista rozwijana do wyboru czujnika. 
+
+\Hypertarget{class_main_window_abac5b47c1c2bf5886d5ba2aa84c04f8e}\index{MainWindow@{MainWindow}!sensors@{sensors}}
+\index{sensors@{sensors}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sensors}{sensors}}
+{\footnotesize\ttfamily \label{class_main_window_abac5b47c1c2bf5886d5ba2aa84c04f8e} 
+std\+::vector$<$std\+::pair$<$int, std\+::string$>$ $>$ Main\+Window\+::sensors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wektor przechowujπcy pary (ID, nazwa) dostÍpnych czujnikÛw. 
+
+\Hypertarget{class_main_window_a87d20b3b108146cfa227fe0a30010c5f}\index{MainWindow@{MainWindow}!showAnalysisButton@{showAnalysisButton}}
+\index{showAnalysisButton@{showAnalysisButton}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showAnalysisButton}{showAnalysisButton}}
+{\footnotesize\ttfamily \label{class_main_window_a87d20b3b108146cfa227fe0a30010c5f} 
+wx\+Button\texorpdfstring{$\ast$}{*} Main\+Window\+::show\+Analysis\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk do pokazania analizy danych. 
+
+\Hypertarget{class_main_window_a9c944ddf631912ab4a78b79ad8294035}\index{MainWindow@{MainWindow}!startDatePicker@{startDatePicker}}
+\index{startDatePicker@{startDatePicker}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{startDatePicker}{startDatePicker}}
+{\footnotesize\ttfamily \label{class_main_window_a9c944ddf631912ab4a78b79ad8294035} 
+wx\+Date\+Picker\+Ctrl\texorpdfstring{$\ast$}{*} Main\+Window\+::start\+Date\+Picker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kontrolka do wyboru daty poczπtkowej zakresu. 
+
+\Hypertarget{class_main_window_ab79901ef3927ef8d4fc9808454289e9c}\index{MainWindow@{MainWindow}!stationChoice@{stationChoice}}
+\index{stationChoice@{stationChoice}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{stationChoice}{stationChoice}}
+{\footnotesize\ttfamily \label{class_main_window_ab79901ef3927ef8d4fc9808454289e9c} 
+wx\+Choice\texorpdfstring{$\ast$}{*} Main\+Window\+::station\+Choice\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista rozwijana do wyboru stacji pomiarowej. 
+
+\Hypertarget{class_main_window_a611a09e2a5cca43d88bfe9115fe8b118}\index{MainWindow@{MainWindow}!stations@{stations}}
+\index{stations@{stations}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{stations}{stations}}
+{\footnotesize\ttfamily \label{class_main_window_a611a09e2a5cca43d88bfe9115fe8b118} 
+std\+::vector$<$std\+::pair$<$int, std\+::string$>$ $>$ Main\+Window\+::stations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wektor przechowujπcy pary (ID, nazwa) dostÍpnych stacji. 
+
+
+
+Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_main_window_8h}{Main\+Window.\+h}}\item 
+src/\mbox{\hyperlink{_main_window_8cpp}{Main\+Window.\+cpp}}\end{DoxyCompactItemize}

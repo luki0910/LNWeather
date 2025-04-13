@@ -1,0 +1,46 @@
+\doxysection{Chart\+Panel.\+h}
+\hypertarget{_chart_panel_8h_source}{}\label{_chart_panel_8h_source}\index{src/ChartPanel.h@{src/ChartPanel.h}}
+\mbox{\hyperlink{_chart_panel_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <wx/datetime.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_measurement_data}{MeasurementData}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ wxDateTime\ \mbox{\hyperlink{struct_measurement_data_a762f4b89359a72efa2f40ccf3da21461}{date}};\ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_measurement_data_a98d2dd6c4e385c0c32d09babec81b941}{value}};\ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_measurement_data_a05a85f6e6429e9b03747882180dca085}{hasValue}};\ \ \ \ \ }
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chart_panel_af4d12480f516ac3f934fe55f6c3d7e24}{ChartPanel}}\ :\ \textcolor{keyword}{public}\ wxPanel\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_chart_panel_af4d12480f516ac3f934fe55f6c3d7e24}{ChartPanel}}(wxWindow*\ parent);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_ab668997f8bb327da22a0f0beb1996b3d}{SetData}}(\textcolor{keyword}{const}\ std::vector<MeasurementData>\&\ data,\ \textcolor{keyword}{const}\ wxString\&\ paramName);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_aa2365d92be8a38365e8835b37495530c}{SetTitle}}(\textcolor{keyword}{const}\ wxString\&\ \mbox{\hyperlink{class_chart_panel_a701f9c29cc5c10a1c97db4c404a0608e}{title}});}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<MeasurementData>\&\ \mbox{\hyperlink{class_chart_panel_a354b9d4c9dbf50ad25132a3b006f729d}{GetChartData}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_chart_panel_a71a54293b9471e9afb405f937c1c8e78}{chartData}};\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ std::vector<MeasurementData>\ \mbox{\hyperlink{class_chart_panel_a71a54293b9471e9afb405f937c1c8e78}{chartData}};\ \ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ wxString\ \mbox{\hyperlink{class_chart_panel_a701f9c29cc5c10a1c97db4c404a0608e}{title}};\ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ wxString\ \mbox{\hyperlink{class_chart_panel_a9ad98587679ff8ccb295d178a7c85a0b}{parameter}};\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_a875f6801746bed41b20bac4bc023afa0}{OnPaint}}(wxPaintEvent\&\ event);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_a38589c7fe45a9dcf178b473b038ffee9}{OnSize}}(wxSizeEvent\&\ event);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_a295bc8771dc6910b590fde506d1324a0}{DrawAxes}}(wxDC\&\ dc,\ \textcolor{keyword}{const}\ wxRect\&\ rect);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_acfaeedf7f462c4655ac4e8082f6635bc}{DrawData}}(wxDC\&\ dc,\ \textcolor{keyword}{const}\ wxRect\&\ rect);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chart_panel_a7373de087a43031e42d349a1ba5e702b}{DrawLabels}}(wxDC\&\ dc,\ \textcolor{keyword}{const}\ wxRect\&\ rect);}
+\DoxyCodeLine{00103\ \};}
+
+\end{DoxyCode}

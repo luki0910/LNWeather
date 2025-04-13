@@ -1,0 +1,62 @@
+\doxysection{Dokumentacja pliku src/\+Main\+Window.cpp}
+\hypertarget{_main_window_8cpp}{}\label{_main_window_8cpp}\index{src/MainWindow.cpp@{src/MainWindow.cpp}}
+
+
+Implementacja głównego okna aplikacji LNWeather.  
+
+
+{\ttfamily \#include "{}Main\+Window.\+h"{}}\newline
+{\ttfamily \#include "{}Api\+Service.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+{\ttfamily \#include $<$json.\+hpp$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\doxysubsubsection*{Definicje typów}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{_main_window_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_main_window_8cpp_ac225d2849d3f377b86c2b70d0d39db33}{compare\+Stations\+By\+Name}} (const std\+::pair$<$ int, std\+::string $>$ \&a, const std\+::pair$<$ int, std\+::string $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Porównuje dwie stacje na podstawie ich nazw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Implementacja głównego okna aplikacji LNWeather. 
+
+Plik zawiera implementację klasy \doxylink{class_main_window}{Main\+Window}, która odpowiada za interfejs graficzny i funkcjonalność głównego okna aplikacji LNWeather. Aplikacja umożliwia pobieranie, wyświetlanie i analizę danych z API GIOŚ dotyczących jakości powietrza. 
+
+\doxysubsection{Dokumentacja definicji typów}
+\Hypertarget{_main_window_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}\index{MainWindow.cpp@{MainWindow.cpp}!json@{json}}
+\index{json@{json}!MainWindow.cpp@{MainWindow.cpp}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily \label{_main_window_8cpp_ab701e3ac61a85b337ec5c1abaad6742d} 
+using \mbox{\hyperlink{_main_window_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} = nlohmann\+::json}
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{_main_window_8cpp_ac225d2849d3f377b86c2b70d0d39db33}\index{MainWindow.cpp@{MainWindow.cpp}!compareStationsByName@{compareStationsByName}}
+\index{compareStationsByName@{compareStationsByName}!MainWindow.cpp@{MainWindow.cpp}}
+\doxysubsubsection{\texorpdfstring{compareStationsByName()}{compareStationsByName()}}
+{\footnotesize\ttfamily \label{_main_window_8cpp_ac225d2849d3f377b86c2b70d0d39db33} 
+bool compare\+Stations\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ int, std\+::string $>$ \&}]{a}{, }\item[{const std\+::pair$<$ int, std\+::string $>$ \&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Porównuje dwie stacje na podstawie ich nazw. 
+
+Funkcja pomocnicza używana do sortowania stacji w kolejności alfabetycznej.
+
+
+\begin{DoxyParams}{Parametry}
+{\em a} & Pierwsza para (id, nazwa) stacji do porównania \\
+\hline
+{\em b} & Druga para (id, nazwa) stacji do porównania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jeśli nazwa stacji a powinna być przed nazwą stacji b, false w przeciwnym wypadku 
+\end{DoxyReturn}

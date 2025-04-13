@@ -19,20 +19,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ApiService.cpp" />
-    <ClCompile Include="ChartPanel.cpp" />
-    <ClCompile Include="DatabaseService.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MainWindow.cpp" />
-    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="src\ApiService.cpp" />
+    <ClCompile Include="src\ChartPanel.cpp" />
+    <ClCompile Include="src\DatabaseService.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainWindow.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ApiService.h" />
-    <ClInclude Include="ChartPanel.h" />
-    <ClInclude Include="DatabaseService.h" />
-    <ClInclude Include="MainWindow.h" />
-    <ClInclude Include="Models.h" />
-    <ClInclude Include="Utils.h" />
+    <ClInclude Include="src\ApiService.h" />
+    <ClInclude Include="src\ChartPanel.h" />
+    <ClInclude Include="src\DatabaseService.h" />
+    <ClInclude Include="src\MainWindow.h" />
+    <ClInclude Include="src\Models.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
