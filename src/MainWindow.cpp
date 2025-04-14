@@ -184,14 +184,14 @@ void MainWindow::loadStations() {
     // Jeśli jest dostęp do internetu, najpierw próbujemy z API
     if (apiAvailable) {
         if (tryLoadStationsFromAPI()) {
-            return; // Sukces - dane pobrane z API
+            return; 
         }
     }
 
     // Jeśli nie udało się pobrać z API lub nie ma internetu, próbujemy z bazy
     if (hasLocalData) {
         if (tryLoadStationsFromDatabase()) {
-            return; // Sukces - dane pobrane z lokalnej bazy
+            return; 
         }
     }
 
@@ -225,7 +225,7 @@ void MainWindow::loadSensorsForStation(int stationId) {
     // Jeśli jest dostęp do internetu, najpierw próbujemy z API
     if (apiAvailable) {
         if (tryLoadSensorsFromAPI(stationId)) {
-            // Sukces - dane pobrane z API
+            
         }
         else if (hasLocalData) {
             // Jeśli API nie zadziałało, próbujemy z bazy
@@ -260,14 +260,14 @@ void MainWindow::loadAirQualityIndex(int stationId) {
     // Jeśli jest połączenie internetowe, najpierw próbujemy z API
     if (ApiService::isNetworkAvailable()) {
         if (tryLoadAirQualityFromAPI(stationId)) {
-            return; // Sukces - dane pobrane z API
+            return; 
         }
     }
 
     // Jeśli nie udało się pobrać z API lub nie ma internetu, próbujemy z bazy
     if (hasLocalData) {
         if (tryLoadAirQualityFromDatabase(stationId)) {
-            return; // Sukces - dane pobrane z lokalnej bazy
+            return; 
         }
     }
 
@@ -565,7 +565,7 @@ void MainWindow::OnSensorSelection(wxCommandEvent& event) {
     // Jeśli jest dostęp do internetu, najpierw próbujemy z API
     if (apiAvailable) {
         if (tryLoadMeasurementsFromAPI(sensorId)) {
-            // Sukces - dane pobrane z API
+            
         }
         else if (hasLocalData) {
             // Jeśli API nie zadziałało, próbujemy z bazy
@@ -1183,7 +1183,7 @@ bool MainWindow::tryLoadMeasurementsWithDateRange(int sensorId) {
         wxDateTime startDate = startDatePicker->GetValue();
         wxDateTime endDate = endDatePicker->GetValue();
 
-        // Dodaj czas do dat, aby uwzględnić cały dzień
+        
         startDate.SetHour(0);
         startDate.SetMinute(0);
         startDate.SetSecond(0);
@@ -1293,7 +1293,7 @@ bool MainWindow::tryLoadMeasurementsWithDateRangeFromDatabase(int sensorId) {
         wxDateTime startDate = startDatePicker->GetValue();
         wxDateTime endDate = endDatePicker->GetValue();
 
-        // Dodaj czas do dat, aby uwzględnić cały dzień
+        
         startDate.SetHour(0);
         startDate.SetMinute(0);
         startDate.SetSecond(0);

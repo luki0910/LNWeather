@@ -1,0 +1,339 @@
+\begin{theindex}
+
+  \item {airQualityIndex}
+    \subitem {MainWindow}, \hyperpage{39}
+  \item {analysisText}
+    \subitem {MainWindow}, \hyperpage{39}
+  \item {ApiService}, \hyperpage{11}
+    \subitem {fetchDataFromAPI}, \hyperpage{11}
+    \subitem {isNetworkAvailable}, \hyperpage{12}
+  \item {App}, \hyperpage{13}
+    \subitem {OnInit}, \hyperpage{13}
+  \item {applyDateRangeButton}
+    \subitem {MainWindow}, \hyperpage{39}
+
+  \indexspace
+
+  \item {chartData}
+    \subitem {ChartPanel}, \hyperpage{18}
+  \item {ChartPanel}, \hyperpage{14}
+    \subitem {chartData}, \hyperpage{18}
+    \subitem {ChartPanel}, \hyperpage{15}
+    \subitem {DrawAxes}, \hyperpage{15}
+    \subitem {DrawData}, \hyperpage{15}
+    \subitem {DrawLabels}, \hyperpage{16}
+    \subitem {GetChartData}, \hyperpage{16}
+    \subitem {OnPaint}, \hyperpage{16}
+    \subitem {OnSize}, \hyperpage{17}
+    \subitem {parameter}, \hyperpage{18}
+    \subitem {SetData}, \hyperpage{17}
+    \subitem {SetTitle}, \hyperpage{17}
+    \subitem {title}, \hyperpage{18}
+  \item {chartPanel}
+    \subitem {MainWindow}, \hyperpage{39}
+  \item {compareStationsByName}
+    \subitem {MainWindow.cpp}, \hyperpage{48}
+
+  \indexspace
+
+  \item {DatabaseService}, \hyperpage{18}
+    \subitem {DatabaseService}, \hyperpage{19}
+    \subitem {dbFolder}, \hyperpage{27}
+    \subitem {getAirQualityFilePath}, \hyperpage{20}
+    \subitem {getLastUpdateTime}, \hyperpage{20}
+    \subitem {getMeasurementFilePath}, \hyperpage{20}
+    \subitem {getSensorsFilePath}, \hyperpage{20}
+    \subitem {getStationsFilePath}, \hyperpage{21}
+    \subitem {hasAirQualityIndex}, \hyperpage{21}
+    \subitem {hasMeasurementData}, \hyperpage{21}
+    \subitem {hasSensorsData}, \hyperpage{22}
+    \subitem {hasStationsData}, \hyperpage{22}
+    \subitem {initializeDatabase}, \hyperpage{23}
+    \subitem {loadAirQualityIndex}, \hyperpage{23}
+    \subitem {loadFromFile}, \hyperpage{24}
+    \subitem {loadMeasurementData}, \hyperpage{24}
+    \subitem {loadSensorsData}, \hyperpage{25}
+    \subitem {loadStationsData}, \hyperpage{25}
+    \subitem {saveAirQualityIndex}, \hyperpage{25}
+    \subitem {saveMeasurementData}, \hyperpage{26}
+    \subitem {saveSensorsData}, \hyperpage{26}
+    \subitem {saveStationsData}, \hyperpage{26}
+    \subitem {saveToFile}, \hyperpage{27}
+  \item {dataNotebook}
+    \subitem {MainWindow}, \hyperpage{40}
+  \item {date}
+    \subitem {MeasurementData}, \hyperpage{42}
+  \item {dbFolder}
+    \subitem {DatabaseService}, \hyperpage{27}
+  \item {dbService}
+    \subitem {MainWindow}, \hyperpage{40}
+  \item {dbStatusText}
+    \subitem {MainWindow}, \hyperpage{40}
+  \item {DrawAxes}
+    \subitem {ChartPanel}, \hyperpage{15}
+  \item {DrawData}
+    \subitem {ChartPanel}, \hyperpage{15}
+  \item {DrawLabels}
+    \subitem {ChartPanel}, \hyperpage{16}
+
+  \indexspace
+
+  \item {endDatePicker}
+    \subitem {MainWindow}, \hyperpage{40}
+
+  \indexspace
+
+  \item {fetchDataFromAPI}
+    \subitem {ApiService}, \hyperpage{11}
+  \item {font}
+    \subitem {MainWindow}, \hyperpage{40}
+
+  \indexspace
+
+  \item {getAirQualityFilePath}
+    \subitem {DatabaseService}, \hyperpage{20}
+  \item {GetChartData}
+    \subitem {ChartPanel}, \hyperpage{16}
+  \item {getLastUpdateTime}
+    \subitem {DatabaseService}, \hyperpage{20}
+  \item {getMeasurementFilePath}
+    \subitem {DatabaseService}, \hyperpage{20}
+  \item {getSensorsFilePath}
+    \subitem {DatabaseService}, \hyperpage{20}
+  \item {getStationsFilePath}
+    \subitem {DatabaseService}, \hyperpage{21}
+
+  \indexspace
+
+  \item {hasAirQualityIndex}
+    \subitem {DatabaseService}, \hyperpage{21}
+  \item {hasMeasurementData}
+    \subitem {DatabaseService}, \hyperpage{21}
+  \item {hasSensorsData}
+    \subitem {DatabaseService}, \hyperpage{22}
+  \item {hasStationsData}
+    \subitem {DatabaseService}, \hyperpage{22}
+  \item {hasValue}
+    \subitem {MeasurementData}, \hyperpage{42}
+
+  \indexspace
+
+  \item {IDI\_ICON1}
+    \subitem {resource.h}, \hyperpage{51}
+  \item {initializeDatabase}
+    \subitem {DatabaseService}, \hyperpage{23}
+  \item {isNetworkAvailable}
+    \subitem {ApiService}, \hyperpage{12}
+
+  \indexspace
+
+  \item {json}
+    \subitem {MainWindow.cpp}, \hyperpage{48}
+
+  \indexspace
+
+  \item {loadAirQualityIndex}
+    \subitem {DatabaseService}, \hyperpage{23}
+    \subitem {MainWindow}, \hyperpage{30}
+  \item {loadFromFile}
+    \subitem {DatabaseService}, \hyperpage{24}
+  \item {loadMeasurementData}
+    \subitem {DatabaseService}, \hyperpage{24}
+  \item {loadSensorsData}
+    \subitem {DatabaseService}, \hyperpage{25}
+  \item {loadSensorsForStation}
+    \subitem {MainWindow}, \hyperpage{30}
+  \item {loadStations}
+    \subitem {MainWindow}, \hyperpage{30}
+  \item {loadStationsData}
+    \subitem {DatabaseService}, \hyperpage{25}
+
+  \indexspace
+
+  \item {main.cpp}
+    \subitem {wxIMPLEMENT\_APP}, \hyperpage{47}
+  \item {MainWindow}, \hyperpage{27}
+    \subitem {airQualityIndex}, \hyperpage{39}
+    \subitem {analysisText}, \hyperpage{39}
+    \subitem {applyDateRangeButton}, \hyperpage{39}
+    \subitem {chartPanel}, \hyperpage{39}
+    \subitem {dataNotebook}, \hyperpage{40}
+    \subitem {dbService}, \hyperpage{40}
+    \subitem {dbStatusText}, \hyperpage{40}
+    \subitem {endDatePicker}, \hyperpage{40}
+    \subitem {font}, \hyperpage{40}
+    \subitem {loadAirQualityIndex}, \hyperpage{30}
+    \subitem {loadSensorsForStation}, \hyperpage{30}
+    \subitem {loadStations}, \hyperpage{30}
+    \subitem {MainWindow}, \hyperpage{30}
+    \subitem {measurementText}, \hyperpage{40}
+    \subitem {OnApplyDateRange}, \hyperpage{31}
+    \subitem {OnSaveAllToDatabase}, \hyperpage{31}
+    \subitem {OnSaveCurrentToDatabase}, \hyperpage{31}
+    \subitem {OnSensorSelection}, \hyperpage{32}
+    \subitem {OnShowAnalysis}, \hyperpage{32}
+    \subitem {OnStationSelection}, \hyperpage{32}
+    \subitem {parseDateTime}, \hyperpage{33}
+    \subitem {PerformDataAnalysis}, \hyperpage{33}
+    \subitem {saveAllToDbButton}, \hyperpage{40}
+    \subitem {saveCurrentToDbButton}, \hyperpage{40}
+    \subitem {sensorChoice}, \hyperpage{41}
+    \subitem {sensors}, \hyperpage{41}
+    \subitem {showAnalysisButton}, \hyperpage{41}
+    \subitem {startDatePicker}, \hyperpage{41}
+    \subitem {stationChoice}, \hyperpage{41}
+    \subitem {stations}, \hyperpage{41}
+    \subitem {tryLoadAirQualityFromAPI}, \hyperpage{33}
+    \subitem {tryLoadAirQualityFromDatabase}, \hyperpage{34}
+    \subitem {tryLoadMeasurementsFromAPI}, \hyperpage{35}
+    \subitem {tryLoadMeasurementsFromDatabase}, \hyperpage{35}
+    \subitem {tryLoadMeasurementsWithDateRange}, \hyperpage{36}
+    \subitem {tryLoadMeasurementsWithDateRangeFromDatabase}, 
+		\hyperpage{36}
+    \subitem {tryLoadSensorsFromAPI}, \hyperpage{37}
+    \subitem {tryLoadSensorsFromDatabase}, \hyperpage{37}
+    \subitem {tryLoadStationsFromAPI}, \hyperpage{38}
+    \subitem {tryLoadStationsFromDatabase}, \hyperpage{38}
+    \subitem {updateDatabaseStatus}, \hyperpage{39}
+  \item {MainWindow.cpp}
+    \subitem {compareStationsByName}, \hyperpage{48}
+    \subitem {json}, \hyperpage{48}
+  \item {MeasurementData}, \hyperpage{42}
+    \subitem {date}, \hyperpage{42}
+    \subitem {hasValue}, \hyperpage{42}
+    \subitem {value}, \hyperpage{42}
+  \item {measurementText}
+    \subitem {MainWindow}, \hyperpage{40}
+
+  \indexspace
+
+  \item {OnApplyDateRange}
+    \subitem {MainWindow}, \hyperpage{31}
+  \item {OnInit}
+    \subitem {App}, \hyperpage{13}
+  \item {OnPaint}
+    \subitem {ChartPanel}, \hyperpage{16}
+  \item {OnSaveAllToDatabase}
+    \subitem {MainWindow}, \hyperpage{31}
+  \item {OnSaveCurrentToDatabase}
+    \subitem {MainWindow}, \hyperpage{31}
+  \item {OnSensorSelection}
+    \subitem {MainWindow}, \hyperpage{32}
+  \item {OnShowAnalysis}
+    \subitem {MainWindow}, \hyperpage{32}
+  \item {OnSize}
+    \subitem {ChartPanel}, \hyperpage{17}
+  \item {OnStationSelection}
+    \subitem {MainWindow}, \hyperpage{32}
+
+  \indexspace
+
+  \item {parameter}
+    \subitem {ChartPanel}, \hyperpage{18}
+  \item {parseDateTime}
+    \subitem {MainWindow}, \hyperpage{33}
+    \subitem {Utils}, \hyperpage{9}
+  \item {PerformDataAnalysis}
+    \subitem {MainWindow}, \hyperpage{33}
+
+  \indexspace
+
+  \item {resource.h}
+    \subitem {IDI\_ICON1}, \hyperpage{51}
+
+  \indexspace
+
+  \item {saveAirQualityIndex}
+    \subitem {DatabaseService}, \hyperpage{25}
+  \item {saveAllToDbButton}
+    \subitem {MainWindow}, \hyperpage{40}
+  \item {saveCurrentToDbButton}
+    \subitem {MainWindow}, \hyperpage{40}
+  \item {saveMeasurementData}
+    \subitem {DatabaseService}, \hyperpage{26}
+  \item {saveSensorsData}
+    \subitem {DatabaseService}, \hyperpage{26}
+  \item {saveStationsData}
+    \subitem {DatabaseService}, \hyperpage{26}
+  \item {saveToFile}
+    \subitem {DatabaseService}, \hyperpage{27}
+  \item {sensorChoice}
+    \subitem {MainWindow}, \hyperpage{41}
+  \item {sensors}
+    \subitem {MainWindow}, \hyperpage{41}
+  \item {SetData}
+    \subitem {ChartPanel}, \hyperpage{17}
+  \item {SetTitle}
+    \subitem {ChartPanel}, \hyperpage{17}
+  \item {showAnalysisButton}
+    \subitem {MainWindow}, \hyperpage{41}
+  \item {src/ApiService.cpp}, \hyperpage{43}
+  \item {src/ApiService.h}, \hyperpage{43, 44}
+  \item {src/ChartPanel.cpp}, \hyperpage{44}
+  \item {src/ChartPanel.h}, \hyperpage{44, 45}
+  \item {src/DatabaseService.cpp}, \hyperpage{45}
+  \item {src/DatabaseService.h}, \hyperpage{46}
+  \item {src/main.cpp}, \hyperpage{47}
+  \item {src/MainWindow.cpp}, \hyperpage{47}
+  \item {src/MainWindow.h}, \hyperpage{49}
+  \item {src/Models.h}, \hyperpage{50, 51}
+  \item {src/resource.h}, \hyperpage{51}
+  \item {src/Utils.cpp}, \hyperpage{52}
+  \item {src/Utils.h}, \hyperpage{53, 54}
+  \item {startDatePicker}
+    \subitem {MainWindow}, \hyperpage{41}
+  \item {stationChoice}
+    \subitem {MainWindow}, \hyperpage{41}
+  \item {stations}
+    \subitem {MainWindow}, \hyperpage{41}
+
+  \indexspace
+
+  \item {title}
+    \subitem {ChartPanel}, \hyperpage{18}
+  \item {tryLoadAirQualityFromAPI}
+    \subitem {MainWindow}, \hyperpage{33}
+  \item {tryLoadAirQualityFromDatabase}
+    \subitem {MainWindow}, \hyperpage{34}
+  \item {tryLoadMeasurementsFromAPI}
+    \subitem {MainWindow}, \hyperpage{35}
+  \item {tryLoadMeasurementsFromDatabase}
+    \subitem {MainWindow}, \hyperpage{35}
+  \item {tryLoadMeasurementsWithDateRange}
+    \subitem {MainWindow}, \hyperpage{36}
+  \item {tryLoadMeasurementsWithDateRangeFromDatabase}
+    \subitem {MainWindow}, \hyperpage{36}
+  \item {tryLoadSensorsFromAPI}
+    \subitem {MainWindow}, \hyperpage{37}
+  \item {tryLoadSensorsFromDatabase}
+    \subitem {MainWindow}, \hyperpage{37}
+  \item {tryLoadStationsFromAPI}
+    \subitem {MainWindow}, \hyperpage{38}
+  \item {tryLoadStationsFromDatabase}
+    \subitem {MainWindow}, \hyperpage{38}
+
+  \indexspace
+
+  \item {updateDatabaseStatus}
+    \subitem {MainWindow}, \hyperpage{39}
+  \item {Utils}, \hyperpage{9}
+    \subitem {parseDateTime}, \hyperpage{9}
+  \item {Utils.cpp}
+    \subitem {WriteCallback}, \hyperpage{52}
+  \item {Utils.h}
+    \subitem {WriteCallback}, \hyperpage{53}
+
+  \indexspace
+
+  \item {value}
+    \subitem {MeasurementData}, \hyperpage{42}
+
+  \indexspace
+
+  \item {WriteCallback}
+    \subitem {Utils.cpp}, \hyperpage{52}
+    \subitem {Utils.h}, \hyperpage{53}
+  \item {wxIMPLEMENT\_APP}
+    \subitem {main.cpp}, \hyperpage{47}
+
+\end{theindex}

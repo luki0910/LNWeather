@@ -180,11 +180,11 @@ wxDateTime DatabaseService::getLastUpdateTime(const std::string& filePath) {
         wxFileName fileName(filePath);
         bool success = fileName.GetTimes(NULL, &lastModTime, NULL);
         if (!success || !lastModTime.IsValid()) {
-            lastModTime = wxDateTime::Now(); // U¿yj aktualnej daty jako zabezpieczenie
+            lastModTime = wxDateTime::Now(); // Aktualna data jako zabezpieczenie
         }
     }
     else {
-        lastModTime = wxDateTime::Now(); // U¿yj aktualnej daty jako zabezpieczenie
+        lastModTime = wxDateTime::Now(); 
     }
     return lastModTime;
 }

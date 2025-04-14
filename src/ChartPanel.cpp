@@ -4,7 +4,7 @@
  */
 
 #include "ChartPanel.h"
-#include <wx/dcbuffer.h>
+#include <wx/dcbuffer.h> //podwójne buforowanie, aby pozbyæ siê migotania przy rysowaniu wykresu
 #include <algorithm>
 
  /**
@@ -60,11 +60,11 @@ void ChartPanel::OnPaint(wxPaintEvent& event) {
     // Pobierz rozmiar panelu
     wxSize size = GetClientSize();
 
-    // Zwiêksz lewy margines, aby pomieœciæ etykiety osi Y
-    int leftMargin = 60;  // Wiêcej miejsca na etykiety osi Y
+    
+    int leftMargin = 60;  
     int rightMargin = 20;
-    int topMargin = 40;   // Miejsce na tytu³
-    int bottomMargin = 30; // Wiêcej miejsca na etykiety osi X
+    int topMargin = 40;   
+    int bottomMargin = 30; 
 
     wxRect chartRect(leftMargin, topMargin,
         size.x - leftMargin - rightMargin,
@@ -209,7 +209,7 @@ void ChartPanel::DrawLabels(wxDC& dc, const wxRect& rect) {
         }
     }
 
-    // Dodaj margines do zakresu wartoœci
+    // Margines do zakresu wartoœci
     double range = maxValue - minValue;
     if (range < 0.1) range = 0.1;
 

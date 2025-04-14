@@ -1,0 +1,167 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Indeks przestrzeni nazw}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lista przestrzeni nazw}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks hierarchiczny}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hierarchia klas}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Indeks klas}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista klas}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Indeks plików}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lista plików}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Dokumentacja przestrzeni nazw}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dokumentacja przestrzeni nazw Utils}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Opis szczegółowy}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Dokumentacja funkcji}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}parseDateTime()}{9}{subsubsection.5.1.2.1}%
+\contentsline {chapter}{\numberline {6}Dokumentacja klas}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Dokumentacja klasy Api\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Opis szczegółowy}{11}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Dokumentacja funkcji składowych}{11}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}fetchDataFromAPI()}{11}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}isNetworkAvailable()}{12}{subsubsection.6.1.2.2}%
+\contentsline {section}{\numberline {6.2}Dokumentacja klasy App}{13}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Opis szczegółowy}{13}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Dokumentacja funkcji składowych}{13}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}OnInit()}{13}{subsubsection.6.2.2.1}%
+\contentsline {section}{\numberline {6.3}Dokumentacja klasy Chart\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel}{14}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Opis szczegółowy}{14}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Dokumentacja konstruktora i destruktora}{15}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}ChartPanel()}{15}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3.3}Dokumentacja funkcji składowych}{15}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}DrawAxes()}{15}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}DrawData()}{15}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}DrawLabels()}{16}{subsubsection.6.3.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.4}GetChartData()}{16}{subsubsection.6.3.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.3.5}OnPaint()}{16}{subsubsection.6.3.3.5}%
+\contentsline {subsubsection}{\numberline {6.3.3.6}OnSize()}{17}{subsubsection.6.3.3.6}%
+\contentsline {subsubsection}{\numberline {6.3.3.7}SetData()}{17}{subsubsection.6.3.3.7}%
+\contentsline {subsubsection}{\numberline {6.3.3.8}SetTitle()}{17}{subsubsection.6.3.3.8}%
+\contentsline {subsection}{\numberline {6.3.4}Dokumentacja atrybutów składowych}{18}{subsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.1}chartData}{18}{subsubsection.6.3.4.1}%
+\contentsline {subsubsection}{\numberline {6.3.4.2}parameter}{18}{subsubsection.6.3.4.2}%
+\contentsline {subsubsection}{\numberline {6.3.4.3}title}{18}{subsubsection.6.3.4.3}%
+\contentsline {section}{\numberline {6.4}Dokumentacja klasy Database\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service}{18}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Opis szczegółowy}{19}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Dokumentacja konstruktora i destruktora}{19}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}DatabaseService()}{19}{subsubsection.6.4.2.1}%
+\contentsline {subsection}{\numberline {6.4.3}Dokumentacja funkcji składowych}{20}{subsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.1}getAirQualityFilePath()}{20}{subsubsection.6.4.3.1}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}getLastUpdateTime()}{20}{subsubsection.6.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.4.3.3}getMeasurementFilePath()}{20}{subsubsection.6.4.3.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.4}getSensorsFilePath()}{20}{subsubsection.6.4.3.4}%
+\contentsline {subsubsection}{\numberline {6.4.3.5}getStationsFilePath()}{21}{subsubsection.6.4.3.5}%
+\contentsline {subsubsection}{\numberline {6.4.3.6}hasAirQualityIndex()}{21}{subsubsection.6.4.3.6}%
+\contentsline {subsubsection}{\numberline {6.4.3.7}hasMeasurementData()}{21}{subsubsection.6.4.3.7}%
+\contentsline {subsubsection}{\numberline {6.4.3.8}hasSensorsData()}{22}{subsubsection.6.4.3.8}%
+\contentsline {subsubsection}{\numberline {6.4.3.9}hasStationsData()}{23}{subsubsection.6.4.3.9}%
+\contentsline {subsubsection}{\numberline {6.4.3.10}initializeDatabase()}{23}{subsubsection.6.4.3.10}%
+\contentsline {subsubsection}{\numberline {6.4.3.11}loadAirQualityIndex()}{23}{subsubsection.6.4.3.11}%
+\contentsline {subsubsection}{\numberline {6.4.3.12}loadFromFile()}{24}{subsubsection.6.4.3.12}%
+\contentsline {subsubsection}{\numberline {6.4.3.13}loadMeasurementData()}{24}{subsubsection.6.4.3.13}%
+\contentsline {subsubsection}{\numberline {6.4.3.14}loadSensorsData()}{25}{subsubsection.6.4.3.14}%
+\contentsline {subsubsection}{\numberline {6.4.3.15}loadStationsData()}{25}{subsubsection.6.4.3.15}%
+\contentsline {subsubsection}{\numberline {6.4.3.16}saveAirQualityIndex()}{25}{subsubsection.6.4.3.16}%
+\contentsline {subsubsection}{\numberline {6.4.3.17}saveMeasurementData()}{26}{subsubsection.6.4.3.17}%
+\contentsline {subsubsection}{\numberline {6.4.3.18}saveSensorsData()}{26}{subsubsection.6.4.3.18}%
+\contentsline {subsubsection}{\numberline {6.4.3.19}saveStationsData()}{26}{subsubsection.6.4.3.19}%
+\contentsline {subsubsection}{\numberline {6.4.3.20}saveToFile()}{27}{subsubsection.6.4.3.20}%
+\contentsline {subsection}{\numberline {6.4.4}Dokumentacja atrybutów składowych}{27}{subsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.4.1}dbFolder}{27}{subsubsection.6.4.4.1}%
+\contentsline {section}{\numberline {6.5}Dokumentacja klasy Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window}{27}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Opis szczegółowy}{29}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Dokumentacja konstruktora i destruktora}{30}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}MainWindow()}{30}{subsubsection.6.5.2.1}%
+\contentsline {subsection}{\numberline {6.5.3}Dokumentacja funkcji składowych}{30}{subsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.1}loadAirQualityIndex()}{30}{subsubsection.6.5.3.1}%
+\contentsline {subsubsection}{\numberline {6.5.3.2}loadSensorsForStation()}{30}{subsubsection.6.5.3.2}%
+\contentsline {subsubsection}{\numberline {6.5.3.3}loadStations()}{31}{subsubsection.6.5.3.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.4}OnApplyDateRange()}{31}{subsubsection.6.5.3.4}%
+\contentsline {subsubsection}{\numberline {6.5.3.5}OnSaveAllToDatabase()}{31}{subsubsection.6.5.3.5}%
+\contentsline {subsubsection}{\numberline {6.5.3.6}OnSaveCurrentToDatabase()}{31}{subsubsection.6.5.3.6}%
+\contentsline {subsubsection}{\numberline {6.5.3.7}OnSensorSelection()}{32}{subsubsection.6.5.3.7}%
+\contentsline {subsubsection}{\numberline {6.5.3.8}OnShowAnalysis()}{32}{subsubsection.6.5.3.8}%
+\contentsline {subsubsection}{\numberline {6.5.3.9}OnStationSelection()}{32}{subsubsection.6.5.3.9}%
+\contentsline {subsubsection}{\numberline {6.5.3.10}parseDateTime()}{33}{subsubsection.6.5.3.10}%
+\contentsline {subsubsection}{\numberline {6.5.3.11}PerformDataAnalysis()}{33}{subsubsection.6.5.3.11}%
+\contentsline {subsubsection}{\numberline {6.5.3.12}tryLoadAirQualityFromAPI()}{34}{subsubsection.6.5.3.12}%
+\contentsline {subsubsection}{\numberline {6.5.3.13}tryLoadAirQualityFromDatabase()}{34}{subsubsection.6.5.3.13}%
+\contentsline {subsubsection}{\numberline {6.5.3.14}tryLoadMeasurementsFromAPI()}{35}{subsubsection.6.5.3.14}%
+\contentsline {subsubsection}{\numberline {6.5.3.15}tryLoadMeasurementsFromDatabase()}{35}{subsubsection.6.5.3.15}%
+\contentsline {subsubsection}{\numberline {6.5.3.16}tryLoadMeasurementsWithDateRange()}{36}{subsubsection.6.5.3.16}%
+\contentsline {subsubsection}{\numberline {6.5.3.17}tryLoadMeasurementsWithDateRangeFromDatabase()}{36}{subsubsection.6.5.3.17}%
+\contentsline {subsubsection}{\numberline {6.5.3.18}tryLoadSensorsFromAPI()}{37}{subsubsection.6.5.3.18}%
+\contentsline {subsubsection}{\numberline {6.5.3.19}tryLoadSensorsFromDatabase()}{38}{subsubsection.6.5.3.19}%
+\contentsline {subsubsection}{\numberline {6.5.3.20}tryLoadStationsFromAPI()}{38}{subsubsection.6.5.3.20}%
+\contentsline {subsubsection}{\numberline {6.5.3.21}tryLoadStationsFromDatabase()}{39}{subsubsection.6.5.3.21}%
+\contentsline {subsubsection}{\numberline {6.5.3.22}updateDatabaseStatus()}{39}{subsubsection.6.5.3.22}%
+\contentsline {subsection}{\numberline {6.5.4}Dokumentacja atrybutów składowych}{39}{subsection.6.5.4}%
+\contentsline {subsubsection}{\numberline {6.5.4.1}airQualityIndex}{39}{subsubsection.6.5.4.1}%
+\contentsline {subsubsection}{\numberline {6.5.4.2}analysisText}{39}{subsubsection.6.5.4.2}%
+\contentsline {subsubsection}{\numberline {6.5.4.3}applyDateRangeButton}{39}{subsubsection.6.5.4.3}%
+\contentsline {subsubsection}{\numberline {6.5.4.4}chartPanel}{40}{subsubsection.6.5.4.4}%
+\contentsline {subsubsection}{\numberline {6.5.4.5}dataNotebook}{40}{subsubsection.6.5.4.5}%
+\contentsline {subsubsection}{\numberline {6.5.4.6}dbService}{40}{subsubsection.6.5.4.6}%
+\contentsline {subsubsection}{\numberline {6.5.4.7}dbStatusText}{40}{subsubsection.6.5.4.7}%
+\contentsline {subsubsection}{\numberline {6.5.4.8}endDatePicker}{40}{subsubsection.6.5.4.8}%
+\contentsline {subsubsection}{\numberline {6.5.4.9}font}{40}{subsubsection.6.5.4.9}%
+\contentsline {subsubsection}{\numberline {6.5.4.10}measurementText}{40}{subsubsection.6.5.4.10}%
+\contentsline {subsubsection}{\numberline {6.5.4.11}saveAllToDbButton}{40}{subsubsection.6.5.4.11}%
+\contentsline {subsubsection}{\numberline {6.5.4.12}saveCurrentToDbButton}{41}{subsubsection.6.5.4.12}%
+\contentsline {subsubsection}{\numberline {6.5.4.13}sensorChoice}{41}{subsubsection.6.5.4.13}%
+\contentsline {subsubsection}{\numberline {6.5.4.14}sensors}{41}{subsubsection.6.5.4.14}%
+\contentsline {subsubsection}{\numberline {6.5.4.15}showAnalysisButton}{41}{subsubsection.6.5.4.15}%
+\contentsline {subsubsection}{\numberline {6.5.4.16}startDatePicker}{41}{subsubsection.6.5.4.16}%
+\contentsline {subsubsection}{\numberline {6.5.4.17}stationChoice}{41}{subsubsection.6.5.4.17}%
+\contentsline {subsubsection}{\numberline {6.5.4.18}stations}{41}{subsubsection.6.5.4.18}%
+\contentsline {section}{\numberline {6.6}Dokumentacja struktury Measurement\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data}{42}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Opis szczegółowy}{42}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Dokumentacja atrybutów składowych}{42}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}date}{42}{subsubsection.6.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}hasValue}{42}{subsubsection.6.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.3}value}{42}{subsubsection.6.6.2.3}%
+\contentsline {chapter}{\numberline {7}Dokumentacja plików}{43}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.cpp}{43}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Opis szczegółowy}{43}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.h}{43}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Opis szczegółowy}{43}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Api\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{44}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Chart\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel.cpp}{44}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Opis szczegółowy}{44}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Chart\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel.h}{44}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Opis szczegółowy}{44}{subsection.7.5.1}%
+\contentsline {section}{\numberline {7.6}Chart\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{45}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.cpp}{45}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Opis szczegółowy}{45}{subsection.7.7.1}%
+\contentsline {section}{\numberline {7.8}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.h}{46}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Opis szczegółowy}{46}{subsection.7.8.1}%
+\contentsline {section}{\numberline {7.9}Database\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Service.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.7.9}%
+\contentsline {section}{\numberline {7.10}Dokumentacja pliku src/main.cpp}{47}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Opis szczegółowy}{47}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.2}Dokumentacja funkcji}{47}{subsection.7.10.2}%
+\contentsline {subsubsection}{\numberline {7.10.2.1}wxIMPLEMENT\_APP()}{47}{subsubsection.7.10.2.1}%
+\contentsline {section}{\numberline {7.11}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window.cpp}{47}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Opis szczegółowy}{48}{subsection.7.11.1}%
+\contentsline {subsection}{\numberline {7.11.2}Dokumentacja definicji typów}{48}{subsection.7.11.2}%
+\contentsline {subsubsection}{\numberline {7.11.2.1}json}{48}{subsubsection.7.11.2.1}%
+\contentsline {subsection}{\numberline {7.11.3}Dokumentacja funkcji}{48}{subsection.7.11.3}%
+\contentsline {subsubsection}{\numberline {7.11.3.1}compareStationsByName()}{48}{subsubsection.7.11.3.1}%
+\contentsline {section}{\numberline {7.12}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window.h}{49}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Opis szczegółowy}{49}{subsection.7.12.1}%
+\contentsline {section}{\numberline {7.13}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.7.13}%
+\contentsline {section}{\numberline {7.14}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Models.h}{50}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Opis szczegółowy}{51}{subsection.7.14.1}%
+\contentsline {section}{\numberline {7.15}Models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{51}{section.7.15}%
+\contentsline {section}{\numberline {7.16}Dokumentacja pliku src/resource.h}{51}{section.7.16}%
+\contentsline {subsection}{\numberline {7.16.1}Dokumentacja definicji}{51}{subsection.7.16.1}%
+\contentsline {subsubsection}{\numberline {7.16.1.1}IDI\_ICON1}{51}{subsubsection.7.16.1.1}%
+\contentsline {section}{\numberline {7.17}resource.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{51}{section.7.17}%
+\contentsline {section}{\numberline {7.18}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils.cpp}{52}{section.7.18}%
+\contentsline {subsection}{\numberline {7.18.1}Opis szczegółowy}{52}{subsection.7.18.1}%
+\contentsline {subsection}{\numberline {7.18.2}Dokumentacja funkcji}{52}{subsection.7.18.2}%
+\contentsline {subsubsection}{\numberline {7.18.2.1}WriteCallback()}{52}{subsubsection.7.18.2.1}%
+\contentsline {section}{\numberline {7.19}Dokumentacja pliku src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils.h}{53}{section.7.19}%
+\contentsline {subsection}{\numberline {7.19.1}Opis szczegółowy}{53}{subsection.7.19.1}%
+\contentsline {subsection}{\numberline {7.19.2}Dokumentacja funkcji}{53}{subsection.7.19.2}%
+\contentsline {subsubsection}{\numberline {7.19.2.1}WriteCallback()}{53}{subsubsection.7.19.2.1}%
+\contentsline {section}{\numberline {7.20}Utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{section.7.20}%
+\contentsline {chapter}{Skorowidz}{55}{section*.31}%

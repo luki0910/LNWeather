@@ -1,0 +1,9 @@
+## Wymagania systemowe:
+- Kompilator C++ z obsługą standardu C++17 lub nowszego.
+- curl 8.11.1/libcurl 8.11.1 lub nowszy.
+- wxWidgets 3.2.7 lub nowszy.
+- json v3.10.2 lub nowszy.
+- CMake 3.12 lub nowszy.
+
+
+
