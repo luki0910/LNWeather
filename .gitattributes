@@ -61,7 +61,7 @@
 *.h linguist-detectable=false
 *.perl linguist-detectable=false
 *.cc linguist-detectable=false
-*.cpp linguist-detectable=false
+*.cpp linguist-detectable=true
 *.kt linguist-detectable=false
 *.rb linguist-detectable=false
 *.swift linguist-detectable=false
