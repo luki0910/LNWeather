@@ -58,8 +58,8 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 *.lib filter=lfs diff=lfs merge=lfs -text
-.es linguist-language=cpp
 *.h linguist-detectable=false
+*.perl linguist-detectable=false
 *.cc linguist-detectable=false
 *.cpp linguist-detectable=false
 *.kt linguist-detectable=false
